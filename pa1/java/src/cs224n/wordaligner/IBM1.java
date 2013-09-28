@@ -19,7 +19,7 @@ import java.util.List;
 public class IBM1 implements WordAligner {
 
     private static final long serialVersionUID = 1315751943476440515L;
-    CounterMap<String, String> sourceTargetCounts;
+    private CounterMap<String, String> sourceTargetCounts;
     private static Random generator = new Random();
     private static final int numIterations = 500;
 
@@ -29,7 +29,7 @@ public class IBM1 implements WordAligner {
         for (int targetIndex=0; targetIndex < sentencePair.getTargetWords().size();
              ++targetIndex) {
             String targetWord = sentencePair.getTargetWords().get(targetIndex);
-            int sourceIndex = sample(targetWord, sentencePair.getSourceWords());
+            int sourceIndex = alignWord(targetWord, sentencePair.getSourceWords());
             if (sourceIndex >= 0) {
                 alignment.addPredictedAlignment(targetIndex, sourceIndex);
             }
@@ -40,7 +40,7 @@ public class IBM1 implements WordAligner {
     public void train(List<SentencePair> trainingPairs) {
         sourceTargetCounts = new CounterMap<String,String>();
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test?
-            System.out.println("EM Iteration " + i);
+            System.out.println("EM Iteration: " + i);
             sourceTargetCounts = EMIteration(trainingPairs);
         }
     }
@@ -50,7 +50,7 @@ public class IBM1 implements WordAligner {
         for(SentencePair pair : trainingPairs){
             for (int i=0; i<pair.getTargetWords().size(); ++i) {
                 String targetWord = pair.getTargetWords().get(i);
-                int sourceIndex = sample(targetWord, pair.getSourceWords());
+                int sourceIndex = sampleWord(targetWord, pair.getSourceWords());
                 String sourceWord = (sourceIndex >= 0) ? pair.getSourceWords().get(sourceIndex)
                         : NULL_WORD;
                 newSourceTargetCounts.incrementCount(sourceWord, targetWord, 1);
@@ -59,8 +59,23 @@ public class IBM1 implements WordAligner {
         return newSourceTargetCounts;
     }
 
-    private int sample(String targetWord, List<String> sourceWords) {
-        sourceWords.add (0,NULL_WORD);
+    private int alignWord(String targetWord, List<String> sourceWords) {
+        sourceWords.add(0, NULL_WORD);
+        double maxCount = -1;
+        int maxIndex = -1;
+        for (int i=0; i<sourceWords.size(); ++i) {
+            double count = sourceTargetCounts.getCount(sourceWords.get(i), targetWord);
+            if (count > maxCount) {
+                maxCount = count;
+                maxIndex = i;
+            }
+        }
+        sourceWords.remove(0);
+        return maxIndex - 1;
+    }
+
+    private int sampleWord(String targetWord, List<String> sourceWords) {
+        sourceWords.add(0, NULL_WORD);
         double cumulativeSum[] = new double[sourceWords.size()];
         double sum = 0;
         for (int i = 0; i < sourceWords.size(); ++i) {
