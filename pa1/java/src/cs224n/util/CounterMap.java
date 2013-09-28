@@ -31,6 +31,17 @@ public class CounterMap<K, V> {
     counterMap = outerMF.buildMap();
   }
 
+  public CounterMap<K, V> deepCopy(){
+      CounterMap<K, V> clone = new CounterMap<K, V>();
+      for (K key : counterMap.keySet()) {
+          Counter<V> counter = counterMap.get(key);
+          for (V val : counter.keySet()) {
+              clone.setCount(key, val, counter.getCount(val));
+          }
+      }
+      return clone;
+  }
+
   // -----------------------------------------------------------------------
 
   protected Counter<V> ensureCounter(K key) {
