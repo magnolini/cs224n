@@ -2,7 +2,6 @@ package cs224n.wordaligner;
 
 import cs224n.util.*;
 
-import java.util.HashMap;
 import java.util.Random;
 import java.util.List;
 
@@ -19,65 +18,70 @@ import java.util.List;
 public class IBM1 implements WordAligner {
 
     private static final long serialVersionUID = 1315751943476440515L;
-    private CounterMap<String, String> sourceTargetCounts;
-    private Counter<String> targetCounts;
+    private CounterMap<String, String> t;  // t(e: A, B, C, f: X, Y, Z) = t(f|e)
     private static Random generator = new Random(1);
-    private static final int numIterations = 200;
+    private static final int numIterations = 20;
 
     public Alignment align(SentencePair sentencePair) {
         Alignment alignment = new Alignment();
-        sentencePair.getTargetWords().add(NULL_WORD);
-        for (int sourceIndex = 0; sourceIndex < sentencePair.getSourceWords().size(); ++sourceIndex) {
-            double maxProb = 0;
-            int maxTargetIndex = -1;
-             for (int targetIndex = 0; targetIndex < sentencePair.getTargetWords().size(); ++targetIndex) {
-                 String targetWord = sentencePair.getTargetWords().get(targetIndex);
-                 String sourceWord = sentencePair.getSourceWords().get(sourceIndex);
-                double probAlign = sourceTargetCounts.getCount(sourceWord, targetWord) /
-                    targetCounts.getCount(targetWord);
-                if (probAlign > maxProb) {
-                    maxTargetIndex = targetIndex;
-                    maxProb = probAlign;
+        sentencePair.getSourceWords().add(NULL_WORD);
+        for (int f_index = 0; f_index < sentencePair.getTargetWords().size(); f_index++) {
+            String f = sentencePair.getTargetWords().get(f_index);
+            int maxEIndex = -1;
+            double maxEProb = -1;
+            for (int e_index = 0; e_index < sentencePair.getSourceWords().size(); e_index++) {
+                String e = sentencePair.getSourceWords().get(e_index);
+                if (t.getCount(e, f) > maxEProb) {
+                    maxEProb = t.getCount(e, f);
+                    maxEIndex = e_index;
                 }
             }
-            sentencePair.getTargetWords().remove(NULL_WORD);
-            if (maxTargetIndex < sentencePair.getTargetWords().size()) {
-                alignment.addPredictedAlignment(maxTargetIndex, sourceIndex);
+            if (sentencePair.getSourceWords().get(maxEIndex) != NULL_WORD) {
+                alignment.addPredictedAlignment(f_index, maxEIndex);
             }
         }
+        sentencePair.getSourceWords().remove(NULL_WORD);
         return alignment;
     }
 
     public void train(List<SentencePair> trainingPairs) {
-        sourceTargetCounts = null;
-        targetCounts = null;
+        t = null;
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test?
             System.out.println("EM Iteration: " + i);
-            CounterMap<String, String> newSourceTargetCounts = new CounterMap<String, String>();
-            Counter<String> newTargetCounts = new Counter<String>();
-            EMIteration(trainingPairs, newSourceTargetCounts, newTargetCounts);
-            sourceTargetCounts = newSourceTargetCounts;
-            targetCounts = newTargetCounts;
+            CounterMap<String, String> c = new CounterMap<String, String>();
+            EMIteration(trainingPairs, c);
+            t = Counters.conditionalNormalize(c);
         }
     }
 
-    private void EMIteration(List<SentencePair> trainingPairs, CounterMap<String, String> newSourceTargetCounts,
-                             Counter<String> newTargetCounts){
+    // receives an empty c
+    private void EMIteration(List<SentencePair> trainingPairs, CounterMap<String, String> c){
         for(SentencePair pair : trainingPairs){
-            pair.getTargetWords().add(NULL_WORD);
-            for (String sourceWord : pair.getSourceWords()) {
-                for (String targetWord : pair.getTargetWords()) {
-                    double probAlign = 1.0 / pair.getSourceWords().size();
-                    if (sourceTargetCounts != null)  {
-                        probAlign = sourceTargetCounts.getCount(sourceWord, targetWord) /
-                            targetCounts.getCount(targetWord);
-                    }
-                    newSourceTargetCounts.incrementCount(sourceWord, targetWord, probAlign);
-                    newTargetCounts.incrementCount(targetWord, probAlign);
+            pair.getSourceWords().add(NULL_WORD);
+            for (String f : pair.getTargetWords()) {
+                double tsum = 0.0;
+                if (t != null) {
+                    tsum = normalizeForSentence(pair.getSourceWords(), f);
                 }
-             }
-            pair.getTargetWords().remove(NULL_WORD);
+                for (String e : pair.getSourceWords()) {
+                    double delta = 1.0 / pair.getSourceWords().size(); // TODO
+                    if (t != null){
+                        delta = t.getCount(e, f) / tsum;
+                    }
+                    c.incrementCount(e, f, delta);
+                }
+            }
+            pair.getSourceWords().remove(NULL_WORD);
         }
+    }
+
+
+    private double normalizeForSentence(List<String> e_sentence, String f_word) {
+        double sum = 0.0;
+        for (String e : e_sentence) {
+            sum += t.getCount(e, f_word);
+        }
+        return sum;
     }
 
 }
