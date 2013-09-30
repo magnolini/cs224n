@@ -2,6 +2,7 @@ package cs224n.wordaligner;
 
 import cs224n.util.*;
 import java.util.List;
+import java.io.*;
 
 /**
  * Simple word alignment baseline model that maps source positions to target
@@ -19,16 +20,13 @@ public class PMIModel implements WordAligner {
 
     // TODO: Use arrays or Counters for collecting sufficient statistics
     // from the training data.
-    private CounterMap<String,String> sourceTargetCounts;
+    private CounterMap<String,String> targetSourceCounts;
     private Counter<String> sourceCounts;
-    private Counter<String> targetCounts;
 
 
     public Alignment align(SentencePair sentencePair) {
-        // Placeholder code below.
-        // TODO Implement an inference algorithm for Eq.1 in the assignment
-        // handout to predict alignments based on the counts you collected with train().
         Alignment alignment = new Alignment();
+        sentencePair.getSourceWords().add(NULL_WORD);
         int numSourceWords = sentencePair.getSourceWords().size();
         int numTargetWords = sentencePair.getTargetWords().size();
 
@@ -36,16 +34,12 @@ public class PMIModel implements WordAligner {
             String target = sentencePair.getTargetWords().get(targetIndex);
             int maxSourceIndex = -1;
             double maxSourceScore = 0;
-            double targetP = targetCounts.getCount(target) / targetCounts.totalCount();
-
             for (int srcIndex = 0; srcIndex < numSourceWords; srcIndex++) {
                 String source = sentencePair.getSourceWords().get(srcIndex);
-                double jointP = sourceTargetCounts.getCount(source, target) / sourceTargetCounts.totalCount();
-                double sourceP = sourceCounts.getCount(source) / sourceCounts.totalCount();
-                double pmi = jointP / (sourceP * targetP);
-
-                if ( pmi > maxSourceScore ){
-                    maxSourceScore = pmi;
+                double mutualInformation = targetSourceCounts.getCount(target, source) / sourceCounts.getCount(source);
+//                System.out.println("target="+target+", source="+source+". pmi="+mutualInformation);
+                if ( mutualInformation > maxSourceScore ){
+                    maxSourceScore = mutualInformation;
                     maxSourceIndex = srcIndex;
                 }
 
@@ -55,32 +49,42 @@ public class PMIModel implements WordAligner {
             alignment.addPredictedAlignment(targetIndex, maxSourceIndex);
 
         }
+        sentencePair.getSourceWords().remove(NULL_WORD);
         return alignment;
     }
 
     public void train(List<SentencePair> trainingPairs) {
-        sourceTargetCounts = new CounterMap<String,String>();
+        targetSourceCounts = new CounterMap<String,String>();
         sourceCounts = new Counter<String>();
-        targetCounts = new Counter<String>();
         for(SentencePair pair : trainingPairs){
             List<String> targetWords = pair.getTargetWords();
             List<String> sourceWords = pair.getSourceWords();
+            sourceWords.add(NULL_WORD);
             for(String source : sourceWords){
                 for(String target : targetWords){
-                    // TODO: Warm-up. Your code here for collecting sufficient statistics.
-                    sourceTargetCounts.incrementCount(source, target, 1.0);
+                    targetSourceCounts.incrementCount(target, source, 1.0);
                 }
             }
             for(String source : sourceWords) {
                 sourceCounts.incrementCount(source, 1.0);
             }
-            for(String target : targetWords) {
-                targetCounts.incrementCount(target, 1.0);
-            }
+            sourceWords.remove(NULL_WORD);
         }
 
-//        sourceCounts = Counters.normalize(sourceCounts);
-//        targetCounts = Counters.normalize(targetCounts);
-//        sourceTargetCounts = Counters.normalize(sourceTargetCounts);
+        sourceCounts = Counters.normalize(sourceCounts);
+        targetSourceCounts = Counters.conditionalNormalize(targetSourceCounts);
+
+//        try {
+//            BufferedWriter bw = new BufferedWriter(new FileWriter("debug"));
+//            bw.write("----------------------------------\n");
+//            bw.write(sourceCounts.toString());
+//            bw.write("\nSource Target Counts:\n");
+//            bw.write("----------------------------------\n");
+//            bw.write(targetSourceCounts.toString());
+//            bw.close();
+//
+//        } catch (IOException e) {
+//            // Handle exception
+//        }
     }
 }

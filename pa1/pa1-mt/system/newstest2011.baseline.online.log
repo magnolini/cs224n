@@ -1,0 +1,624 @@
+Sep 28, 2013 6:11:03 PM edu.stanford.nlp.mt.tune.OnlineTuner <init>
+INFO: Initial weights: {TM:FPT.0=>0.2, TM:FPT.1=>0.2, TM:FPT.2=>0.2, TM:FPT.3=>0.2, TM:FPT.4=>0.2, LinearDistortion=>0.2, TM:FPT.6=>0.2, UnknownWord=>0.2, LexR:monotoneWithPrevious=>0.2, LexR:discontinuousWithPrevious=>0.2, LM=>0.5, TM:FPT.5=>0.2, LexR:monotoneWithNext=>0.2, LexR:swapWithPrevious=>0.2, WordPenalty=>-1.0, LexR:discontinuous2WithPrevious=>0.2, LexR:discontinuousWithNext=>0.2, LexR:discontinuous2WithNext=>0.2, LexR:swapWithNext=>0.2}
+Sep 28, 2013 6:11:04 PM edu.stanford.nlp.mt.tune.OnlineTuner loadReferences
+INFO: Number of references for expected BLEU calculation: 1
+Sep 28, 2013 6:11:04 PM edu.stanford.nlp.mt.tune.OnlineTuner <init>
+INFO: Intrinsic loss corpus contains 200 examples
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner <init>
+INFO: Loaded Phrasal from: newstest2011.baseline.ini
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner <init>
+INFO: Loaded optimizer: PairwiseRankingOptimizerSGD gamma: 5000 xi: 50 threshold: 0.50 feature-filter: 1 updater: adagradl1f
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Start of online tuning
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of epochs: 4
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of threads: 4
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of references: 1
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Start of epoch: 0
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of batches for epoch 0: 10
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 0 memory free: 4886015504  max: 6174015488
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 1/1  submitted: 1  completed: 0  input_q: 0  output_q: 0  idle_q: 3
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 1 memory free: 4853803232  max: 6174015488
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 2/2  submitted: 2  completed: 0  input_q: 0  output_q: 0  idle_q: 2
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 2 memory free: 4821590840  max: 6174015488
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 3/3  submitted: 3  completed: 0  input_q: 0  output_q: 0  idle_q: 1
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 3 memory free: 4789378448  max: 6174015488
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 4  completed: 0  input_q: 0  output_q: 0  idle_q: 0
+Sep 28, 2013 6:11:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 4 memory free: 4757166056  max: 6174015488
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 5  completed: 1  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 0 gradient cardinality: 10
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 0 with gradient from input step 1 (diff: 1)
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 0 approximate L2 ||w'-w|| 7981.7221
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 0 cardinality: 19
+Sep 28, 2013 6:11:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 5 memory free: 5007607392  max: 6214582272
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 6  completed: 2  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 1 gradient cardinality: 10
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 1 with gradient from input step 2 (diff: 1)
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 1 approximate L2 ||w'-w|| 3446.6240
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 1 cardinality: 19
+Sep 28, 2013 6:11:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 6 memory free: 4435791624  max: 6269108224
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 7  completed: 3  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 2 gradient cardinality: 10
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 2 with gradient from input step 3 (diff: 1)
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 2 approximate L2 ||w'-w|| 4371.3746
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 2 cardinality: 19
+Sep 28, 2013 6:11:43 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 7 memory free: 4843487056  max: 6283329536
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 8  completed: 4  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 3 gradient cardinality: 10
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 3 with gradient from input step 0 (diff: -3)
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 3 approximate L2 ||w'-w|| 5209.8542
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 3 cardinality: 19
+Sep 28, 2013 6:11:46 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 8 memory free: 4860288208  max: 6273630208
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 9  completed: 5  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 4 gradient cardinality: 10
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 4 with gradient from input step 4 (diff: 0)
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 4 approximate L2 ||w'-w|| 6085.6424
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 4 cardinality: 19
+Sep 28, 2013 6:12:07 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 batch 9 memory free: 4875792744  max: 6275530752
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 10  completed: 6  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 5 gradient cardinality: 10
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 5 with gradient from input step 5 (diff: 0)
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 5 approximate L2 ||w'-w|| 5968.2461
+Sep 28, 2013 6:12:17 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 5 cardinality: 19
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 6 gradient cardinality: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 6 with gradient from input step 6 (diff: 0)
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 6 approximate L2 ||w'-w|| 1747.4900
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 6 cardinality: 19
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 7 gradient cardinality: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 7 with gradient from input step 7 (diff: 0)
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 7 approximate L2 ||w'-w|| 12298.6179
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 7 cardinality: 19
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 8 gradient cardinality: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 8 with gradient from input step 8 (diff: 0)
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 8 approximate L2 ||w'-w|| 9973.1700
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 8 cardinality: 19
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 9 gradient cardinality: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Full regularization step for 19 features
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 9
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 9 with gradient from input step 9 (diff: 0)
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 9 approximate L2 ||w'-w|| 9871.4744
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 9 cardinality: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 0 elapsed time: 88.33 seconds
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner approximateBLEUObjective
+INFO: Epoch 0 expected BLEU: 20.29 / BP: 1.000
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Start of epoch: 1
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of batches for epoch 1: 10
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 0 memory free: 3929731560  max: 6348079104
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 1/1  submitted: 1  completed: 0  input_q: 0  output_q: 0  idle_q: 3
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 1 memory free: 3910168272  max: 6348079104
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 2/2  submitted: 2  completed: 0  input_q: 0  output_q: 0  idle_q: 2
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 2 memory free: 3890604984  max: 6348079104
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 3/3  submitted: 3  completed: 0  input_q: 0  output_q: 0  idle_q: 1
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 3 memory free: 3871041696  max: 6348079104
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 4  completed: 0  input_q: 0  output_q: 0  idle_q: 0
+Sep 28, 2013 6:12:37 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 4 memory free: 3851478408  max: 6348079104
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 5  completed: 1  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 10 gradient cardinality: 10
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 10 with gradient from input step 10 (diff: 0)
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 10 approximate L2 ||w'-w|| 2973.4671
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 10 cardinality: 10
+Sep 28, 2013 6:13:04 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 5 memory free: 3852617040  max: 6297026560
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 6  completed: 2  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 11 gradient cardinality: 10
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 11 with gradient from input step 13 (diff: 2)
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 11 approximate L2 ||w'-w|| 2085.3509
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 11 cardinality: 10
+Sep 28, 2013 6:13:05 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 6 memory free: 3903884216  max: 6290997248
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 7  completed: 3  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 12 gradient cardinality: 10
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 12 with gradient from input step 12 (diff: 0)
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 12 approximate L2 ||w'-w|| 4506.1860
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 12 cardinality: 10
+Sep 28, 2013 6:13:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 7 memory free: 3410912008  max: 6295781376
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 8  completed: 4  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 13 gradient cardinality: 10
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 13 with gradient from input step 11 (diff: -2)
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 13 approximate L2 ||w'-w|| 1709.4722
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 13 cardinality: 10
+Sep 28, 2013 6:13:12 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 8 memory free: 3200788600  max: 6284050432
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 9  completed: 5  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 14 gradient cardinality: 10
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 14 with gradient from input step 14 (diff: 0)
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 14 approximate L2 ||w'-w|| 3879.4472
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 14 cardinality: 10
+Sep 28, 2013 6:13:32 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 batch 9 memory free: 3916053560  max: 6275072000
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 10  completed: 6  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 15 gradient cardinality: 10
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 15 with gradient from input step 16 (diff: 1)
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 15 approximate L2 ||w'-w|| 2979.0373
+Sep 28, 2013 6:13:39 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 15 cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 16 gradient cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 16 with gradient from input step 15 (diff: -1)
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 16 approximate L2 ||w'-w|| 5153.6708
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 16 cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 17 gradient cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 17 with gradient from input step 17 (diff: 0)
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 17 approximate L2 ||w'-w|| 1843.7888
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 17 cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 18 gradient cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 18 with gradient from input step 18 (diff: 0)
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 18 approximate L2 ||w'-w|| 4271.9538
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 18 cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 19 gradient cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Full regularization step for 10 features
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 19 with gradient from input step 19 (diff: 0)
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 19 approximate L2 ||w'-w|| 4033.3210
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 19 cardinality: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 1 elapsed time: 91.37 seconds
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner approximateBLEUObjective
+INFO: Epoch 1 expected BLEU: 21.14 / BP: 1.000
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Start of epoch: 2
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of batches for epoch 2: 10
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 0 memory free: 3040540136  max: 6328614912
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 1/1  submitted: 1  completed: 0  input_q: 0  output_q: 0  idle_q: 3
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 1 memory free: 3021309768  max: 6328614912
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 2/2  submitted: 2  completed: 0  input_q: 0  output_q: 0  idle_q: 2
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 2 memory free: 3001930816  max: 6328614912
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 3/3  submitted: 3  completed: 0  input_q: 0  output_q: 0  idle_q: 1
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 3 memory free: 2982700448  max: 6328614912
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 4  completed: 0  input_q: 0  output_q: 0  idle_q: 0
+Sep 28, 2013 6:14:09 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 4 memory free: 2963470080  max: 6328614912
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 5  completed: 1  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 20 gradient cardinality: 10
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 20 with gradient from input step 23 (diff: 3)
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 20 approximate L2 ||w'-w|| 2751.1927
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 20 cardinality: 10
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 5 memory free: 2992285392  max: 6267404288
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 6  completed: 2  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 21 gradient cardinality: 10
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 21 with gradient from input step 22 (diff: 1)
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 21 approximate L2 ||w'-w|| 1522.3236
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 21 cardinality: 10
+Sep 28, 2013 6:14:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 6 memory free: 4008698936  max: 6290210816
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 7  completed: 3  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 22 gradient cardinality: 10
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 22 with gradient from input step 21 (diff: -1)
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 22 approximate L2 ||w'-w|| 3790.9627
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 22 cardinality: 10
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 7 memory free: 3832334040  max: 6283395072
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 8  completed: 4  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 23 gradient cardinality: 10
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 23 with gradient from input step 20 (diff: -3)
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 23 approximate L2 ||w'-w|| 2117.8551
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 23 cardinality: 10
+Sep 28, 2013 6:14:42 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 8 memory free: 2721365184  max: 6283395072
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 9  completed: 5  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 24 gradient cardinality: 10
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 24 with gradient from input step 25 (diff: 1)
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 24 approximate L2 ||w'-w|| 2673.4059
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 24 cardinality: 10
+Sep 28, 2013 6:15:07 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 batch 9 memory free: 3426551192  max: 6279200768
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 10  completed: 6  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 25 gradient cardinality: 10
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 25 with gradient from input step 26 (diff: 1)
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 25 approximate L2 ||w'-w|| 5189.7589
+Sep 28, 2013 6:15:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 25 cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 26 gradient cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 26 with gradient from input step 24 (diff: -2)
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 26 approximate L2 ||w'-w|| 2511.3305
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 26 cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 27 gradient cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 27 with gradient from input step 27 (diff: 0)
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 27 approximate L2 ||w'-w|| 2697.2768
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 27 cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 28 gradient cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 28 with gradient from input step 28 (diff: 0)
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 28 approximate L2 ||w'-w|| 1767.2484
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 28 cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 29 gradient cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Full regularization step for 10 features
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 29 with gradient from input step 29 (diff: 0)
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 29 approximate L2 ||w'-w|| 3077.9257
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 29 cardinality: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 2 elapsed time: 92.00 seconds
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner approximateBLEUObjective
+INFO: Epoch 2 expected BLEU: 22.11 / BP: 0.993
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Start of epoch: 3
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Number of batches for epoch 3: 10
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 0 memory free: 2339841936  max: 6302597120
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 1/1  submitted: 1  completed: 0  input_q: 0  output_q: 0  idle_q: 3
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 1 memory free: 2321096048  max: 6302597120
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 2/2  submitted: 2  completed: 0  input_q: 0  output_q: 0  idle_q: 2
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 2 memory free: 2302350128  max: 6302597120
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 3/3  submitted: 3  completed: 0  input_q: 0  output_q: 0  idle_q: 1
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 3 memory free: 2283604152  max: 6302597120
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 4  completed: 0  input_q: 0  output_q: 0  idle_q: 0
+Sep 28, 2013 6:15:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 4 memory free: 2264858136  max: 6302597120
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 5  completed: 1  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 30 gradient cardinality: 10
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 30 with gradient from input step 32 (diff: 2)
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 30 approximate L2 ||w'-w|| 2109.1604
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 30 cardinality: 10
+Sep 28, 2013 6:16:10 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 5 memory free: 1649011600  max: 6245711872
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 6  completed: 2  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 31 gradient cardinality: 10
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 31 with gradient from input step 31 (diff: 0)
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 31 approximate L2 ||w'-w|| 2881.2462
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 31 cardinality: 10
+Sep 28, 2013 6:16:11 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 6 memory free: 2765385208  max: 6262620160
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 7  completed: 3  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 32 gradient cardinality: 10
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 32 with gradient from input step 30 (diff: -2)
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 32 approximate L2 ||w'-w|| 2328.8604
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 32 cardinality: 10
+Sep 28, 2013 6:16:14 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 7 memory free: 1897708520  max: 6277758976
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 8  completed: 4  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 33 gradient cardinality: 10
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 33 with gradient from input step 33 (diff: 0)
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 33 approximate L2 ||w'-w|| 4953.9380
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 33 cardinality: 10
+Sep 28, 2013 6:16:15 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 8 memory free: 2740294456  max: 6266486784
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 9  completed: 5  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 34 gradient cardinality: 10
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 34 with gradient from input step 35 (diff: 1)
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 34 approximate L2 ||w'-w|| 2960.6346
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 34 cardinality: 10
+Sep 28, 2013 6:16:38 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 batch 9 memory free: 2880689840  max: 6245122048
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Threadpool.status: active: 4/4  submitted: 10  completed: 6  input_q: 0  output_q: 1  idle_q: 0
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 35 gradient cardinality: 10
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 35 with gradient from input step 36 (diff: 1)
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 35 approximate L2 ||w'-w|| 7514.4445
+Sep 28, 2013 6:16:41 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 35 cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 36 gradient cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 36 with gradient from input step 34 (diff: -2)
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 36 approximate L2 ||w'-w|| 3497.5356
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 36 cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 37 gradient cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 37 with gradient from input step 37 (diff: 0)
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 37 approximate L2 ||w'-w|| 1880.6190
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 37 cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 38 gradient cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 38 with gradient from input step 38 (diff: 0)
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 38 approximate L2 ||w'-w|| 6739.6214
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 38 cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 39 gradient cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Full regularization step for 10 features
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.optimizers.AdaGradFastFOBOSUpdater update
+INFO: Nullified features: 0
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 39 with gradient from input step 39 (diff: 0)
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 39 approximate L2 ||w'-w|| 3767.0711
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner update
+INFO: Update 39 cardinality: 10
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner run
+INFO: Epoch 3 elapsed time: 87.27 seconds
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner approximateBLEUObjective
+INFO: Epoch 3 expected BLEU: 22.02 / BP: 0.991
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner saveFinalWeights
+INFO: Wrote final weights to newstest2011.baseline.online.final.binwts
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner saveFinalWeights
+INFO: Final weights from epoch 3: BLEU: 22.02
+Sep 28, 2013 6:17:08 PM edu.stanford.nlp.mt.tune.OnlineTuner saveFinalWeights
+INFO: Non-zero final weights: 10

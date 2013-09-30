@@ -139,7 +139,11 @@ public class Counter <E> implements Serializable {
    * @return string representation
    */
   public String toString() {
-    return toString(keySet().size());
+      String str = "";
+      for (E key : entries.keySet()) {
+        str += key + ": " + entries.get(key) + "\n";
+      }
+      return str;
   }
 
   /**

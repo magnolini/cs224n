@@ -75,6 +75,7 @@ public class IBM2 implements WordAligner {
         positions = new HashMap<String, CounterMap<Integer, Integer>>();
 
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test
+            System.out.println("EM Iteration: " + i);
             CounterMap<String, String> newSourceTargetCounts = sourceTargetCounts.deepCopy();
             HashMap<String, CounterMap<Integer, Integer>> newPositions = clonePositions(positions);
             EMIteration(trainingPairs, newSourceTargetCounts, newPositions);

@@ -2,7 +2,7 @@ package cs224n.wordaligner;
 
 import cs224n.util.*;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.List;
 
@@ -20,77 +20,64 @@ public class IBM1 implements WordAligner {
 
     private static final long serialVersionUID = 1315751943476440515L;
     private CounterMap<String, String> sourceTargetCounts;
-    private static Random generator = new Random();
-    private static final int numIterations = 500;
+    private Counter<String> targetCounts;
+    private static Random generator = new Random(1);
+    private static final int numIterations = 200;
 
     public Alignment align(SentencePair sentencePair) {
         Alignment alignment = new Alignment();
-
-        for (int targetIndex=0; targetIndex < sentencePair.getTargetWords().size();
-             ++targetIndex) {
-            String targetWord = sentencePair.getTargetWords().get(targetIndex);
-            int sourceIndex = alignWord(targetWord, sentencePair.getSourceWords());
-            if (sourceIndex >= 0) {
-                alignment.addPredictedAlignment(targetIndex, sourceIndex);
+        sentencePair.getTargetWords().add(NULL_WORD);
+        for (int sourceIndex = 0; sourceIndex < sentencePair.getSourceWords().size(); ++sourceIndex) {
+            double maxProb = 0;
+            int maxTargetIndex = -1;
+             for (int targetIndex = 0; targetIndex < sentencePair.getTargetWords().size(); ++targetIndex) {
+                 String targetWord = sentencePair.getTargetWords().get(targetIndex);
+                 String sourceWord = sentencePair.getSourceWords().get(sourceIndex);
+                double probAlign = sourceTargetCounts.getCount(sourceWord, targetWord) /
+                    targetCounts.getCount(targetWord);
+                if (probAlign > maxProb) {
+                    maxTargetIndex = targetIndex;
+                    maxProb = probAlign;
+                }
+            }
+            sentencePair.getTargetWords().remove(NULL_WORD);
+            if (maxTargetIndex < sentencePair.getTargetWords().size()) {
+                alignment.addPredictedAlignment(maxTargetIndex, sourceIndex);
             }
         }
         return alignment;
     }
 
     public void train(List<SentencePair> trainingPairs) {
-        sourceTargetCounts = new CounterMap<String,String>();
+        sourceTargetCounts = null;
+        targetCounts = null;
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test?
             System.out.println("EM Iteration: " + i);
-            sourceTargetCounts = EMIteration(trainingPairs);
+            CounterMap<String, String> newSourceTargetCounts = new CounterMap<String, String>();
+            Counter<String> newTargetCounts = new Counter<String>();
+            EMIteration(trainingPairs, newSourceTargetCounts, newTargetCounts);
+            sourceTargetCounts = newSourceTargetCounts;
+            targetCounts = newTargetCounts;
         }
     }
 
-    private CounterMap<String, String> EMIteration(List<SentencePair> trainingPairs){
-        CounterMap<String, String> newSourceTargetCounts = sourceTargetCounts.deepCopy();
+    private void EMIteration(List<SentencePair> trainingPairs, CounterMap<String, String> newSourceTargetCounts,
+                             Counter<String> newTargetCounts){
         for(SentencePair pair : trainingPairs){
-            for (int i=0; i<pair.getTargetWords().size(); ++i) {
-                String targetWord = pair.getTargetWords().get(i);
-                int sourceIndex = sampleWord(targetWord, pair.getSourceWords());
-                String sourceWord = (sourceIndex >= 0) ? pair.getSourceWords().get(sourceIndex)
-                        : NULL_WORD;
-                newSourceTargetCounts.incrementCount(sourceWord, targetWord, 1);
-            }
+            pair.getTargetWords().add(NULL_WORD);
+            for (String sourceWord : pair.getSourceWords()) {
+                for (String targetWord : pair.getTargetWords()) {
+                    double probAlign = 1.0 / pair.getSourceWords().size();
+                    if (sourceTargetCounts != null)  {
+                        probAlign = sourceTargetCounts.getCount(sourceWord, targetWord) /
+                            targetCounts.getCount(targetWord);
+                    }
+                    newSourceTargetCounts.incrementCount(sourceWord, targetWord, probAlign);
+                    newTargetCounts.incrementCount(targetWord, probAlign);
+                }
+             }
+            pair.getTargetWords().remove(NULL_WORD);
         }
-        return newSourceTargetCounts;
-    }
-
-    private int alignWord(String targetWord, List<String> sourceWords) {
-        sourceWords.add(0, NULL_WORD);
-        double maxCount = -1;
-        int maxIndex = -1;
-        for (int i=0; i<sourceWords.size(); ++i) {
-            double count = sourceTargetCounts.getCount(sourceWords.get(i), targetWord);
-            if (count > maxCount) {
-                maxCount = count;
-                maxIndex = i;
-            }
-        }
-        sourceWords.remove(0);
-        return maxIndex - 1;
-    }
-
-    private int sampleWord(String targetWord, List<String> sourceWords) {
-        sourceWords.add(0, NULL_WORD);
-        double cumulativeSum[] = new double[sourceWords.size()];
-        double sum = 0;
-        for (int i = 0; i < sourceWords.size(); ++i) {
-            sum += sourceTargetCounts.getCount(sourceWords.get(i), targetWord) + 1;
-            cumulativeSum[i] = sum;
-        }
-        double rand = generator.nextDouble()*sum;
-        for (int i = 0; i < cumulativeSum.length; ++i) {
-            if (rand < cumulativeSum[i]) {
-                sourceWords.remove(0);
-                return i-1;
-            }
-        }
-        // Should never reach this
-        return -1;
     }
 
 }

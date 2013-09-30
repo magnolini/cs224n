@@ -1,0 +1,82 @@
+#!/usr/bin/perl
+#
+# Load local Phrasal Perl modules from the scripts directory.
+#
+use Cwd 'abs_path';
+use File::Basename;
+BEGIN { push @INC, dirname(abs_path($0)) }
+
+################################################
+# Replaces <old_id> with <new_id> within
+# ttable-file, distortion-file, and lmodel-file
+# Author: Michel Galley
+################################################
+
+use strict;
+use POSIX;
+use Fatal qw(open close);
+
+use arg_utils qw(&get_args &get_opts);
+
+my %opts = get_opts(['v',0,'program will be more verbose'],
+                    ['f=s','','target nbest list'],
+                    ['n=s','','nbest list size'],
+                    ['w=s','','weights file']);
+my %args = get_args('old','new');
+my $oldid = $args{old};
+my $newid = $args{new};
+
+$oldid =~ s/\+/\\+/g;
+$newid =~ s/\+/\\+/g;
+
+my $field = '';
+while(<STDIN>) {
+    my $newfield = 0;
+    if(/^\[(\S+)\]/) {
+	$field = $1;
+	$newfield = 1;
+    }
+    if($field eq 'ttable-file' ||
+       $field eq 'distortion-file' ||
+       $field eq 'hierarchical-distortion-file' ||
+       $field eq 'lmodel-file' ||
+       $field eq 'additional-featurizers') {
+	if(s/DEVID/$newid/g || s/$oldid/$newid/g) {
+	    if($field eq 'additional-featurizers') {
+		/\((.*)\)/;
+		foreach my $el (split(/,/,$1)) {
+		    warn "WARNING: not a file name or missing file: $el\n" if(! -f $el);
+		}
+	    } else {
+		/(\S+)$/;
+		warn "WARNING: missing file: $1\n" if(! -f $1);
+	    }
+	}
+    } elsif($field eq 'n-best-list' && $newfield) {
+	my $oldlist = <STDIN>;  
+	my $oldsize = <STDIN>;  
+	if($opts{n} && $opts{f}) {
+	    print "[n-best-list]\n$opts{f}\n$opts{n}\n";
+	    if($oldsize =~ /^\s*$/) {
+		print "\n";
+	    }
+	} elsif($opts{n}) {
+	    print "[n-best-list]\n$opts{n}\n";
+	    if($oldsize =~ /^\s*$/) {
+		print "\n";
+	    }
+	}
+	next;
+    } elsif($field eq 'weights-file' && $newfield) {
+	my $oldfile = <STDIN>;
+	chomp $oldfile;
+	print "[weights-file]\n";
+	if($opts{w}) {
+	    print "$opts{w}\n";
+	} else {
+	    print "$oldfile\n";
+	}
+	next;
+    }
+    print;
+}

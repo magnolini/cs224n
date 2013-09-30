@@ -1,0 +1,1 @@
+java -cp classes cs224n.assignments.WordAlignmentTester -dataPath /afs/ir.stanford.edu/class/cs224n/pa1/data -model cs224n.wordaligner.IBM2 -evalSet dev -trainSentences 10000 -language french -verbose

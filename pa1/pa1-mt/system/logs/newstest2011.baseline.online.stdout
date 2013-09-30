@@ -1,0 +1,2444 @@
+Phrasal Online Tuner
+Startup: Sat Sep 28 18:11:03 PDT 2013
+====================
+ 	newstest2011.fr /afs/ir/class/cs224n/pa1/data/mt/refs/newstest2011/ref0 newstest2011.baseline.ini cs224n.binwts
+ b	20
+ e	4
+ ef	20
+ m	bleu-smooth
+ n	newstest2011.baseline
+ o	pro-sgd
+ of	1,5000,50,0.5,Infinity,0.02,adagradl1f,0.1
+ uw	true
+====================
+
+Gap type: none
+Phrase table: newstest2011.tables/phrase-table.gz Unknown words policy: Drop
+Done loading phrase table: /afs/ir.stanford.edu/users/r/m/rmferrer/private/projects/cs224n/pa1/pa1-mt/system/newstest2011.tables/phrase-table.gz (mem used: 724 MiB time: 2.504 s)
+Longest foreign phrase: 6
+Phrase table signature: 12752210066039
+edu.stanford.nlp.mt.base.DynamicIntegerArrayIndex@5e526300 locked.
+edu.stanford.nlp.mt.base.DynamicIntegerArrayIndex@72e1c560 locked.
+Phrase table limit (ttable-limit): 20
+Number of additional annotators loaded: 0
+Language model: /afs/ir/class/cs224n/pa1/data/mt/3gram-lm.gz
+Warning: could not load alias file: edu/stanford/nlp/mt/resources/feature.aliases
+Linear distortion featurizer: edu.stanford.nlp.mt.decoder.feat.LinearFutureCostFeaturizer@13b0d75f
+Reading 65536 1-grams...
+Reading 524288 2-grams...
+Reading 1048576 3-grams...
+Done loading arpa lm: /afs/ir/class/cs224n/pa1/data/mt/3gram-lm.gz (order: 3) (mem used: 473 MiB time: 2.830 s)
+Weights file: cs224n.binwts
+WeightConfig: '[LexR:discontinuous2WithPrevious=0.12944736339373195, TM:FPT.6=0.1189895927163082, LexR:discontinuousWithPrevious=0.08224163607787623, LexR:monotoneWithPrevious=0.07781759585017375, LexR:swapWithPrevious=0.07320729449012583, LexR:monotoneWithNext=0.05043513664498748, LexR:discontinuous2WithNext=0.04554145056121328, LM=0.042100720916833895, TM:FPT.2=0.025813070498999214, TM:FPT.1=0.025588606344493135, LexR:swapWithNext=0.022265366957531625, LexR:discontinuousWithNext=0.02103066236194083, TM:FPT.3=0.018935261391686522, TM:FPT.0=0.011388875543155284, TM:FPT.5=0.010870643292902507, LinearDistortion=0.010108551791847125, UnknownWord=-4.0082737272793465E-4, TM:FPT.4=-0.09249497813263272, WordPenalty=-0.1380546813346322]' 
+Recombination name: classicaltranslationmodel
+Number of threads: 4
+Search algorithm: cube
+Cube pruning decoder. Distortion limit: 5
+Cube pruning decoder. Distortion limit: 5
+Cube pruning decoder. Distortion limit: 5
+Cube pruning decoder. Distortion limit: 5
+Inferer Count: 4
+Generating n-best lists (size: 100)
+Not using custom L1
+Translation options after reduction by output space constraint: 1221
+Translation options after reduction by output space constraint: 956
+Translation options after reduction by output space constraint: 966
+Translation options after reduction by output space constraint: 1452
+Decoding loop time: 1.016 s
+Total hypotheses generated: 52289
+Decoding loop time: 1.047 s
+Total hypotheses generated: 57567
+Decoding loop time: 1.061 s
+Total hypotheses generated: 62870
+Decoding loop time: 1.129 s
+Total hypotheses generated: 80345
+Translation options after reduction by output space constraint: 1211
+Translation options after reduction by output space constraint: 2640
+Translation options after reduction by output space constraint: 1377
+Decoding loop time: 0.319 s
+Total hypotheses generated: 52950
+Translation options after reduction by output space constraint: 810
+Decoding loop time: 0.433 s
+Total hypotheses generated: 60725
+Decoding loop time: 0.753 s
+Total hypotheses generated: 118959
+Decoding loop time: 0.206 s
+Total hypotheses generated: 43746
+Translation options after reduction by output space constraint: 1131
+Decoding loop time: 0.275 s
+Total hypotheses generated: 64951
+Translation options after reduction by output space constraint: 1405
+Translation options after reduction by output space constraint: 752
+Decoding loop time: 0.287 s
+Total hypotheses generated: 64900
+Translation options after reduction by output space constraint: 1112
+Decoding loop time: 0.346 s
+Total hypotheses generated: 46277
+Decoding loop time: 0.340 s
+Total hypotheses generated: 45006
+Translation options after reduction by output space constraint: 568
+Translation options after reduction by output space constraint: 553
+Decoding loop time: 0.155 s
+Total hypotheses generated: 29852
+Decoding loop time: 0.156 s
+Total hypotheses generated: 33539
+Translation options after reduction by output space constraint: 428
+Decoding loop time: 0.139 s
+Total hypotheses generated: 31512
+Translation options after reduction by output space constraint: 573
+Translation options after reduction by output space constraint: 316
+Decoding loop time: 0.158 s
+Total hypotheses generated: 36407
+Decoding loop time: 0.121 s
+Total hypotheses generated: 24888
+Translation options after reduction by output space constraint: 494
+Translation options after reduction by output space constraint: 1050
+Decoding loop time: 0.272 s
+Total hypotheses generated: 28172
+Translation options after reduction by output space constraint: 776
+Translation options after reduction by output space constraint: 1159
+Decoding loop time: 0.221 s
+Total hypotheses generated: 42790
+Translation options after reduction by output space constraint: 487
+Decoding loop time: 0.249 s
+Total hypotheses generated: 52107
+Decoding loop time: 0.334 s
+Total hypotheses generated: 64657
+Decoding loop time: 0.147 s
+Total hypotheses generated: 31045
+Translation options after reduction by output space constraint: 623
+Decoding loop time: 0.132 s
+Total hypotheses generated: 30208
+Translation options after reduction by output space constraint: 892
+Translation options after reduction by output space constraint: 1377
+Decoding loop time: 0.351 s
+Total hypotheses generated: 46465
+Translation options after reduction by output space constraint: 628
+Translation options after reduction by output space constraint: 1201
+Decoding loop time: 0.235 s
+Total hypotheses generated: 45298
+Decoding loop time: 0.492 s
+Total hypotheses generated: 74690
+Translation options after reduction by output space constraint: 327
+Decoding loop time: 0.298 s
+Total hypotheses generated: 60565
+Decoding loop time: 0.111 s
+Total hypotheses generated: 22490
+Translation options after reduction by output space constraint: 1031
+Translation options after reduction by output space constraint: 1004
+Translation options after reduction by output space constraint: 1059
+Translation options after reduction by output space constraint: 350
+Decoding loop time: 0.296 s
+Total hypotheses generated: 61161
+Decoding loop time: 0.125 s
+Total hypotheses generated: 22869
+Decoding loop time: 0.276 s
+Total hypotheses generated: 56971
+Decoding loop time: 0.419 s
+Total hypotheses generated: 57366
+Translation options after reduction by output space constraint: 871
+Translation options after reduction by output space constraint: 783
+Decoding loop time: 0.263 s
+Total hypotheses generated: 56019
+Decoding loop time: 0.213 s
+Total hypotheses generated: 47483
+Translation options after reduction by output space constraint: 1022
+Translation options after reduction by output space constraint: 737
+Translation options after reduction by output space constraint: 1719
+Decoding loop time: 0.212 s
+Total hypotheses generated: 41717
+Decoding loop time: 0.257 s
+Total hypotheses generated: 49775
+Translation options after reduction by output space constraint: 935
+Decoding loop time: 0.373 s
+Total hypotheses generated: 80082
+Translation options after reduction by output space constraint: 389
+Decoding loop time: 0.363 s
+Total hypotheses generated: 44932
+Decoding loop time: 0.139 s
+Total hypotheses generated: 30121
+Translation options after reduction by output space constraint: 767
+Translation options after reduction by output space constraint: 1282
+Translation options after reduction by output space constraint: 262
+Decoding loop time: 0.237 s
+Total hypotheses generated: 51508
+Decoding loop time: 0.259 s
+Total hypotheses generated: 53231
+Decoding loop time: 0.135 s
+Total hypotheses generated: 27518
+Translation options after reduction by output space constraint: 692
+Decoding loop time: 0.179 s
+Total hypotheses generated: 41787
+Translation options after reduction by output space constraint: 937
+Translation options after reduction by output space constraint: 1021
+Translation options after reduction by output space constraint: 991
+Translation options after reduction by output space constraint: 434
+Decoding loop time: 0.382 s
+Total hypotheses generated: 56830
+Decoding loop time: 0.309 s
+Total hypotheses generated: 44549
+Decoding loop time: 0.147 s
+Total hypotheses generated: 29000
+Decoding loop time: 0.329 s
+Total hypotheses generated: 73354
+Translation options after reduction by output space constraint: 831
+Translation options after reduction by output space constraint: 1691
+Translation options after reduction by output space constraint: 404
+Decoding loop time: 0.182 s
+Total hypotheses generated: 37139
+Decoding loop time: 0.116 s
+Total hypotheses generated: 23286
+Decoding loop time: 0.391 s
+Total hypotheses generated: 87924
+Translation options after reduction by output space constraint: 1338
+Translation options after reduction by output space constraint: 1126
+Decoding loop time: 0.475 s
+Total hypotheses generated: 68802
+Translation options after reduction by output space constraint: 1208
+Decoding loop time: 0.456 s
+Total hypotheses generated: 68547
+Decoding loop time: 0.203 s
+Total hypotheses generated: 46965
+Translation options after reduction by output space constraint: 537
+Translation options after reduction by output space constraint: 760
+Decoding loop time: 0.164 s
+Total hypotheses generated: 34074
+Decoding loop time: 0.208 s
+Total hypotheses generated: 42860
+Translation options after reduction by output space constraint: 1494
+Translation options after reduction by output space constraint: 1341
+Translation options after reduction by output space constraint: 426
+Translation options after reduction by output space constraint: 663
+Decoding loop time: 0.157 s
+Total hypotheses generated: 31314
+Decoding loop time: 0.354 s
+Total hypotheses generated: 54251
+Decoding loop time: 0.235 s
+Total hypotheses generated: 30300
+Decoding loop time: 0.449 s
+Total hypotheses generated: 75920
+Translation options after reduction by output space constraint: 199
+Translation options after reduction by output space constraint: 208
+Decoding loop time: 0.099 s
+Total hypotheses generated: 19670
+Decoding loop time: 0.129 s
+Total hypotheses generated: 25587
+Translation options after reduction by output space constraint: 1611
+Decoding loop time: 0.292 s
+Total hypotheses generated: 67520
+Translation options after reduction by output space constraint: 881
+Translation options after reduction by output space constraint: 1151
+Translation options after reduction by output space constraint: 1844
+Decoding loop time: 0.248 s
+Total hypotheses generated: 51470
+Decoding loop time: 0.357 s
+Total hypotheses generated: 56587
+Decoding loop time: 0.491 s
+Total hypotheses generated: 87880
+Translation options after reduction by output space constraint: 163
+Translation options after reduction by output space constraint: 631
+Decoding loop time: 0.096 s
+Total hypotheses generated: 18697
+Decoding loop time: 0.153 s
+Total hypotheses generated: 32418
+Translation options after reduction by output space constraint: 1545
+Translation options after reduction by output space constraint: 1051
+Decoding loop time: 0.284 s
+Total hypotheses generated: 63915
+Decoding loop time: 0.276 s
+Total hypotheses generated: 64280
+Translation options after reduction by output space constraint: 756
+Decoding loop time: 0.291 s
+Total hypotheses generated: 43194
+Translation options after reduction by output space constraint: 508
+Decoding loop time: 0.163 s
+Total hypotheses generated: 32211
+Translation options after reduction by output space constraint: 1679
+Translation options after reduction by output space constraint: 1462
+Decoding loop time: 0.321 s
+Total hypotheses generated: 70144
+Decoding loop time: 0.414 s
+Total hypotheses generated: 85259
+Translation options after reduction by output space constraint: 1566
+Decoding loop time: 0.392 s
+Total hypotheses generated: 64383
+Translation options after reduction by output space constraint: 1350
+Translation options after reduction by output space constraint: 1298
+Translation options after reduction by output space constraint: 94
+Decoding loop time: 0.312 s
+Total hypotheses generated: 64114
+Decoding loop time: 0.085 s
+Total hypotheses generated: 15184
+Translation options after reduction by output space constraint: 644
+Decoding loop time: 0.298 s
+Total hypotheses generated: 62928
+Decoding loop time: 0.256 s
+Total hypotheses generated: 38804
+Translation options after reduction by output space constraint: 1311
+Decoding loop time: 0.287 s
+Total hypotheses generated: 58399
+Translation options after reduction by output space constraint: 883
+Decoding loop time: 0.169 s
+Total hypotheses generated: 37221
+Translation options after reduction by output space constraint: 277
+Decoding loop time: 0.102 s
+Total hypotheses generated: 20401
+Translation options after reduction by output space constraint: 152
+Decoding loop time: 0.100 s
+Total hypotheses generated: 20737
+Translation options after reduction by output space constraint: 890
+Decoding loop time: 0.242 s
+Total hypotheses generated: 52778
+Translation options after reduction by output space constraint: 442
+Decoding loop time: 0.121 s
+Total hypotheses generated: 26691
+Translation options after reduction by output space constraint: 1521
+Decoding loop time: 0.287 s
+Total hypotheses generated: 68817
+Translation options after reduction by output space constraint: 469
+Decoding loop time: 0.145 s
+Total hypotheses generated: 32277
+Translation options after reduction by output space constraint: 400
+Translation options after reduction by output space constraint: 1208
+Decoding loop time: 0.186 s
+Total hypotheses generated: 29298
+Decoding loop time: 0.366 s
+Total hypotheses generated: 74368
+Translation options after reduction by output space constraint: 1536
+Decoding loop time: 0.333 s
+Total hypotheses generated: 80354
+Translation options after reduction by output space constraint: 961
+Translation options after reduction by output space constraint: 952
+Decoding loop time: 0.237 s
+Total hypotheses generated: 43954
+Translation options after reduction by output space constraint: 1605
+Decoding loop time: 0.265 s
+Total hypotheses generated: 50415
+Decoding loop time: 0.280 s
+Total hypotheses generated: 61024
+Translation options after reduction by output space constraint: 435
+Decoding loop time: 0.156 s
+Total hypotheses generated: 32358
+Translation options after reduction by output space constraint: 2058
+Translation options after reduction by output space constraint: 1415
+Decoding loop time: 0.413 s
+Total hypotheses generated: 94420
+Translation options after reduction by output space constraint: 425
+Decoding loop time: 0.184 s
+Total hypotheses generated: 39007
+Decoding loop time: 0.543 s
+Total hypotheses generated: 99432
+Translation options after reduction by output space constraint: 172
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.097 s
+Total hypotheses generated: 17684
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.171 s
+Total hypotheses generated: 36306
+Translation options after reduction by output space constraint: 656
+Decoding loop time: 0.175 s
+Total hypotheses generated: 31726
+Decoding loop time: 0.239 s
+Total hypotheses generated: 49848
+Translation options after reduction by output space constraint: 1922
+Translation options after reduction by output space constraint: 203
+Decoding loop time: 0.606 s
+Total hypotheses generated: 111349
+Decoding loop time: 0.113 s
+Total hypotheses generated: 22014
+Translation options after reduction by output space constraint: 564
+Translation options after reduction by output space constraint: 663
+Translation options after reduction by output space constraint: 1661
+Decoding loop time: 0.276 s
+Total hypotheses generated: 55454
+Decoding loop time: 0.179 s
+Total hypotheses generated: 36950
+Translation options after reduction by output space constraint: 1129
+Decoding loop time: 0.447 s
+Total hypotheses generated: 96133
+Decoding loop time: 0.357 s
+Total hypotheses generated: 77751
+Translation options after reduction by output space constraint: 1506
+Translation options after reduction by output space constraint: 853
+Decoding loop time: 0.273 s
+Total hypotheses generated: 57268
+Decoding loop time: 0.408 s
+Total hypotheses generated: 83902
+Translation options after reduction by output space constraint: 641
+Translation options after reduction by output space constraint: 544
+Decoding loop time: 0.213 s
+Total hypotheses generated: 44583
+Decoding loop time: 0.168 s
+Total hypotheses generated: 36799
+Translation options after reduction by output space constraint: 2082
+Translation options after reduction by output space constraint: 1006
+Translation options after reduction by output space constraint: 942
+Translation options after reduction by output space constraint: 620
+Decoding loop time: 0.388 s
+Total hypotheses generated: 59474
+Decoding loop time: 0.635 s
+Total hypotheses generated: 109901
+Decoding loop time: 0.168 s
+Total hypotheses generated: 32637
+Decoding loop time: 0.283 s
+Total hypotheses generated: 56678
+Translation options after reduction by output space constraint: 517
+Decoding loop time: 0.166 s
+Total hypotheses generated: 35659
+Translation options after reduction by output space constraint: 2074
+Translation options after reduction by output space constraint: 685
+Translation options after reduction by output space constraint: 829
+Decoding loop time: 0.231 s
+Total hypotheses generated: 44894
+Decoding loop time: 0.274 s
+Total hypotheses generated: 57226
+Decoding loop time: 0.430 s
+Total hypotheses generated: 89720
+Translation options after reduction by output space constraint: 1347
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.217 s
+Total hypotheses generated: 43970
+Decoding loop time: 0.402 s
+Total hypotheses generated: 83410
+Translation options after reduction by output space constraint: 171
+Decoding loop time: 0.094 s
+Total hypotheses generated: 17979
+Translation options after reduction by output space constraint: 359
+Decoding loop time: 0.117 s
+Total hypotheses generated: 25115
+Translation options after reduction by output space constraint: 322
+Decoding loop time: 0.081 s
+Total hypotheses generated: 17792
+Translation options after reduction by output space constraint: 2613
+Translation options after reduction by output space constraint: 1512
+Decoding loop time: 0.328 s
+Total hypotheses generated: 67584
+Translation options after reduction by output space constraint: 1616
+Decoding loop time: 0.620 s
+Total hypotheses generated: 133465
+Translation options after reduction by output space constraint: 1170
+Decoding loop time: 0.508 s
+Total hypotheses generated: 109145
+Decoding loop time: 0.341 s
+Total hypotheses generated: 71364
+Translation options after reduction by output space constraint: 806
+Decoding loop time: 0.271 s
+Total hypotheses generated: 45451
+Translation options after reduction by output space constraint: 521
+Translation options after reduction by output space constraint: 900
+Decoding loop time: 0.172 s
+Total hypotheses generated: 35595
+Decoding loop time: 0.217 s
+Total hypotheses generated: 47054
+Translation options after reduction by output space constraint: 688
+Translation options after reduction by output space constraint: 1072
+Decoding loop time: 0.219 s
+Total hypotheses generated: 46446
+Decoding loop time: 0.266 s
+Total hypotheses generated: 54540
+Translation options after reduction by output space constraint: 1054
+Translation options after reduction by output space constraint: 944
+Decoding loop time: 0.448 s
+Total hypotheses generated: 71533
+Decoding loop time: 0.260 s
+Total hypotheses generated: 57275
+Translation options after reduction by output space constraint: 700
+Translation options after reduction by output space constraint: 852
+Decoding loop time: 0.250 s
+Total hypotheses generated: 51957
+Decoding loop time: 0.259 s
+Total hypotheses generated: 55697
+Translation options after reduction by output space constraint: 1086
+Decoding loop time: 0.358 s
+Total hypotheses generated: 78101
+Translation options after reduction by output space constraint: 848
+Translation options after reduction by output space constraint: 1444
+Translation options after reduction by output space constraint: 1019
+Decoding loop time: 0.261 s
+Total hypotheses generated: 52729
+Decoding loop time: 0.471 s
+Total hypotheses generated: 84770
+Decoding loop time: 0.447 s
+Total hypotheses generated: 76851
+Translation options after reduction by output space constraint: 401
+Decoding loop time: 0.128 s
+Total hypotheses generated: 25882
+Translation options after reduction by output space constraint: 1538
+Translation options after reduction by output space constraint: 352
+Decoding loop time: 0.125 s
+Total hypotheses generated: 23794
+Translation options after reduction by output space constraint: 1399
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.617 s
+Total hypotheses generated: 110151
+Decoding loop time: 0.335 s
+Total hypotheses generated: 69057
+Decoding loop time: 0.317 s
+Total hypotheses generated: 70421
+Translation options after reduction by output space constraint: 1778
+Translation options after reduction by output space constraint: 2227
+Translation options after reduction by output space constraint: 526
+Decoding loop time: 0.388 s
+Total hypotheses generated: 82291
+Decoding loop time: 0.207 s
+Total hypotheses generated: 41758
+Decoding loop time: 0.657 s
+Total hypotheses generated: 141791
+Translation options after reduction by output space constraint: 481
+Decoding loop time: 0.147 s
+Total hypotheses generated: 34005
+Translation options after reduction by output space constraint: 886
+Translation options after reduction by output space constraint: 682
+Decoding loop time: 0.280 s
+Total hypotheses generated: 63264
+Decoding loop time: 0.215 s
+Total hypotheses generated: 47047
+Translation options after reduction by output space constraint: 243
+Decoding loop time: 0.103 s
+Total hypotheses generated: 21113
+Translation options after reduction by output space constraint: 760
+Translation options after reduction by output space constraint: 539
+Decoding loop time: 0.225 s
+Total hypotheses generated: 48238
+Decoding loop time: 0.212 s
+Total hypotheses generated: 44785
+Translation options after reduction by output space constraint: 488
+Decoding loop time: 0.144 s
+Total hypotheses generated: 30632
+Translation options after reduction by output space constraint: 388
+Translation options after reduction by output space constraint: 1465
+Decoding loop time: 0.168 s
+Total hypotheses generated: 32718
+Translation options after reduction by output space constraint: 840
+Decoding loop time: 0.576 s
+Total hypotheses generated: 107255
+Decoding loop time: 0.288 s
+Total hypotheses generated: 63699
+Translation options after reduction by output space constraint: 398
+Decoding loop time: 0.175 s
+Total hypotheses generated: 36583
+Translation options after reduction by output space constraint: 782
+Translation options after reduction by output space constraint: 1261
+Decoding loop time: 0.388 s
+Total hypotheses generated: 77043
+Decoding loop time: 0.443 s
+Total hypotheses generated: 88822
+Translation options after reduction by output space constraint: 1058
+Decoding loop time: 0.361 s
+Total hypotheses generated: 79152
+Translation options after reduction by output space constraint: 1114
+Decoding loop time: 0.397 s
+Total hypotheses generated: 82582
+Translation options after reduction by output space constraint: 1172
+Decoding loop time: 0.332 s
+Total hypotheses generated: 73363
+Translation options after reduction by output space constraint: 1248
+Decoding loop time: 0.376 s
+Total hypotheses generated: 83474
+Translation options after reduction by output space constraint: 1117
+Decoding loop time: 0.307 s
+Total hypotheses generated: 67779
+Translation options after reduction by output space constraint: 1334
+Decoding loop time: 0.404 s
+Total hypotheses generated: 88474
+Translation options after reduction by output space constraint: 801
+Decoding loop time: 0.339 s
+Total hypotheses generated: 68715
+Translation options after reduction by output space constraint: 602
+Decoding loop time: 0.178 s
+Total hypotheses generated: 38837
+Translation options after reduction by output space constraint: 972
+Translation options after reduction by output space constraint: 1152
+Decoding loop time: 0.316 s
+Total hypotheses generated: 66370
+Decoding loop time: 0.475 s
+Total hypotheses generated: 100570
+Translation options after reduction by output space constraint: 627
+Decoding loop time: 0.211 s
+Total hypotheses generated: 45791
+Translation options after reduction by output space constraint: 533
+Decoding loop time: 0.298 s
+Total hypotheses generated: 52530
+Translation options after reduction by output space constraint: 365
+Translation options after reduction by output space constraint: 699
+Decoding loop time: 0.114 s
+Total hypotheses generated: 22916
+Translation options after reduction by output space constraint: 455
+Decoding loop time: 0.164 s
+Total hypotheses generated: 34020
+Decoding loop time: 0.278 s
+Total hypotheses generated: 62083
+Translation options after reduction by output space constraint: 1259
+Translation options after reduction by output space constraint: 503
+Decoding loop time: 0.432 s
+Total hypotheses generated: 93461
+Decoding loop time: 0.273 s
+Total hypotheses generated: 39056
+Translation options after reduction by output space constraint: 751
+Decoding loop time: 0.252 s
+Total hypotheses generated: 52695
+Translation options after reduction by output space constraint: 168
+Decoding loop time: 0.077 s
+Total hypotheses generated: 16332
+Translation options after reduction by output space constraint: 615
+Translation options after reduction by output space constraint: 1357
+Decoding loop time: 0.273 s
+Total hypotheses generated: 54896
+Decoding loop time: 0.280 s
+Total hypotheses generated: 68336
+Translation options after reduction by output space constraint: 492
+Decoding loop time: 0.137 s
+Total hypotheses generated: 29654
+Translation options after reduction by output space constraint: 726
+Translation options after reduction by output space constraint: 908
+Decoding loop time: 0.234 s
+Total hypotheses generated: 50863
+Decoding loop time: 0.351 s
+Total hypotheses generated: 75386
+Translation options after reduction by output space constraint: 1061
+Translation options after reduction by output space constraint: 720
+Decoding loop time: 0.229 s
+Total hypotheses generated: 46778
+Decoding loop time: 0.329 s
+Total hypotheses generated: 70490
+Translation options after reduction by output space constraint: 1242
+Translation options after reduction by output space constraint: 609
+Decoding loop time: 0.311 s
+Total hypotheses generated: 68147
+Decoding loop time: 0.205 s
+Total hypotheses generated: 45823
+Translation options after reduction by output space constraint: 608
+Decoding loop time: 0.164 s
+Total hypotheses generated: 36370
+Translation options after reduction by output space constraint: 1193
+Translation options after reduction by output space constraint: 511
+Decoding loop time: 0.385 s
+Total hypotheses generated: 76367
+Decoding loop time: 0.242 s
+Total hypotheses generated: 41128
+Translation options after reduction by output space constraint: 410
+Decoding loop time: 0.134 s
+Total hypotheses generated: 29302
+Translation options after reduction by output space constraint: 1081
+Translation options after reduction by output space constraint: 851
+Decoding loop time: 0.387 s
+Total hypotheses generated: 84790
+Decoding loop time: 0.276 s
+Total hypotheses generated: 58620
+Translation options after reduction by output space constraint: 433
+Decoding loop time: 0.174 s
+Total hypotheses generated: 36200
+Translation options after reduction by output space constraint: 843
+Translation options after reduction by output space constraint: 622
+Decoding loop time: 0.309 s
+Total hypotheses generated: 68891
+Decoding loop time: 0.232 s
+Total hypotheses generated: 51888
+Translation options after reduction by output space constraint: 1198
+Decoding loop time: 0.426 s
+Total hypotheses generated: 85461
+Translation options after reduction by output space constraint: 943
+Decoding loop time: 0.295 s
+Total hypotheses generated: 64592
+Translation options after reduction by output space constraint: 564
+Translation options after reduction by output space constraint: 620
+Translation options after reduction by output space constraint: 663
+Translation options after reduction by output space constraint: 1465
+Decoding loop time: 0.184 s
+Total hypotheses generated: 33535
+Decoding loop time: 0.230 s
+Total hypotheses generated: 43793
+Decoding loop time: 0.386 s
+Total hypotheses generated: 57173
+Decoding loop time: 0.569 s
+Total hypotheses generated: 104940
+Translation options after reduction by output space constraint: 641
+Translation options after reduction by output space constraint: 388
+Decoding loop time: 0.153 s
+Total hypotheses generated: 30954
+Decoding loop time: 0.213 s
+Total hypotheses generated: 43578
+Translation options after reduction by output space constraint: 726
+Translation options after reduction by output space constraint: 168
+Decoding loop time: 0.085 s
+Total hypotheses generated: 15902
+Translation options after reduction by output space constraint: 481
+Decoding loop time: 0.248 s
+Total hypotheses generated: 54283
+Translation options after reduction by output space constraint: 553
+Decoding loop time: 0.158 s
+Total hypotheses generated: 34630
+Decoding loop time: 0.207 s
+Total hypotheses generated: 45558
+Translation options after reduction by output space constraint: 442
+Translation options after reduction by output space constraint: 199
+Decoding loop time: 0.109 s
+Total hypotheses generated: 20793
+Decoding loop time: 0.137 s
+Total hypotheses generated: 28613
+Translation options after reduction by output space constraint: 410
+Translation options after reduction by output space constraint: 699
+Translation options after reduction by output space constraint: 1242
+Translation options after reduction by output space constraint: 1126
+Decoding loop time: 0.199 s
+Total hypotheses generated: 24494
+Decoding loop time: 0.303 s
+Total hypotheses generated: 61683
+Translation options after reduction by output space constraint: 2074
+Decoding loop time: 0.308 s
+Total hypotheses generated: 61989
+Decoding loop time: 0.423 s
+Total hypotheses generated: 87621
+Translation options after reduction by output space constraint: 1172
+Decoding loop time: 0.412 s
+Total hypotheses generated: 89095
+Translation options after reduction by output space constraint: 1054
+Translation options after reduction by output space constraint: 801
+Decoding loop time: 0.355 s
+Total hypotheses generated: 68920
+Decoding loop time: 0.334 s
+Total hypotheses generated: 66574
+Decoding loop time: 0.305 s
+Total hypotheses generated: 59835
+Translation options after reduction by output space constraint: 751
+Translation options after reduction by output space constraint: 692
+Decoding loop time: 0.342 s
+Total hypotheses generated: 45024
+Decoding loop time: 0.208 s
+Total hypotheses generated: 47277
+Translation options after reduction by output space constraint: 656
+Translation options after reduction by output space constraint: 533
+Translation options after reduction by output space constraint: 511
+Decoding loop time: 0.251 s
+Total hypotheses generated: 52651
+Decoding loop time: 0.168 s
+Total hypotheses generated: 34399
+Decoding loop time: 0.255 s
+Total hypotheses generated: 51001
+Translation options after reduction by output space constraint: 1545
+Translation options after reduction by output space constraint: 627
+Translation options after reduction by output space constraint: 1611
+Decoding loop time: 0.389 s
+Total hypotheses generated: 84202
+Decoding loop time: 0.217 s
+Total hypotheses generated: 45125
+Translation options after reduction by output space constraint: 469
+Translation options after reduction by output space constraint: 1021
+Decoding loop time: 0.482 s
+Total hypotheses generated: 83826
+Decoding loop time: 0.284 s
+Total hypotheses generated: 39275
+Decoding loop time: 0.248 s
+Total hypotheses generated: 55906
+Translation options after reduction by output space constraint: 1566
+Translation options after reduction by output space constraint: 848
+Decoding loop time: 0.384 s
+Total hypotheses generated: 85515
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.271 s
+Total hypotheses generated: 54296
+Translation options after reduction by output space constraint: 152
+Decoding loop time: 0.338 s
+Total hypotheses generated: 76228
+Translation options after reduction by output space constraint: 94
+Decoding loop time: 0.103 s
+Total hypotheses generated: 20622
+Decoding loop time: 0.092 s
+Total hypotheses generated: 14679
+Translation options after reduction by output space constraint: 400
+Translation options after reduction by output space constraint: 890
+Translation options after reduction by output space constraint: 886
+Decoding loop time: 0.271 s
+Total hypotheses generated: 29690
+Decoding loop time: 0.402 s
+Total hypotheses generated: 63377
+Decoding loop time: 0.417 s
+Total hypotheses generated: 68324
+Translation options after reduction by output space constraint: 433
+Translation options after reduction by output space constraint: 492
+Decoding loop time: 0.179 s
+Total hypotheses generated: 36445
+Decoding loop time: 0.137 s
+Total hypotheses generated: 30368
+Translation options after reduction by output space constraint: 425
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.194 s
+Total hypotheses generated: 42776
+Translation options after reduction by output space constraint: 2613
+Translation options after reduction by output space constraint: 783
+Decoding loop time: 0.323 s
+Total hypotheses generated: 70898
+Decoding loop time: 0.244 s
+Total hypotheses generated: 50818
+Translation options after reduction by output space constraint: 171
+Decoding loop time: 0.198 s
+Total hypotheses generated: 18494
+Translation options after reduction by output space constraint: 806
+Translation options after reduction by output space constraint: 1152
+Decoding loop time: 0.777 s
+Total hypotheses generated: 141641
+Decoding loop time: 0.258 s
+Total hypotheses generated: 52113
+Translation options after reduction by output space constraint: 1058
+Decoding loop time: 0.463 s
+Total hypotheses generated: 97153
+Decoding loop time: 0.347 s
+Total hypotheses generated: 74843
+Translation options after reduction by output space constraint: 1377
+Translation options after reduction by output space constraint: 2058
+Translation options after reduction by output space constraint: 623
+Decoding loop time: 0.544 s
+Total hypotheses generated: 88928
+Decoding loop time: 0.173 s
+Total hypotheses generated: 36651
+Decoding loop time: 0.711 s
+Total hypotheses generated: 127868
+Translation options after reduction by output space constraint: 521
+Translation options after reduction by output space constraint: 1261
+Decoding loop time: 0.153 s
+Total hypotheses generated: 32588
+Translation options after reduction by output space constraint: 1248
+Translation options after reduction by output space constraint: 900
+Decoding loop time: 0.436 s
+Total hypotheses generated: 83486
+Decoding loop time: 0.270 s
+Total hypotheses generated: 55375
+Decoding loop time: 0.347 s
+Total hypotheses generated: 74686
+Translation options after reduction by output space constraint: 401
+Decoding loop time: 0.278 s
+Total hypotheses generated: 27127
+Translation options after reduction by output space constraint: 551
+Translation options after reduction by output space constraint: 1341
+Translation options after reduction by output space constraint: 1452
+Decoding loop time: 0.231 s
+Total hypotheses generated: 45777
+Decoding loop time: 0.406 s
+Total hypotheses generated: 79979
+Decoding loop time: 0.442 s
+Total hypotheses generated: 96228
+Translation options after reduction by output space constraint: 1350
+Translation options after reduction by output space constraint: 1201
+Decoding loop time: 0.428 s
+Total hypotheses generated: 86413
+Decoding loop time: 0.476 s
+Total hypotheses generated: 72536
+Translation options after reduction by output space constraint: 1311
+Decoding loop time: 0.309 s
+Total hypotheses generated: 69199
+Translation options after reduction by output space constraint: 1691
+Translation options after reduction by output space constraint: 1086
+Decoding loop time: 0.517 s
+Total hypotheses generated: 112393
+Translation options after reduction by output space constraint: 1512
+Decoding loop time: 0.350 s
+Total hypotheses generated: 71868
+Translation options after reduction by output space constraint: 1117
+Decoding loop time: 0.535 s
+Total hypotheses generated: 88993
+Decoding loop time: 0.290 s
+Total hypotheses generated: 63194
+Translation options after reduction by output space constraint: 1536
+Translation options after reduction by output space constraint: 426
+Translation options after reduction by output space constraint: 568
+Decoding loop time: 0.169 s
+Total hypotheses generated: 35018
+Decoding loop time: 0.394 s
+Total hypotheses generated: 89282
+Decoding loop time: 0.157 s
+Total hypotheses generated: 32987
+Translation options after reduction by output space constraint: 644
+Translation options after reduction by output space constraint: 455
+Decoding loop time: 0.305 s
+Total hypotheses generated: 48259
+Decoding loop time: 0.228 s
+Total hypotheses generated: 33250
+Translation options after reduction by output space constraint: 810
+Decoding loop time: 0.243 s
+Total hypotheses generated: 54811
+Translation options after reduction by output space constraint: 752
+Decoding loop time: 0.225 s
+Total hypotheses generated: 54242
+Translation options after reduction by output space constraint: 1661
+Translation options after reduction by output space constraint: 1679
+Decoding loop time: 0.432 s
+Total hypotheses generated: 96403
+Decoding loop time: 0.577 s
+Total hypotheses generated: 114338
+Translation options after reduction by output space constraint: 389
+Decoding loop time: 0.145 s
+Total hypotheses generated: 31233
+Translation options after reduction by output space constraint: 327
+Decoding loop time: 0.118 s
+Total hypotheses generated: 23958
+Translation options after reduction by output space constraint: 628
+Decoding loop time: 0.235 s
+Total hypotheses generated: 52827
+Translation options after reduction by output space constraint: 943
+Decoding loop time: 0.279 s
+Total hypotheses generated: 57023
+Translation options after reduction by output space constraint: 359
+Decoding loop time: 0.152 s
+Total hypotheses generated: 30226
+Translation options after reduction by output space constraint: 428
+Decoding loop time: 0.171 s
+Total hypotheses generated: 38116
+Translation options after reduction by output space constraint: 760
+Decoding loop time: 0.228 s
+Total hypotheses generated: 49207
+Translation options after reduction by output space constraint: 1081
+Decoding loop time: 0.421 s
+Total hypotheses generated: 84941
+Translation options after reduction by output space constraint: 508
+Decoding loop time: 0.171 s
+Total hypotheses generated: 37648
+Translation options after reduction by output space constraint: 503
+Translation options after reduction by output space constraint: 622
+Decoding loop time: 0.175 s
+Total hypotheses generated: 33241
+Decoding loop time: 0.222 s
+Total hypotheses generated: 48627
+Translation options after reduction by output space constraint: 942
+Translation options after reduction by output space constraint: 2227
+Decoding loop time: 0.456 s
+Total hypotheses generated: 70900
+Decoding loop time: 0.846 s
+Total hypotheses generated: 137659
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.205 s
+Total hypotheses generated: 45341
+Translation options after reduction by output space constraint: 404
+Decoding loop time: 0.120 s
+Total hypotheses generated: 27237
+Translation options after reduction by output space constraint: 972
+Translation options after reduction by output space constraint: 322
+Decoding loop time: 0.088 s
+Total hypotheses generated: 17913
+Translation options after reduction by output space constraint: 602
+Decoding loop time: 0.458 s
+Total hypotheses generated: 69936
+Decoding loop time: 0.183 s
+Total hypotheses generated: 38343
+Translation options after reduction by output space constraint: 871
+Translation options after reduction by output space constraint: 1605
+Translation options after reduction by output space constraint: 1357
+Decoding loop time: 0.321 s
+Total hypotheses generated: 67085
+Decoding loop time: 0.380 s
+Total hypotheses generated: 74239
+Decoding loop time: 0.278 s
+Total hypotheses generated: 61889
+Translation options after reduction by output space constraint: 700
+Translation options after reduction by output space constraint: 935
+Decoding loop time: 0.262 s
+Total hypotheses generated: 55533
+Decoding loop time: 0.242 s
+Total hypotheses generated: 53503
+Translation options after reduction by output space constraint: 1061
+Translation options after reduction by output space constraint: 1114
+Decoding loop time: 0.301 s
+Total hypotheses generated: 62960
+Translation options after reduction by output space constraint: 1051
+Decoding loop time: 0.459 s
+Total hypotheses generated: 77492
+Translation options after reduction by output space constraint: 1444
+Decoding loop time: 0.445 s
+Total hypotheses generated: 76055
+Translation options after reduction by output space constraint: 1538
+Decoding loop time: 0.390 s
+Total hypotheses generated: 86079
+Translation options after reduction by output space constraint: 609
+Translation options after reduction by output space constraint: 1719
+Decoding loop time: 0.507 s
+Total hypotheses generated: 105438
+Decoding loop time: 0.230 s
+Total hypotheses generated: 48017
+Translation options after reduction by output space constraint: 1494
+Decoding loop time: 0.615 s
+Total hypotheses generated: 102831
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.524 s
+Total hypotheses generated: 89651
+Decoding loop time: 0.150 s
+Total hypotheses generated: 28965
+Translation options after reduction by output space constraint: 756
+Decoding loop time: 0.224 s
+Total hypotheses generated: 53777
+Translation options after reduction by output space constraint: 1616
+Translation options after reduction by output space constraint: 1347
+Translation options after reduction by output space constraint: 829
+Decoding loop time: 0.578 s
+Total hypotheses generated: 123860
+Decoding loop time: 0.293 s
+Total hypotheses generated: 55206
+Decoding loop time: 0.540 s
+Total hypotheses generated: 82059
+Translation options after reduction by output space constraint: 966
+Decoding loop time: 0.300 s
+Total hypotheses generated: 68118
+Translation options after reduction by output space constraint: 663
+Translation options after reduction by output space constraint: 1208
+Decoding loop time: 0.170 s
+Total hypotheses generated: 35696
+Translation options after reduction by output space constraint: 1298
+Translation options after reduction by output space constraint: 852
+Translation options after reduction by output space constraint: 1259
+Decoding loop time: 0.286 s
+Total hypotheses generated: 57674
+Decoding loop time: 0.385 s
+Total hypotheses generated: 77895
+Decoding loop time: 0.462 s
+Total hypotheses generated: 94829
+Decoding loop time: 0.519 s
+Total hypotheses generated: 88520
+Translation options after reduction by output space constraint: 1399
+Translation options after reduction by output space constraint: 961
+Decoding loop time: 0.330 s
+Total hypotheses generated: 71869
+Translation options after reduction by output space constraint: 944
+Decoding loop time: 0.253 s
+Total hypotheses generated: 51958
+Decoding loop time: 0.271 s
+Total hypotheses generated: 60864
+Translation options after reduction by output space constraint: 172
+Decoding loop time: 0.090 s
+Total hypotheses generated: 17842
+Translation options after reduction by output space constraint: 737
+Translation options after reduction by output space constraint: 760
+Decoding loop time: 0.333 s
+Total hypotheses generated: 50158
+Decoding loop time: 0.225 s
+Total hypotheses generated: 49998
+Translation options after reduction by output space constraint: 1159
+Translation options after reduction by output space constraint: 163
+Translation options after reduction by output space constraint: 682
+Decoding loop time: 0.099 s
+Total hypotheses generated: 18644
+Decoding loop time: 0.287 s
+Total hypotheses generated: 61902
+Translation options after reduction by output space constraint: 1129
+Translation options after reduction by output space constraint: 615
+Decoding loop time: 0.232 s
+Total hypotheses generated: 48074
+Decoding loop time: 0.238 s
+Total hypotheses generated: 45733
+Decoding loop time: 0.379 s
+Total hypotheses generated: 79312
+Translation options after reduction by output space constraint: 851
+Translation options after reduction by output space constraint: 435
+Decoding loop time: 0.177 s
+Total hypotheses generated: 34435
+Decoding loop time: 0.374 s
+Total hypotheses generated: 58064
+Translation options after reduction by output space constraint: 631
+Translation options after reduction by output space constraint: 1338
+Decoding loop time: 0.200 s
+Total hypotheses generated: 41115
+Translation options after reduction by output space constraint: 203
+Translation options after reduction by output space constraint: 1844
+Decoding loop time: 0.124 s
+Total hypotheses generated: 22949
+Translation options after reduction by output space constraint: 1019
+Decoding loop time: 0.472 s
+Total hypotheses generated: 92488
+Decoding loop time: 0.539 s
+Total hypotheses generated: 111991
+Translation options after reduction by output space constraint: 1072
+Decoding loop time: 0.409 s
+Total hypotheses generated: 84545
+Decoding loop time: 0.433 s
+Total hypotheses generated: 57015
+Translation options after reduction by output space constraint: 1221
+Decoding loop time: 0.329 s
+Total hypotheses generated: 74585
+Translation options after reduction by output space constraint: 243
+Translation options after reduction by output space constraint: 956
+Decoding loop time: 0.103 s
+Total hypotheses generated: 20265
+Translation options after reduction by output space constraint: 539
+Decoding loop time: 0.298 s
+Total hypotheses generated: 65249
+Decoding loop time: 0.233 s
+Total hypotheses generated: 48439
+Translation options after reduction by output space constraint: 908
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.107 s
+Total hypotheses generated: 20324
+Translation options after reduction by output space constraint: 831
+Decoding loop time: 0.331 s
+Total hypotheses generated: 72354
+Translation options after reduction by output space constraint: 1462
+Decoding loop time: 0.200 s
+Total hypotheses generated: 43739
+Translation options after reduction by output space constraint: 208
+Decoding loop time: 0.436 s
+Total hypotheses generated: 97357
+Translation options after reduction by output space constraint: 1112
+Decoding loop time: 0.195 s
+Total hypotheses generated: 26691
+Decoding loop time: 0.306 s
+Total hypotheses generated: 56273
+Translation options after reduction by output space constraint: 487
+Decoding loop time: 0.170 s
+Total hypotheses generated: 35554
+Translation options after reduction by output space constraint: 1405
+Translation options after reduction by output space constraint: 840
+Translation options after reduction by output space constraint: 1050
+Decoding loop time: 0.426 s
+Total hypotheses generated: 83754
+Decoding loop time: 0.363 s
+Total hypotheses generated: 64474
+Decoding loop time: 0.373 s
+Total hypotheses generated: 79194
+Translation options after reduction by output space constraint: 991
+Translation options after reduction by output space constraint: 843
+Decoding loop time: 0.395 s
+Total hypotheses generated: 84609
+Decoding loop time: 0.344 s
+Total hypotheses generated: 70236
+Translation options after reduction by output space constraint: 892
+Decoding loop time: 0.340 s
+Total hypotheses generated: 59772
+Translation options after reduction by output space constraint: 398
+Translation options after reduction by output space constraint: 1059
+Translation options after reduction by output space constraint: 853
+Decoding loop time: 0.195 s
+Total hypotheses generated: 37743
+Decoding loop time: 0.342 s
+Total hypotheses generated: 70472
+Decoding loop time: 0.289 s
+Total hypotheses generated: 60636
+Translation options after reduction by output space constraint: 767
+Decoding loop time: 0.326 s
+Total hypotheses generated: 60093
+Translation options after reduction by output space constraint: 434
+Decoding loop time: 0.145 s
+Total hypotheses generated: 32275
+Translation options after reduction by output space constraint: 1282
+Decoding loop time: 0.324 s
+Total hypotheses generated: 68077
+Translation options after reduction by output space constraint: 685
+Decoding loop time: 0.274 s
+Total hypotheses generated: 58934
+Translation options after reduction by output space constraint: 1506
+Decoding loop time: 0.482 s
+Total hypotheses generated: 101144
+Translation options after reduction by output space constraint: 1151
+Decoding loop time: 0.337 s
+Total hypotheses generated: 76589
+Translation options after reduction by output space constraint: 488
+Decoding loop time: 0.138 s
+Total hypotheses generated: 30384
+Translation options after reduction by output space constraint: 881
+Decoding loop time: 0.282 s
+Total hypotheses generated: 64734
+Translation options after reduction by output space constraint: 350
+Decoding loop time: 0.146 s
+Total hypotheses generated: 29410
+Translation options after reduction by output space constraint: 316
+Decoding loop time: 0.125 s
+Total hypotheses generated: 27887
+Translation options after reduction by output space constraint: 937
+Decoding loop time: 0.314 s
+Total hypotheses generated: 67978
+Translation options after reduction by output space constraint: 2640
+Decoding loop time: 0.747 s
+Total hypotheses generated: 168410
+Translation options after reduction by output space constraint: 1022
+Translation options after reduction by output space constraint: 262
+Decoding loop time: 0.283 s
+Total hypotheses generated: 62131
+Decoding loop time: 0.194 s
+Total hypotheses generated: 30379
+Translation options after reduction by output space constraint: 782
+Translation options after reduction by output space constraint: 517
+Decoding loop time: 0.178 s
+Total hypotheses generated: 37030
+Decoding loop time: 0.381 s
+Total hypotheses generated: 78742
+Translation options after reduction by output space constraint: 720
+Decoding loop time: 0.204 s
+Total hypotheses generated: 45349
+Translation options after reduction by output space constraint: 277
+Decoding loop time: 0.115 s
+Total hypotheses generated: 22996
+Translation options after reduction by output space constraint: 1208
+Translation options after reduction by output space constraint: 1521
+Decoding loop time: 0.285 s
+Total hypotheses generated: 58603
+Decoding loop time: 0.417 s
+Total hypotheses generated: 90367
+Translation options after reduction by output space constraint: 1377
+Translation options after reduction by output space constraint: 1031
+Decoding loop time: 0.474 s
+Total hypotheses generated: 93989
+Decoding loop time: 0.328 s
+Total hypotheses generated: 71504
+Translation options after reduction by output space constraint: 608
+Decoding loop time: 0.173 s
+Total hypotheses generated: 38709
+Translation options after reduction by output space constraint: 1211
+Decoding loop time: 0.291 s
+Total hypotheses generated: 69910
+Translation options after reduction by output space constraint: 776
+Decoding loop time: 0.230 s
+Total hypotheses generated: 52181
+Translation options after reduction by output space constraint: 1198
+Decoding loop time: 0.379 s
+Total hypotheses generated: 85943
+Translation options after reduction by output space constraint: 526
+Decoding loop time: 0.204 s
+Total hypotheses generated: 46089
+Translation options after reduction by output space constraint: 688
+Translation options after reduction by output space constraint: 1334
+Decoding loop time: 0.202 s
+Total hypotheses generated: 46310
+Translation options after reduction by output space constraint: 952
+Decoding loop time: 0.380 s
+Total hypotheses generated: 85259
+Decoding loop time: 0.246 s
+Total hypotheses generated: 55126
+Translation options after reduction by output space constraint: 494
+Decoding loop time: 0.133 s
+Total hypotheses generated: 30272
+Translation options after reduction by output space constraint: 883
+Translation options after reduction by output space constraint: 2082
+Decoding loop time: 0.207 s
+Total hypotheses generated: 45480
+Translation options after reduction by output space constraint: 537
+Decoding loop time: 0.176 s
+Total hypotheses generated: 36820
+Decoding loop time: 0.609 s
+Total hypotheses generated: 130394
+Translation options after reduction by output space constraint: 1170
+Decoding loop time: 0.380 s
+Total hypotheses generated: 68441
+Translation options after reduction by output space constraint: 1922
+Decoding loop time: 0.451 s
+Total hypotheses generated: 106248
+Translation options after reduction by output space constraint: 573
+Decoding loop time: 0.168 s
+Total hypotheses generated: 39229
+Translation options after reduction by output space constraint: 1193
+Decoding loop time: 0.336 s
+Total hypotheses generated: 74123
+Translation options after reduction by output space constraint: 1778
+Decoding loop time: 0.402 s
+Total hypotheses generated: 94074
+Translation options after reduction by output space constraint: 1131
+Decoding loop time: 0.362 s
+Total hypotheses generated: 81435
+Translation options after reduction by output space constraint: 1415
+Decoding loop time: 0.466 s
+Total hypotheses generated: 108502
+Translation options after reduction by output space constraint: 544
+Decoding loop time: 0.157 s
+Total hypotheses generated: 37009
+Translation options after reduction by output space constraint: 1006
+Decoding loop time: 0.237 s
+Total hypotheses generated: 53634
+Translation options after reduction by output space constraint: 352
+Decoding loop time: 0.114 s
+Total hypotheses generated: 24726
+Translation options after reduction by output space constraint: 966
+Translation options after reduction by output space constraint: 1072
+Translation options after reduction by output space constraint: 851
+Translation options after reduction by output space constraint: 1019
+Decoding loop time: 0.351 s
+Total hypotheses generated: 60685
+Decoding loop time: 0.344 s
+Total hypotheses generated: 61889
+Decoding loop time: 0.388 s
+Total hypotheses generated: 73335
+Decoding loop time: 0.463 s
+Total hypotheses generated: 87690
+Translation options after reduction by output space constraint: 726
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.251 s
+Total hypotheses generated: 55127
+Decoding loop time: 0.113 s
+Total hypotheses generated: 21086
+Translation options after reduction by output space constraint: 492
+Translation options after reduction by output space constraint: 1545
+Translation options after reduction by output space constraint: 573
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.160 s
+Total hypotheses generated: 32327
+Decoding loop time: 0.193 s
+Total hypotheses generated: 40304
+Decoding loop time: 0.250 s
+Total hypotheses generated: 49401
+Translation options after reduction by output space constraint: 937
+Decoding loop time: 0.457 s
+Total hypotheses generated: 89878
+Translation options after reduction by output space constraint: 2082
+Translation options after reduction by output space constraint: 961
+Decoding loop time: 0.502 s
+Total hypotheses generated: 71719
+Decoding loop time: 0.282 s
+Total hypotheses generated: 55327
+Translation options after reduction by output space constraint: 1494
+Decoding loop time: 0.690 s
+Total hypotheses generated: 137840
+Translation options after reduction by output space constraint: 1350
+Decoding loop time: 0.452 s
+Total hypotheses generated: 95953
+Translation options after reduction by output space constraint: 526
+Decoding loop time: 0.237 s
+Total hypotheses generated: 49361
+Decoding loop time: 0.474 s
+Total hypotheses generated: 94246
+Translation options after reduction by output space constraint: 620
+Translation options after reduction by output space constraint: 533
+Decoding loop time: 0.176 s
+Total hypotheses generated: 35659
+Decoding loop time: 0.257 s
+Total hypotheses generated: 54262
+Translation options after reduction by output space constraint: 537
+Translation options after reduction by output space constraint: 1021
+Decoding loop time: 0.179 s
+Total hypotheses generated: 38241
+Translation options after reduction by output space constraint: 2613
+Decoding loop time: 0.288 s
+Total hypotheses generated: 60628
+Translation options after reduction by output space constraint: 1006
+Decoding loop time: 0.398 s
+Total hypotheses generated: 55653
+Translation options after reduction by output space constraint: 1611
+Translation options after reduction by output space constraint: 1259
+Decoding loop time: 0.889 s
+Total hypotheses generated: 153805
+Decoding loop time: 0.434 s
+Total hypotheses generated: 90112
+Translation options after reduction by output space constraint: 1679
+Decoding loop time: 0.460 s
+Total hypotheses generated: 95737
+Decoding loop time: 0.566 s
+Total hypotheses generated: 122029
+Translation options after reduction by output space constraint: 442
+Translation options after reduction by output space constraint: 1159
+Decoding loop time: 0.141 s
+Total hypotheses generated: 28943
+Translation options after reduction by output space constraint: 883
+Decoding loop time: 0.298 s
+Total hypotheses generated: 65346
+Decoding loop time: 0.218 s
+Total hypotheses generated: 48711
+Translation options after reduction by output space constraint: 503
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.185 s
+Total hypotheses generated: 34393
+Decoding loop time: 0.169 s
+Total hypotheses generated: 31040
+Translation options after reduction by output space constraint: 1334
+Translation options after reduction by output space constraint: 935
+Translation options after reduction by output space constraint: 1377
+Decoding loop time: 0.281 s
+Total hypotheses generated: 58115
+Decoding loop time: 0.600 s
+Total hypotheses generated: 87251
+Translation options after reduction by output space constraint: 208
+Translation options after reduction by output space constraint: 1208
+Decoding loop time: 0.648 s
+Total hypotheses generated: 98286
+Decoding loop time: 0.148 s
+Total hypotheses generated: 27257
+Decoding loop time: 0.287 s
+Total hypotheses generated: 62440
+Translation options after reduction by output space constraint: 628
+Decoding loop time: 0.266 s
+Total hypotheses generated: 57512
+Translation options after reduction by output space constraint: 564
+Translation options after reduction by output space constraint: 760
+Translation options after reduction by output space constraint: 1151
+Translation options after reduction by output space constraint: 152
+Decoding loop time: 0.326 s
+Total hypotheses generated: 62265
+Decoding loop time: 0.246 s
+Total hypotheses generated: 51543
+Decoding loop time: 0.190 s
+Total hypotheses generated: 21018
+Translation options after reduction by output space constraint: 1152
+Decoding loop time: 0.448 s
+Total hypotheses generated: 80448
+Translation options after reduction by output space constraint: 388
+Decoding loop time: 0.171 s
+Total hypotheses generated: 33334
+Translation options after reduction by output space constraint: 1311
+Translation options after reduction by output space constraint: 1051
+Decoding loop time: 0.519 s
+Total hypotheses generated: 104250
+Translation options after reduction by output space constraint: 1506
+Decoding loop time: 0.369 s
+Total hypotheses generated: 72567
+Decoding loop time: 0.361 s
+Total hypotheses generated: 77584
+Decoding loop time: 0.632 s
+Total hypotheses generated: 106627
+Translation options after reduction by output space constraint: 1058
+Translation options after reduction by output space constraint: 663
+Translation options after reduction by output space constraint: 663
+Decoding loop time: 0.400 s
+Total hypotheses generated: 81662
+Translation options after reduction by output space constraint: 163
+Decoding loop time: 0.200 s
+Total hypotheses generated: 38635
+Decoding loop time: 0.253 s
+Total hypotheses generated: 46962
+Decoding loop time: 0.095 s
+Total hypotheses generated: 19017
+Translation options after reduction by output space constraint: 481
+Translation options after reduction by output space constraint: 656
+Translation options after reduction by output space constraint: 756
+Decoding loop time: 0.182 s
+Total hypotheses generated: 36730
+Translation options after reduction by output space constraint: 631
+Decoding loop time: 0.268 s
+Total hypotheses generated: 54695
+Decoding loop time: 0.359 s
+Total hypotheses generated: 56126
+Translation options after reduction by output space constraint: 700
+Decoding loop time: 0.308 s
+Total hypotheses generated: 45448
+Translation options after reduction by output space constraint: 494
+Decoding loop time: 0.151 s
+Total hypotheses generated: 31048
+Decoding loop time: 0.289 s
+Total hypotheses generated: 58700
+Translation options after reduction by output space constraint: 608
+Translation options after reduction by output space constraint: 1405
+Translation options after reduction by output space constraint: 956
+Decoding loop time: 0.206 s
+Total hypotheses generated: 39659
+Decoding loop time: 0.393 s
+Total hypotheses generated: 86376
+Decoding loop time: 0.318 s
+Total hypotheses generated: 67727
+Translation options after reduction by output space constraint: 641
+Translation options after reduction by output space constraint: 1201
+Decoding loop time: 0.328 s
+Total hypotheses generated: 47190
+Translation options after reduction by output space constraint: 623
+Translation options after reduction by output space constraint: 511
+Decoding loop time: 0.368 s
+Total hypotheses generated: 77548
+Translation options after reduction by output space constraint: 752
+Decoding loop time: 0.194 s
+Total hypotheses generated: 39692
+Decoding loop time: 0.182 s
+Total hypotheses generated: 36504
+Decoding loop time: 0.251 s
+Total hypotheses generated: 56394
+Translation options after reduction by output space constraint: 1126
+Translation options after reduction by output space constraint: 853
+Translation options after reduction by output space constraint: 172
+Decoding loop time: 0.300 s
+Total hypotheses generated: 63863
+Translation options after reduction by output space constraint: 243
+Decoding loop time: 0.430 s
+Total hypotheses generated: 92880
+Decoding loop time: 0.102 s
+Total hypotheses generated: 18351
+Decoding loop time: 0.112 s
+Total hypotheses generated: 21198
+Translation options after reduction by output space constraint: 1538
+Translation options after reduction by output space constraint: 1059
+Translation options after reduction by output space constraint: 682
+Translation options after reduction by output space constraint: 1691
+Decoding loop time: 0.382 s
+Total hypotheses generated: 77616
+Decoding loop time: 0.265 s
+Total hypotheses generated: 53339
+Decoding loop time: 0.544 s
+Total hypotheses generated: 109619
+Decoding loop time: 0.540 s
+Total hypotheses generated: 120083
+Translation options after reduction by output space constraint: 806
+Decoding loop time: 0.260 s
+Total hypotheses generated: 55736
+Translation options after reduction by output space constraint: 644
+Decoding loop time: 0.403 s
+Total hypotheses generated: 52653
+Translation options after reduction by output space constraint: 1605
+Translation options after reduction by output space constraint: 469
+Decoding loop time: 0.326 s
+Total hypotheses generated: 71079
+Translation options after reduction by output space constraint: 1114
+Decoding loop time: 0.208 s
+Total hypotheses generated: 42830
+Decoding loop time: 0.489 s
+Total hypotheses generated: 83796
+Translation options after reduction by output space constraint: 1377
+Decoding loop time: 0.485 s
+Total hypotheses generated: 100657
+Translation options after reduction by output space constraint: 1086
+Decoding loop time: 0.361 s
+Total hypotheses generated: 78718
+Translation options after reduction by output space constraint: 277
+Translation options after reduction by output space constraint: 487
+Decoding loop time: 0.124 s
+Total hypotheses generated: 23634
+Decoding loop time: 0.190 s
+Total hypotheses generated: 38992
+Translation options after reduction by output space constraint: 171
+Decoding loop time: 0.094 s
+Total hypotheses generated: 18723
+Translation options after reduction by output space constraint: 871
+Translation options after reduction by output space constraint: 262
+Decoding loop time: 0.402 s
+Total hypotheses generated: 81533
+Decoding loop time: 0.151 s
+Total hypotheses generated: 31030
+Translation options after reduction by output space constraint: 1512
+Decoding loop time: 0.442 s
+Total hypotheses generated: 97508
+Translation options after reduction by output space constraint: 782
+Translation options after reduction by output space constraint: 1341
+Decoding loop time: 0.395 s
+Total hypotheses generated: 81654
+Decoding loop time: 0.417 s
+Total hypotheses generated: 87901
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.331 s
+Total hypotheses generated: 75930
+Translation options after reduction by output space constraint: 389
+Translation options after reduction by output space constraint: 1719
+Decoding loop time: 0.154 s
+Total hypotheses generated: 31566
+Translation options after reduction by output space constraint: 1031
+Translation options after reduction by output space constraint: 767
+Decoding loop time: 0.509 s
+Total hypotheses generated: 107467
+Decoding loop time: 0.286 s
+Total hypotheses generated: 62341
+Translation options after reduction by output space constraint: 760
+Decoding loop time: 0.351 s
+Total hypotheses generated: 71294
+Translation options after reduction by output space constraint: 972
+Decoding loop time: 0.290 s
+Total hypotheses generated: 51775
+Decoding loop time: 0.451 s
+Total hypotheses generated: 73495
+Translation options after reduction by output space constraint: 1452
+Translation options after reduction by output space constraint: 433
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.451 s
+Total hypotheses generated: 102141
+Translation options after reduction by output space constraint: 783
+Decoding loop time: 0.204 s
+Total hypotheses generated: 38682
+Decoding loop time: 0.245 s
+Total hypotheses generated: 51877
+Decoding loop time: 0.256 s
+Total hypotheses generated: 50941
+Translation options after reduction by output space constraint: 692
+Translation options after reduction by output space constraint: 400
+Decoding loop time: 0.227 s
+Total hypotheses generated: 48598
+Decoding loop time: 0.154 s
+Total hypotheses generated: 30754
+Translation options after reduction by output space constraint: 751
+Translation options after reduction by output space constraint: 1844
+Translation options after reduction by output space constraint: 602
+Translation options after reduction by output space constraint: 1081
+Decoding loop time: 0.257 s
+Total hypotheses generated: 49749
+Decoding loop time: 0.211 s
+Total hypotheses generated: 40136
+Decoding loop time: 0.558 s
+Total hypotheses generated: 114346
+Decoding loop time: 0.421 s
+Total hypotheses generated: 89190
+Translation options after reduction by output space constraint: 1211
+Decoding loop time: 0.324 s
+Total hypotheses generated: 73389
+Translation options after reduction by output space constraint: 1248
+Translation options after reduction by output space constraint: 203
+Translation options after reduction by output space constraint: 322
+Decoding loop time: 0.506 s
+Total hypotheses generated: 82589
+Decoding loop time: 0.092 s
+Total hypotheses generated: 18433
+Decoding loop time: 0.125 s
+Total hypotheses generated: 23942
+Translation options after reduction by output space constraint: 544
+Translation options after reduction by output space constraint: 1566
+Translation options after reduction by output space constraint: 2227
+Decoding loop time: 0.191 s
+Total hypotheses generated: 38044
+Translation options after reduction by output space constraint: 94
+Decoding loop time: 0.469 s
+Total hypotheses generated: 96105
+Decoding loop time: 0.084 s
+Total hypotheses generated: 14977
+Translation options after reduction by output space constraint: 508
+Translation options after reduction by output space constraint: 1347
+Decoding loop time: 0.216 s
+Total hypotheses generated: 40294
+Decoding loop time: 0.722 s
+Total hypotheses generated: 149131
+Decoding loop time: 0.562 s
+Total hypotheses generated: 85968
+Translation options after reduction by output space constraint: 2074
+Translation options after reduction by output space constraint: 1922
+Decoding loop time: 0.455 s
+Total hypotheses generated: 93747
+Decoding loop time: 0.515 s
+Total hypotheses generated: 109648
+Translation options after reduction by output space constraint: 1050
+Translation options after reduction by output space constraint: 401
+Decoding loop time: 0.488 s
+Total hypotheses generated: 82169
+Translation options after reduction by output space constraint: 1242
+Decoding loop time: 0.255 s
+Total hypotheses generated: 28160
+Translation options after reduction by output space constraint: 881
+Translation options after reduction by output space constraint: 622
+Decoding loop time: 0.337 s
+Total hypotheses generated: 67893
+Decoding loop time: 0.325 s
+Total hypotheses generated: 66306
+Decoding loop time: 0.244 s
+Total hypotheses generated: 52562
+Translation options after reduction by output space constraint: 609
+Translation options after reduction by output space constraint: 1131
+Decoding loop time: 0.224 s
+Total hypotheses generated: 49526
+Translation options after reduction by output space constraint: 991
+Translation options after reduction by output space constraint: 699
+Decoding loop time: 0.395 s
+Total hypotheses generated: 83244
+Translation options after reduction by output space constraint: 810
+Decoding loop time: 0.511 s
+Total hypotheses generated: 87680
+Decoding loop time: 0.381 s
+Total hypotheses generated: 62515
+Decoding loop time: 0.276 s
+Total hypotheses generated: 58238
+Translation options after reduction by output space constraint: 316
+Decoding loop time: 0.132 s
+Total hypotheses generated: 29120
+Translation options after reduction by output space constraint: 1282
+Translation options after reduction by output space constraint: 890
+Translation options after reduction by output space constraint: 1193
+Decoding loop time: 0.347 s
+Total hypotheses generated: 69926
+Decoding loop time: 0.320 s
+Total hypotheses generated: 66382
+Translation options after reduction by output space constraint: 539
+Decoding loop time: 0.363 s
+Total hypotheses generated: 75974
+Decoding loop time: 0.261 s
+Total hypotheses generated: 53535
+Translation options after reduction by output space constraint: 1465
+Translation options after reduction by output space constraint: 801
+Translation options after reduction by output space constraint: 1338
+Translation options after reduction by output space constraint: 688
+Decoding loop time: 0.330 s
+Total hypotheses generated: 65741
+Decoding loop time: 0.549 s
+Total hypotheses generated: 113631
+Decoding loop time: 0.227 s
+Total hypotheses generated: 46838
+Decoding loop time: 0.506 s
+Total hypotheses generated: 98225
+Translation options after reduction by output space constraint: 1521
+Translation options after reduction by output space constraint: 488
+Decoding loop time: 0.547 s
+Total hypotheses generated: 93461
+Translation options after reduction by output space constraint: 1399
+Translation options after reduction by output space constraint: 553
+Decoding loop time: 0.283 s
+Total hypotheses generated: 31633
+Decoding loop time: 0.226 s
+Total hypotheses generated: 46833
+Translation options after reduction by output space constraint: 1444
+Decoding loop time: 0.379 s
+Total hypotheses generated: 76267
+Translation options after reduction by output space constraint: 434
+Translation options after reduction by output space constraint: 1462
+Decoding loop time: 0.168 s
+Total hypotheses generated: 33491
+Decoding loop time: 0.421 s
+Total hypotheses generated: 88538
+Translation options after reduction by output space constraint: 1778
+Decoding loop time: 0.490 s
+Total hypotheses generated: 102068
+Decoding loop time: 0.660 s
+Total hypotheses generated: 95374
+Translation options after reduction by output space constraint: 521
+Translation options after reduction by output space constraint: 1061
+Decoding loop time: 0.161 s
+Total hypotheses generated: 33386
+Translation options after reduction by output space constraint: 1129
+Decoding loop time: 0.340 s
+Total hypotheses generated: 68645
+Translation options after reduction by output space constraint: 327
+Translation options after reduction by output space constraint: 900
+Decoding loop time: 0.402 s
+Total hypotheses generated: 83040
+Decoding loop time: 0.142 s
+Total hypotheses generated: 25452
+Decoding loop time: 0.272 s
+Total hypotheses generated: 60033
+Translation options after reduction by output space constraint: 1198
+Translation options after reduction by output space constraint: 350
+Decoding loop time: 0.535 s
+Total hypotheses generated: 89594
+Decoding loop time: 0.163 s
+Total hypotheses generated: 30479
+Translation options after reduction by output space constraint: 843
+Translation options after reduction by output space constraint: 848
+Decoding loop time: 0.346 s
+Total hypotheses generated: 73468
+Decoding loop time: 0.273 s
+Total hypotheses generated: 57126
+Translation options after reduction by output space constraint: 568
+Translation options after reduction by output space constraint: 517
+Decoding loop time: 0.253 s
+Total hypotheses generated: 34411
+Decoding loop time: 0.179 s
+Total hypotheses generated: 38496
+Translation options after reduction by output space constraint: 952
+Translation options after reduction by output space constraint: 1112
+Decoding loop time: 0.264 s
+Total hypotheses generated: 55949
+Decoding loop time: 0.292 s
+Total hypotheses generated: 61511
+Translation options after reduction by output space constraint: 1172
+Translation options after reduction by output space constraint: 168
+Decoding loop time: 0.318 s
+Total hypotheses generated: 71984
+Decoding loop time: 0.081 s
+Total hypotheses generated: 16459
+Translation options after reduction by output space constraint: 1616
+Decoding loop time: 0.589 s
+Total hypotheses generated: 128462
+Translation options after reduction by output space constraint: 425
+Decoding loop time: 0.197 s
+Total hypotheses generated: 44768
+Translation options after reduction by output space constraint: 627
+Decoding loop time: 0.200 s
+Total hypotheses generated: 45544
+Translation options after reduction by output space constraint: 615
+Decoding loop time: 0.233 s
+Total hypotheses generated: 48362
+Translation options after reduction by output space constraint: 1261
+Decoding loop time: 0.429 s
+Total hypotheses generated: 90479
+Translation options after reduction by output space constraint: 1536
+Decoding loop time: 0.393 s
+Total hypotheses generated: 95830
+Translation options after reduction by output space constraint: 1298
+Decoding loop time: 0.420 s
+Total hypotheses generated: 81256
+Translation options after reduction by output space constraint: 455
+Decoding loop time: 0.156 s
+Total hypotheses generated: 35005
+Translation options after reduction by output space constraint: 410
+Decoding loop time: 0.113 s
+Total hypotheses generated: 24778
+Translation options after reduction by output space constraint: 685
+Translation options after reduction by output space constraint: 908
+Decoding loop time: 0.267 s
+Total hypotheses generated: 59837
+Decoding loop time: 0.348 s
+Total hypotheses generated: 76807
+Translation options after reduction by output space constraint: 852
+Decoding loop time: 0.271 s
+Total hypotheses generated: 60875
+Translation options after reduction by output space constraint: 404
+Decoding loop time: 0.130 s
+Total hypotheses generated: 29681
+Translation options after reduction by output space constraint: 943
+Decoding loop time: 0.278 s
+Total hypotheses generated: 61568
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.343 s
+Total hypotheses generated: 79643
+Translation options after reduction by output space constraint: 1357
+Translation options after reduction by output space constraint: 737
+Decoding loop time: 0.291 s
+Total hypotheses generated: 65256
+Decoding loop time: 0.259 s
+Total hypotheses generated: 55322
+Translation options after reduction by output space constraint: 944
+Translation options after reduction by output space constraint: 942
+Decoding loop time: 0.291 s
+Total hypotheses generated: 63763
+Decoding loop time: 0.359 s
+Total hypotheses generated: 77718
+Translation options after reduction by output space constraint: 1170
+Decoding loop time: 0.316 s
+Total hypotheses generated: 71371
+Translation options after reduction by output space constraint: 720
+Decoding loop time: 0.216 s
+Total hypotheses generated: 46894
+Translation options after reduction by output space constraint: 1054
+Translation options after reduction by output space constraint: 886
+Decoding loop time: 0.348 s
+Total hypotheses generated: 70790
+Decoding loop time: 0.331 s
+Total hypotheses generated: 72655
+Translation options after reduction by output space constraint: 428
+Decoding loop time: 0.172 s
+Total hypotheses generated: 38737
+Translation options after reduction by output space constraint: 1208
+Translation options after reduction by output space constraint: 892
+Decoding loop time: 0.465 s
+Total hypotheses generated: 100550
+Decoding loop time: 0.285 s
+Total hypotheses generated: 63063
+Translation options after reduction by output space constraint: 435
+Decoding loop time: 0.163 s
+Total hypotheses generated: 35434
+Translation options after reduction by output space constraint: 2640
+Translation options after reduction by output space constraint: 776
+Decoding loop time: 0.272 s
+Total hypotheses generated: 54819
+Decoding loop time: 0.786 s
+Total hypotheses generated: 176209
+Translation options after reduction by output space constraint: 1221
+Decoding loop time: 0.353 s
+Total hypotheses generated: 78085
+Translation options after reduction by output space constraint: 829
+Decoding loop time: 0.382 s
+Total hypotheses generated: 58255
+Translation options after reduction by output space constraint: 352
+Decoding loop time: 0.118 s
+Total hypotheses generated: 25163
+Translation options after reduction by output space constraint: 831
+Translation options after reduction by output space constraint: 1415
+Decoding loop time: 0.208 s
+Total hypotheses generated: 46395
+Translation options after reduction by output space constraint: 840
+Decoding loop time: 0.513 s
+Total hypotheses generated: 111469
+Decoding loop time: 0.305 s
+Total hypotheses generated: 66430
+Translation options after reduction by output space constraint: 398
+Decoding loop time: 0.179 s
+Total hypotheses generated: 39070
+Translation options after reduction by output space constraint: 359
+Decoding loop time: 0.145 s
+Total hypotheses generated: 32300
+Translation options after reduction by output space constraint: 1117
+Decoding loop time: 0.294 s
+Total hypotheses generated: 67391
+Translation options after reduction by output space constraint: 2058
+Decoding loop time: 0.613 s
+Total hypotheses generated: 138360
+Translation options after reduction by output space constraint: 426
+Decoding loop time: 0.161 s
+Total hypotheses generated: 37055
+Translation options after reduction by output space constraint: 1022
+Decoding loop time: 0.291 s
+Total hypotheses generated: 64187
+Translation options after reduction by output space constraint: 1661
+Decoding loop time: 0.436 s
+Total hypotheses generated: 100557
+Translation options after reduction by output space constraint: 199
+Decoding loop time: 0.104 s
+Total hypotheses generated: 21247
+Translation options after reduction by output space constraint: 426
+Translation options after reduction by output space constraint: 503
+Translation options after reduction by output space constraint: 398
+Translation options after reduction by output space constraint: 442
+Decoding loop time: 0.141 s
+Total hypotheses generated: 29256
+Decoding loop time: 0.191 s
+Total hypotheses generated: 38260
+Decoding loop time: 0.265 s
+Total hypotheses generated: 35487
+Decoding loop time: 0.275 s
+Total hypotheses generated: 40432
+Translation options after reduction by output space constraint: 2082
+Translation options after reduction by output space constraint: 425
+Translation options after reduction by output space constraint: 623
+Decoding loop time: 0.233 s
+Total hypotheses generated: 47785
+Decoding loop time: 0.211 s
+Total hypotheses generated: 40614
+Translation options after reduction by output space constraint: 1159
+Translation options after reduction by output space constraint: 853
+Translation options after reduction by output space constraint: 1341
+Decoding loop time: 0.345 s
+Total hypotheses generated: 67985
+Decoding loop time: 0.334 s
+Total hypotheses generated: 66514
+Decoding loop time: 0.759 s
+Total hypotheses generated: 145794
+Translation options after reduction by output space constraint: 1494
+Decoding loop time: 0.444 s
+Total hypotheses generated: 91614
+Translation options after reduction by output space constraint: 1201
+Decoding loop time: 0.553 s
+Total hypotheses generated: 81883
+Decoding loop time: 0.635 s
+Total hypotheses generated: 99289
+Translation options after reduction by output space constraint: 628
+Translation options after reduction by output space constraint: 1566
+Decoding loop time: 0.291 s
+Total hypotheses generated: 58845
+Translation options after reduction by output space constraint: 1248
+Decoding loop time: 0.484 s
+Total hypotheses generated: 100092
+Translation options after reduction by output space constraint: 1208
+Decoding loop time: 0.592 s
+Total hypotheses generated: 86779
+Decoding loop time: 0.466 s
+Total hypotheses generated: 64841
+Translation options after reduction by output space constraint: 663
+Translation options after reduction by output space constraint: 350
+Decoding loop time: 0.186 s
+Total hypotheses generated: 41218
+Translation options after reduction by output space constraint: 1004
+Decoding loop time: 0.175 s
+Total hypotheses generated: 31798
+Translation options after reduction by output space constraint: 602
+Translation options after reduction by output space constraint: 1170
+Decoding loop time: 0.200 s
+Total hypotheses generated: 41025
+Translation options after reduction by output space constraint: 243
+Decoding loop time: 0.360 s
+Total hypotheses generated: 78036
+Decoding loop time: 0.112 s
+Total hypotheses generated: 21534
+Translation options after reduction by output space constraint: 692
+Translation options after reduction by output space constraint: 1193
+Decoding loop time: 0.356 s
+Total hypotheses generated: 73396
+Decoding loop time: 0.352 s
+Total hypotheses generated: 48439
+Translation options after reduction by output space constraint: 806
+Translation options after reduction by output space constraint: 568
+Decoding loop time: 0.480 s
+Total hypotheses generated: 78156
+Decoding loop time: 0.199 s
+Total hypotheses generated: 36198
+Translation options after reduction by output space constraint: 1114
+Decoding loop time: 0.299 s
+Total hypotheses generated: 58976
+Translation options after reduction by output space constraint: 1242
+Translation options after reduction by output space constraint: 1399
+Decoding loop time: 0.436 s
+Total hypotheses generated: 86555
+Decoding loop time: 0.358 s
+Total hypotheses generated: 70806
+Decoding loop time: 0.409 s
+Total hypotheses generated: 82314
+Translation options after reduction by output space constraint: 972
+Translation options after reduction by output space constraint: 1058
+Translation options after reduction by output space constraint: 2074
+Decoding loop time: 0.466 s
+Total hypotheses generated: 75547
+Decoding loop time: 0.500 s
+Total hypotheses generated: 85286
+Decoding loop time: 0.475 s
+Total hypotheses generated: 98817
+Translation options after reduction by output space constraint: 1211
+Translation options after reduction by output space constraint: 1347
+Translation options after reduction by output space constraint: 1405
+Decoding loop time: 0.360 s
+Total hypotheses generated: 76491
+Decoding loop time: 0.431 s
+Total hypotheses generated: 89880
+Translation options after reduction by output space constraint: 944
+Decoding loop time: 0.406 s
+Total hypotheses generated: 87150
+Translation options after reduction by output space constraint: 508
+Decoding loop time: 0.418 s
+Total hypotheses generated: 66895
+Decoding loop time: 0.205 s
+Total hypotheses generated: 41850
+Translation options after reduction by output space constraint: 322
+Decoding loop time: 0.090 s
+Total hypotheses generated: 19031
+Translation options after reduction by output space constraint: 564
+Translation options after reduction by output space constraint: 1081
+Translation options after reduction by output space constraint: 1004
+Translation options after reduction by output space constraint: 352
+Decoding loop time: 0.133 s
+Total hypotheses generated: 25722
+Decoding loop time: 0.339 s
+Total hypotheses generated: 63894
+Translation options after reduction by output space constraint: 631
+Decoding loop time: 0.412 s
+Total hypotheses generated: 82329
+Decoding loop time: 0.437 s
+Total hypotheses generated: 91284
+Translation options after reduction by output space constraint: 720
+Decoding loop time: 0.240 s
+Total hypotheses generated: 48579
+Decoding loop time: 0.228 s
+Total hypotheses generated: 48069
+Translation options after reduction by output space constraint: 1072
+Translation options after reduction by output space constraint: 937
+Translation options after reduction by output space constraint: 1462
+Translation options after reduction by output space constraint: 641
+Decoding loop time: 0.338 s
+Total hypotheses generated: 63620
+Decoding loop time: 0.376 s
+Total hypotheses generated: 73301
+Decoding loop time: 0.246 s
+Total hypotheses generated: 48786
+Decoding loop time: 0.479 s
+Total hypotheses generated: 102903
+Translation options after reduction by output space constraint: 2058
+Translation options after reduction by output space constraint: 2227
+Translation options after reduction by output space constraint: 168
+Decoding loop time: 0.090 s
+Total hypotheses generated: 16758
+Translation options after reduction by output space constraint: 699
+Decoding loop time: 0.876 s
+Total hypotheses generated: 142962
+Translation options after reduction by output space constraint: 1350
+Decoding loop time: 0.305 s
+Total hypotheses generated: 63480
+Decoding loop time: 0.917 s
+Total hypotheses generated: 153552
+Decoding loop time: 0.501 s
+Total hypotheses generated: 99261
+Translation options after reduction by output space constraint: 776
+Decoding loop time: 0.269 s
+Total hypotheses generated: 57315
+Translation options after reduction by output space constraint: 404
+Translation options after reduction by output space constraint: 663
+Decoding loop time: 0.144 s
+Total hypotheses generated: 31296
+Translation options after reduction by output space constraint: 1357
+Decoding loop time: 0.376 s
+Total hypotheses generated: 48206
+Translation options after reduction by output space constraint: 1691
+Decoding loop time: 0.298 s
+Total hypotheses generated: 66687
+Translation options after reduction by output space constraint: 2640
+Translation options after reduction by output space constraint: 1338
+Translation options after reduction by output space constraint: 573
+Decoding loop time: 0.593 s
+Total hypotheses generated: 121754
+Decoding loop time: 0.198 s
+Total hypotheses generated: 41954
+Decoding loop time: 0.536 s
+Total hypotheses generated: 103835
+Translation options after reduction by output space constraint: 539
+Decoding loop time: 0.914 s
+Total hypotheses generated: 181925
+Decoding loop time: 0.542 s
+Total hypotheses generated: 56755
+Translation options after reduction by output space constraint: 1126
+Translation options after reduction by output space constraint: 700
+Decoding loop time: 0.422 s
+Total hypotheses generated: 94410
+Translation options after reduction by output space constraint: 783
+Decoding loop time: 0.295 s
+Total hypotheses generated: 60767
+Decoding loop time: 0.239 s
+Total hypotheses generated: 52849
+Translation options after reduction by output space constraint: 883
+Translation options after reduction by output space constraint: 94
+Translation options after reduction by output space constraint: 991
+Decoding loop time: 0.091 s
+Total hypotheses generated: 14961
+Decoding loop time: 0.246 s
+Total hypotheses generated: 50547
+Translation options after reduction by output space constraint: 327
+Decoding loop time: 0.147 s
+Total hypotheses generated: 26341
+Translation options after reduction by output space constraint: 400
+Translation options after reduction by output space constraint: 1021
+Decoding loop time: 0.592 s
+Total hypotheses generated: 89503
+Decoding loop time: 0.170 s
+Total hypotheses generated: 31788
+Decoding loop time: 0.292 s
+Total hypotheses generated: 63765
+Translation options after reduction by output space constraint: 1050
+Translation options after reduction by output space constraint: 435
+Decoding loop time: 0.187 s
+Total hypotheses generated: 36670
+Translation options after reduction by output space constraint: 881
+Decoding loop time: 0.440 s
+Total hypotheses generated: 87548
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.328 s
+Total hypotheses generated: 68961
+Translation options after reduction by output space constraint: 956
+Decoding loop time: 0.429 s
+Total hypotheses generated: 53931
+Decoding loop time: 0.469 s
+Total hypotheses generated: 69243
+Translation options after reduction by output space constraint: 1538
+Translation options after reduction by output space constraint: 2613
+Decoding loop time: 0.638 s
+Total hypotheses generated: 112362
+Decoding loop time: 0.828 s
+Total hypotheses generated: 159140
+Translation options after reduction by output space constraint: 152
+Decoding loop time: 0.104 s
+Total hypotheses generated: 21422
+Translation options after reduction by output space constraint: 1031
+Decoding loop time: 0.381 s
+Total hypotheses generated: 73353
+Translation options after reduction by output space constraint: 1465
+Decoding loop time: 0.537 s
+Total hypotheses generated: 115730
+Translation options after reduction by output space constraint: 952
+Translation options after reduction by output space constraint: 890
+Decoding loop time: 0.274 s
+Total hypotheses generated: 56990
+Decoding loop time: 0.322 s
+Total hypotheses generated: 67697
+Translation options after reduction by output space constraint: 208
+Decoding loop time: 0.226 s
+Total hypotheses generated: 27693
+Translation options after reduction by output space constraint: 1006
+Translation options after reduction by output space constraint: 1022
+Decoding loop time: 0.277 s
+Total hypotheses generated: 57923
+Decoding loop time: 0.299 s
+Total hypotheses generated: 65529
+Translation options after reduction by output space constraint: 688
+Decoding loop time: 0.208 s
+Total hypotheses generated: 46948
+Translation options after reduction by output space constraint: 544
+Decoding loop time: 0.215 s
+Total hypotheses generated: 38475
+Translation options after reduction by output space constraint: 1311
+Translation options after reduction by output space constraint: 1152
+Decoding loop time: 0.393 s
+Total hypotheses generated: 75444
+Decoding loop time: 0.487 s
+Total hypotheses generated: 106513
+Translation options after reduction by output space constraint: 943
+Decoding loop time: 0.416 s
+Total hypotheses generated: 64605
+Translation options after reduction by output space constraint: 1377
+Translation options after reduction by output space constraint: 511
+Translation options after reduction by output space constraint: 782
+Decoding loop time: 0.191 s
+Total hypotheses generated: 38426
+Decoding loop time: 0.541 s
+Total hypotheses generated: 105748
+Translation options after reduction by output space constraint: 767
+Translation options after reduction by output space constraint: 1129
+Decoding loop time: 0.420 s
+Total hypotheses generated: 82522
+Decoding loop time: 0.305 s
+Total hypotheses generated: 63143
+Decoding loop time: 0.420 s
+Total hypotheses generated: 87424
+Translation options after reduction by output space constraint: 622
+Translation options after reduction by output space constraint: 852
+Translation options after reduction by output space constraint: 277
+Translation options after reduction by output space constraint: 682
+Decoding loop time: 0.278 s
+Total hypotheses generated: 55551
+Decoding loop time: 0.134 s
+Total hypotheses generated: 24419
+Decoding loop time: 0.323 s
+Total hypotheses generated: 64706
+Decoding loop time: 0.266 s
+Total hypotheses generated: 56133
+Translation options after reduction by output space constraint: 1922
+Translation options after reduction by output space constraint: 851
+Translation options after reduction by output space constraint: 609
+Decoding loop time: 0.329 s
+Total hypotheses generated: 64486
+Decoding loop time: 0.551 s
+Total hypotheses generated: 116975
+Decoding loop time: 0.234 s
+Total hypotheses generated: 49934
+Translation options after reduction by output space constraint: 203
+Translation options after reduction by output space constraint: 644
+Decoding loop time: 0.130 s
+Total hypotheses generated: 24260
+Translation options after reduction by output space constraint: 608
+Decoding loop time: 0.383 s
+Total hypotheses generated: 54166
+Translation options after reduction by output space constraint: 615
+Decoding loop time: 0.204 s
+Total hypotheses generated: 41000
+Translation options after reduction by output space constraint: 494
+Decoding loop time: 0.265 s
+Total hypotheses generated: 51622
+Decoding loop time: 0.144 s
+Total hypotheses generated: 31287
+Translation options after reduction by output space constraint: 1512
+Translation options after reduction by output space constraint: 829
+Translation options after reduction by output space constraint: 526
+Decoding loop time: 0.327 s
+Total hypotheses generated: 60851
+Decoding loop time: 0.263 s
+Total hypotheses generated: 51608
+Decoding loop time: 0.510 s
+Total hypotheses generated: 102551
+Translation options after reduction by output space constraint: 1605
+Decoding loop time: 0.472 s
+Total hypotheses generated: 74012
+Translation options after reduction by output space constraint: 171
+Decoding loop time: 0.098 s
+Total hypotheses generated: 19081
+Translation options after reduction by output space constraint: 1172
+Translation options after reduction by output space constraint: 801
+Translation options after reduction by output space constraint: 1198
+Translation options after reduction by output space constraint: 1611
+Decoding loop time: 0.380 s
+Total hypotheses generated: 74004
+Decoding loop time: 0.373 s
+Total hypotheses generated: 68351
+Decoding loop time: 0.501 s
+Total hypotheses generated: 92969
+Translation options after reduction by output space constraint: 428
+Decoding loop time: 0.534 s
+Total hypotheses generated: 95901
+Decoding loop time: 0.223 s
+Total hypotheses generated: 39757
+Translation options after reduction by output space constraint: 737
+Translation options after reduction by output space constraint: 481
+Translation options after reduction by output space constraint: 1661
+Decoding loop time: 0.436 s
+Total hypotheses generated: 58270
+Decoding loop time: 0.187 s
+Total hypotheses generated: 37868
+Translation options after reduction by output space constraint: 469
+Translation options after reduction by output space constraint: 1415
+Translation options after reduction by output space constraint: 1536
+Decoding loop time: 0.228 s
+Total hypotheses generated: 43775
+Decoding loop time: 0.505 s
+Total hypotheses generated: 103726
+Decoding loop time: 0.554 s
+Total hypotheses generated: 115021
+Translation options after reduction by output space constraint: 434
+Decoding loop time: 0.449 s
+Total hypotheses generated: 100099
+Decoding loop time: 0.327 s
+Total hypotheses generated: 34781
+Translation options after reduction by output space constraint: 533
+Translation options after reduction by output space constraint: 1444
+Decoding loop time: 0.273 s
+Total hypotheses generated: 54813
+Decoding loop time: 0.422 s
+Total hypotheses generated: 91064
+Translation options after reduction by output space constraint: 961
+Translation options after reduction by output space constraint: 1334
+Translation options after reduction by output space constraint: 551
+Decoding loop time: 0.287 s
+Total hypotheses generated: 56818
+Decoding loop time: 0.249 s
+Total hypotheses generated: 50571
+Decoding loop time: 0.443 s
+Total hypotheses generated: 89284
+Translation options after reduction by output space constraint: 521
+Decoding loop time: 0.312 s
+Total hypotheses generated: 36126
+Translation options after reduction by output space constraint: 935
+Translation options after reduction by output space constraint: 1844
+Translation options after reduction by output space constraint: 1719
+Decoding loop time: 0.302 s
+Total hypotheses generated: 61110
+Translation options after reduction by output space constraint: 262
+Decoding loop time: 0.556 s
+Total hypotheses generated: 117064
+Decoding loop time: 0.585 s
+Total hypotheses generated: 113459
+Decoding loop time: 0.150 s
+Total hypotheses generated: 31168
+Translation options after reduction by output space constraint: 760
+Translation options after reduction by output space constraint: 908
+Decoding loop time: 0.247 s
+Total hypotheses generated: 51813
+Translation options after reduction by output space constraint: 892
+Decoding loop time: 0.507 s
+Total hypotheses generated: 79561
+Translation options after reduction by output space constraint: 620
+Translation options after reduction by output space constraint: 389
+Decoding loop time: 0.199 s
+Total hypotheses generated: 36804
+Decoding loop time: 0.159 s
+Total hypotheses generated: 31634
+Decoding loop time: 0.317 s
+Total hypotheses generated: 64768
+Translation options after reduction by output space constraint: 751
+Translation options after reduction by output space constraint: 1506
+Translation options after reduction by output space constraint: 172
+Translation options after reduction by output space constraint: 537
+Decoding loop time: 0.103 s
+Total hypotheses generated: 18592
+Decoding loop time: 0.278 s
+Total hypotheses generated: 53850
+Translation options after reduction by output space constraint: 410
+Decoding loop time: 0.129 s
+Total hypotheses generated: 25348
+Decoding loop time: 0.197 s
+Total hypotheses generated: 38990
+Decoding loop time: 0.546 s
+Total hypotheses generated: 111081
+Translation options after reduction by output space constraint: 1616
+Translation options after reduction by output space constraint: 810
+Translation options after reduction by output space constraint: 401
+Decoding loop time: 0.408 s
+Total hypotheses generated: 61273
+Decoding loop time: 0.160 s
+Total hypotheses generated: 29744
+Decoding loop time: 0.716 s
+Total hypotheses generated: 130077
+Translation options after reduction by output space constraint: 871
+Translation options after reduction by output space constraint: 1679
+Translation options after reduction by output space constraint: 199
+Decoding loop time: 0.116 s
+Total hypotheses generated: 21444
+Translation options after reduction by output space constraint: 388
+Decoding loop time: 0.434 s
+Total hypotheses generated: 83805
+Decoding loop time: 0.175 s
+Total hypotheses generated: 34036
+Translation options after reduction by output space constraint: 942
+Decoding loop time: 0.603 s
+Total hypotheses generated: 123846
+Decoding loop time: 0.553 s
+Total hypotheses generated: 79511
+Translation options after reduction by output space constraint: 1298
+Decoding loop time: 0.383 s
+Total hypotheses generated: 85636
+Translation options after reduction by output space constraint: 843
+Translation options after reduction by output space constraint: 1377
+Decoding loop time: 0.525 s
+Total hypotheses generated: 76891
+Translation options after reduction by output space constraint: 627
+Decoding loop time: 0.628 s
+Total hypotheses generated: 101697
+Decoding loop time: 0.220 s
+Total hypotheses generated: 46806
+Translation options after reduction by output space constraint: 1778
+Translation options after reduction by output space constraint: 359
+Decoding loop time: 0.169 s
+Total hypotheses generated: 33380
+Decoding loop time: 0.462 s
+Total hypotheses generated: 98658
+Translation options after reduction by output space constraint: 1131
+Decoding loop time: 0.417 s
+Total hypotheses generated: 86569
+Translation options after reduction by output space constraint: 840
+Decoding loop time: 0.310 s
+Total hypotheses generated: 69309
+Translation options after reduction by output space constraint: 1282
+Decoding loop time: 0.314 s
+Total hypotheses generated: 72748
+Translation options after reduction by output space constraint: 1261
+Decoding loop time: 0.479 s
+Total hypotheses generated: 93655
+Translation options after reduction by output space constraint: 1545
+Decoding loop time: 0.411 s
+Total hypotheses generated: 92271
+Translation options after reduction by output space constraint: 966
+Decoding loop time: 0.330 s
+Total hypotheses generated: 75215
+Translation options after reduction by output space constraint: 365
+Translation options after reduction by output space constraint: 831
+Decoding loop time: 0.175 s
+Total hypotheses generated: 32087
+Decoding loop time: 0.222 s
+Total hypotheses generated: 47784
+Translation options after reduction by output space constraint: 488
+Translation options after reduction by output space constraint: 848
+Decoding loop time: 0.149 s
+Total hypotheses generated: 31832
+Translation options after reduction by output space constraint: 553
+Decoding loop time: 0.287 s
+Total hypotheses generated: 58833
+Decoding loop time: 0.235 s
+Total hypotheses generated: 49165
+Translation options after reduction by output space constraint: 487
+Translation options after reduction by output space constraint: 1151
+Decoding loop time: 0.238 s
+Total hypotheses generated: 40169
+Decoding loop time: 0.389 s
+Total hypotheses generated: 83143
+Translation options after reduction by output space constraint: 1521
+Translation options after reduction by output space constraint: 1086
+Decoding loop time: 0.441 s
+Total hypotheses generated: 96598
+Decoding loop time: 0.374 s
+Total hypotheses generated: 82084
+Translation options after reduction by output space constraint: 316
+Translation options after reduction by output space constraint: 455
+Decoding loop time: 0.146 s
+Total hypotheses generated: 29913
+Decoding loop time: 0.174 s
+Total hypotheses generated: 36492
+Translation options after reduction by output space constraint: 1208
+Translation options after reduction by output space constraint: 1452
+Decoding loop time: 0.489 s
+Total hypotheses generated: 102936
+Decoding loop time: 0.475 s
+Total hypotheses generated: 104300
+Translation options after reduction by output space constraint: 1259
+Translation options after reduction by output space constraint: 900
+Decoding loop time: 0.290 s
+Total hypotheses generated: 62130
+Decoding loop time: 0.494 s
+Total hypotheses generated: 99970
+Translation options after reduction by output space constraint: 1019
+Translation options after reduction by output space constraint: 1221
+Decoding loop time: 0.401 s
+Total hypotheses generated: 88577
+Decoding loop time: 0.362 s
+Total hypotheses generated: 79948
+Translation options after reduction by output space constraint: 685
+Decoding loop time: 0.249 s
+Total hypotheses generated: 60021
+Translation options after reduction by output space constraint: 1059
+Translation options after reduction by output space constraint: 492
+Decoding loop time: 0.157 s
+Total hypotheses generated: 33128
+Decoding loop time: 0.366 s
+Total hypotheses generated: 80410
+Translation options after reduction by output space constraint: 163
+Decoding loop time: 0.091 s
+Total hypotheses generated: 19364
+Translation options after reduction by output space constraint: 1054
+Translation options after reduction by output space constraint: 886
+Decoding loop time: 0.321 s
+Total hypotheses generated: 73047
+Decoding loop time: 0.337 s
+Total hypotheses generated: 76749
+Translation options after reduction by output space constraint: 365
+Decoding loop time: 0.104 s
+Total hypotheses generated: 21765
+Translation options after reduction by output space constraint: 760
+Translation options after reduction by output space constraint: 517
+Decoding loop time: 0.270 s
+Total hypotheses generated: 54573
+Decoding loop time: 0.193 s
+Total hypotheses generated: 40073
+Translation options after reduction by output space constraint: 752
+Decoding loop time: 0.225 s
+Total hypotheses generated: 56428
+Translation options after reduction by output space constraint: 756
+Decoding loop time: 0.236 s
+Total hypotheses generated: 56708
+Translation options after reduction by output space constraint: 1051
+Decoding loop time: 0.340 s
+Total hypotheses generated: 78340
+Translation options after reduction by output space constraint: 433
+Decoding loop time: 0.190 s
+Total hypotheses generated: 39836
+Translation options after reduction by output space constraint: 656
+Decoding loop time: 0.275 s
+Total hypotheses generated: 54922
+Translation options after reduction by output space constraint: 726
+Decoding loop time: 0.244 s
+Total hypotheses generated: 55447
+Translation options after reduction by output space constraint: 1112
+Decoding loop time: 0.281 s
+Total hypotheses generated: 62484
+Translation options after reduction by output space constraint: 1061
+Decoding loop time: 0.366 s
+Total hypotheses generated: 72770
+Translation options after reduction by output space constraint: 1117
+Decoding loop time: 0.312 s
+Total hypotheses generated: 70190
+Elapsed time: 364.80 seconds
+Finished at: Sat Sep 28 18:17:08 PDT 2013
