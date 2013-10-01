@@ -47,11 +47,15 @@ public class IBM1 implements WordAligner {
     public void train(List<SentencePair> trainingPairs) {
         t = null;
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test?
-            System.out.println("EM Iteration: " + i);
+            System.out.println("IBM1: EM Iteration: " + i);
             CounterMap<String, String> c = new CounterMap<String, String>();
             EMIteration(trainingPairs, c);
             t = Counters.conditionalNormalize(c);
         }
+    }
+
+    public CounterMap<String, String> getT(){
+        return t;
     }
 
     // receives an empty c

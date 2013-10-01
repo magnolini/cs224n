@@ -50,10 +50,13 @@ public class IBM2 implements WordAligner {
     }
 
     public void train(List<SentencePair> trainingPairs) {
-        t = null;
+        IBM1 initializer = new IBM1();
+        initializer.train(trainingPairs);
+        t = initializer.getT();
         q = null;
+
         for (int i = 0; i < numIterations; ++i){  // TODO: stop with a convergence test?
-            System.out.println("EM Iteration: " + i);
+            System.out.println("IBM2: EM Iteration: " + i);
             CounterMap<String, String> c = new CounterMap<String, String>();
             QType cq = new QType();
             EMIteration(trainingPairs, c, cq);
@@ -70,16 +73,20 @@ public class IBM2 implements WordAligner {
             for (int f_index = 0; f_index < pair.getTargetWords().size(); f_index++) {
                 String f = pair.getTargetWords().get(f_index);
                 double tqsum = 0.0;
-                if (t != null) {
+                if (q != null) {
                     tqsum = normalizeForSentence(pair, f_index);
                 }
                 String qKey = makeQKey(pair);
                 for (int e_index = 0; e_index < pair.getSourceWords().size(); ++e_index) {
                     String e = pair.getSourceWords().get(e_index);
-                    double delta = 1.0 / pair.getSourceWords().size(); // TODO
-                    if (t != null){
+                    double delta = 0.0;
+                    if (q != null){
                         delta = t.getCount(e, f) * q.get(qKey).getCount(e_index, f_index)
                                 / tqsum;
+                    }
+                    else{
+                        double tsum = normalizeTForSentence(pair.getSourceWords(), f);
+                        delta = t.getCount(e, f) / tsum;
                     }
                     c.incrementCount(e, f, delta);
                     if (cq.get(qKey) == null) {
@@ -105,6 +112,13 @@ public class IBM2 implements WordAligner {
         return sum;
     }
 
+    private double normalizeTForSentence(List<String> e_sentence, String f_word) {
+        double sum = 0.0;
+        for (String e : e_sentence) {
+            sum += t.getCount(e, f_word);
+        }
+        return sum;
+    }
 
     private String makeQKey(SentencePair pair) {
         int sourceSentenceLength = pair.getSourceWords().size();
