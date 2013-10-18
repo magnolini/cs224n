@@ -178,8 +178,11 @@ public class PCFGParser implements Parser {
         public void merge(CKYNode leftNode, CKYNode rightNode) {
 
             for (String leftTerminal : leftNode.getTerminalScores().keySet()) {
-                for (String rightTerminal : rightNode.getTerminalScores().keySet()) {
-                    for (BinaryRule rule : grammar.getBinaryRulesByBothChildren(leftTerminal, rightTerminal)) {
+                List<BinaryRule> rulesByLeft = grammar.getBinaryRulesByLeftChild(leftTerminal);
+                for (BinaryRule rule : rulesByLeft) {
+                    for (String rightTerminal : rightNode.getTerminalScores().keySet()) {
+                        if (!rule.getRightChild().equals(rightTerminal))
+                            continue;
                         String parentTerminal = rule.getParent();
                         double currentScore = -1;
                         if (terminalScores.containsKey(parentTerminal)) {
@@ -257,9 +260,9 @@ public class PCFGParser implements Parser {
                 int j = i + (numWords-diag);
                 CKYNode parentNode = new CKYNode();
                 for (int split=i; split<j; split++) {
-//                    System.out.println("i: " + i + ", j: " + j + ", split:" + split);
                     CKYNode leftNode = ckyTriangle[i][split];
                     CKYNode rightNode = ckyTriangle[split+1][j];
+//                    System.out.println("[Merge called] i: " + i + ", j: " + j + ", split: " + split);
                     parentNode.merge(leftNode, rightNode);
                 }
                 parentNode.handleUnary();

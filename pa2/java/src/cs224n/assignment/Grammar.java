@@ -48,6 +48,10 @@ public class Grammar {
 			this.score = score;
 		}
 
+        public String makeIndexFromChildren() {
+            return leftChild + ":" + rightChild;
+        }
+
 		public boolean equals(Object o) {
 			if (this == o) return true;
 			if (!(o instanceof BinaryRule)) return false;
@@ -142,8 +146,12 @@ public class Grammar {
 			new HashMap<String, List<BinaryRule>>();
 	Map<String, List<BinaryRule>> binaryRulesByRightChild = 
 			new HashMap<String, List<BinaryRule>>();
+    Map<String, Map<String, List<BinaryRule> > > binaryRulesByBothChildren =
+            new HashMap<String, Map<String, List<BinaryRule>>>();
 	Map<String, List<UnaryRule>> unaryRulesByChild = 
 			new HashMap<String, List<UnaryRule>>();
+
+    private List<BinaryRule> emptyRules = new ArrayList<BinaryRule>();
 
 	/* Rules in grammar are indexed by child for easy access when
 	 * doing bottom up parsing. */
@@ -157,21 +165,10 @@ public class Grammar {
 
     public List<BinaryRule> getBinaryRulesByBothChildren(String leftChild,
                                                    String rightChild) {
-        List<BinaryRule> leftChildRules = binaryRulesByLeftChild.get(leftChild);
-        List<BinaryRule> allRules = new ArrayList<BinaryRule>();
-        if (leftChildRules == null) {
-            return allRules;
+        if (binaryRulesByBothChildren.containsKey(leftChild) && binaryRulesByBothChildren.get(leftChild).containsKey(rightChild)){
+            return binaryRulesByBothChildren.get(leftChild).get(rightChild);
         }
-        for (BinaryRule rule : leftChildRules) {
-            // There can only be one rule containing a right child and a
-            // self child in a Chomsky's normal form grammar
-            if (rule.getRightChild() == rightChild) {
-                allRules.add(rule);
-            }
-        }
-        return allRules;
-
-
+        return emptyRules;
     }
 
 	public List<UnaryRule> getUnaryRulesByChild(String child) {
@@ -203,7 +200,25 @@ public class Grammar {
 				binaryRule.getLeftChild(), binaryRule);
 		CollectionUtils.addToValueList(binaryRulesByRightChild, 
 				binaryRule.getRightChild(), binaryRule);
-	}
+
+        Map<String, List<BinaryRule> > innerMap;
+        if (!binaryRulesByBothChildren.containsKey(binaryRule.getLeftChild())) {
+            innerMap = new HashMap<String, List<BinaryRule>>();
+            binaryRulesByBothChildren.put(binaryRule.getLeftChild(), innerMap);
+        } else {
+            innerMap = binaryRulesByBothChildren.get(binaryRule.getLeftChild());
+        }
+
+        List<BinaryRule> rules;
+        if (!innerMap.containsKey(binaryRule.getRightChild())) {
+            rules = new ArrayList<BinaryRule>();
+            innerMap.put(binaryRule.getRightChild(), rules);
+        } else {
+            rules = innerMap.get(binaryRule.getRightChild());
+        }
+
+        rules.add(binaryRule);
+   	}
 
 	private void addUnary(UnaryRule unaryRule) {
 		CollectionUtils.addToValueList(unaryRulesByChild, 
