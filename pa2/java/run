@@ -8,7 +8,7 @@ else
   DATA=$1
 fi
 
-java -Xprof -Xmx1g -cp classes \
+java -Xmx1g -cp classes \
   cs224n.assignment.PCFGParserTester \
   -data $DATA \
   -parser cs224n.assignment.PCFGParser

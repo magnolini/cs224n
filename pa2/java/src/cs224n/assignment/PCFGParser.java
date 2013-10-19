@@ -15,9 +15,6 @@ public class PCFGParser implements Parser {
         List<Tree<String>> annotatedTrainTrees = new ArrayList<Tree<String>>();
         int i = 0;
         for (Tree<String> tree : trainTrees) {
-//            i++;
-//            if (i > 100)
-//                break;
             annotatedTrainTrees.add(TreeAnnotations.annotateTree(tree));
         }
         lexicon = new Lexicon(annotatedTrainTrees);
@@ -126,18 +123,6 @@ public class PCFGParser implements Parser {
             backPointers = new HashMap<String, BackPointer>();
         }
 
-        public String getMaxTerminal() {
-            double max = 0;
-            String maxTerm = "";
-            for (String term : terminalScores.keySet()) {
-                if (terminalScores.get(term) > max) {
-                    max = terminalScores.get(term);
-                    maxTerm = term;
-                }
-            }
-            return maxTerm;
-        }
-
         public BackPointer getTerminalBackPointer(String terminal) {
             return backPointers.get(terminal);
         }
@@ -176,34 +161,44 @@ public class PCFGParser implements Parser {
         }
 
         public void merge(CKYNode leftNode, CKYNode rightNode) {
+            Set<BinaryRule> leftRules = new HashSet<BinaryRule>();
+            Set<BinaryRule> rightRules = new HashSet<BinaryRule>();
+            for (String leftTerminal : leftNode.getTerminalScores().keySet()){
+                for (BinaryRule rule : grammar.getBinaryRulesByLeftChild(leftTerminal)){
+                    leftRules.add(rule);
+                }
+            }
+            for (String rightTerminal : rightNode.getTerminalScores().keySet()){
+                for (BinaryRule rule : grammar.getBinaryRulesByRightChild(rightTerminal)){
+                    rightRules.add(rule);
+                }
+            }
 
-            for (String leftTerminal : leftNode.getTerminalScores().keySet()) {
-                List<BinaryRule> rulesByLeft = grammar.getBinaryRulesByLeftChild(leftTerminal);
-                for (BinaryRule rule : rulesByLeft) {
-                    for (String rightTerminal : rightNode.getTerminalScores().keySet()) {
-                        if (!rule.getRightChild().equals(rightTerminal))
-                            continue;
-                        String parentTerminal = rule.getParent();
-                        double currentScore = -1;
-                        if (terminalScores.containsKey(parentTerminal)) {
-                            currentScore = terminalScores.get(parentTerminal);
-                        } else {
-                            // Optimization. place the backpointer object once and update it in place
-                            backPointers.put(parentTerminal, new BinaryBackPointer());
-                        }
+            leftRules.retainAll(rightRules);
 
-                        double ruleScore = rule.getScore() * leftNode.getTerminalScores().get(leftTerminal)
-                                * rightNode.getTerminalScores().get(rightTerminal);
+            for(BinaryRule rule : leftRules){
+                String leftTerminal = rule.getLeftChild();
+                String rightTerminal = rule.getRightChild();
+                String parentTerminal = rule.getParent();
+                double currentScore = -1;
+                if (terminalScores.containsKey(parentTerminal)) {
+                    currentScore = terminalScores.get(parentTerminal);
+                } else {
+                    // Optimization. place the backpointer object once and update it in place
+                    backPointers.put(parentTerminal, new BinaryBackPointer());
+                }
 
-                        if (ruleScore > currentScore) {
-                            terminalScores.put(parentTerminal, ruleScore);
-                            BinaryBackPointer bp = (BinaryBackPointer) backPointers.get(parentTerminal);
-                            bp.update(leftNode, rightNode, rule);
-                        }
-                    }
+                double ruleScore = rule.getScore() * leftNode.getTerminalScores().get(leftTerminal)
+                        * rightNode.getTerminalScores().get(rightTerminal);
+
+                if (ruleScore > currentScore) {
+                    terminalScores.put(parentTerminal, ruleScore);
+                    BinaryBackPointer bp = (BinaryBackPointer) backPointers.get(parentTerminal);
+                    bp.update(leftNode, rightNode, rule);
                 }
             }
         }
+
 
         private List<String> copySet(Set<String> str) {
             ArrayList<String> list = new ArrayList<String>();
@@ -245,7 +240,6 @@ public class PCFGParser implements Parser {
 
     private CKYNode[][] CKYParse(List<String> sentence) {
         int numWords = sentence.size();
-        System.out.println("Parsing sentence");
         CKYNode ckyTriangle[][] = new CKYNode[numWords][numWords];
 
         for (int i=0; i<numWords; i++) {
@@ -262,21 +256,17 @@ public class PCFGParser implements Parser {
                 for (int split=i; split<j; split++) {
                     CKYNode leftNode = ckyTriangle[i][split];
                     CKYNode rightNode = ckyTriangle[split+1][j];
-//                    System.out.println("[Merge called] i: " + i + ", j: " + j + ", split: " + split);
                     parentNode.merge(leftNode, rightNode);
                 }
                 parentNode.handleUnary();
                 ckyTriangle[i][j] = parentNode;
             }
         }
-
-//        printTriangle(ckyTriangle);
         return ckyTriangle;
     }
 
     private Tree<String> CKYBackTrack(CKYNode[][] ckyTriangle) {
 
-        System.out.println("Backtracking sentence");
         CKYNode node = ckyTriangle[0][ckyTriangle.length-1];
         return CKYBackTrackHelper(node, "ROOT");
     }
