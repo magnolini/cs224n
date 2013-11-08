@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -Xmx500m -cp "extlib/*:classes" cs224n.assignments.CoreferenceTester -path /afs/ir/class/cs224n/pa3/data/ -model $1 -data $2 -documents 100

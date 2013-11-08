@@ -10,6 +10,7 @@ import cs224n.util.Pair;
 
 public class BetterBaseline implements CoreferenceSystem {
 
+    // TODO: refactor
     Map<String, List<String> > commonCo = new HashMap<String, List<String>>();
 
 	@Override
