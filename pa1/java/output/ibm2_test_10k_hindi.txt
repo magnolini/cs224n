@@ -1,0 +1,2530 @@
+/// CS224n Word Alignment Tester ///
+Language: hindi
+Data path: /afs/ir.stanford.edu/class/cs224n/pa1/data/hindi
+Evaluation set: test
+Using up to 10000 training sentences.
+Training set size: 3441
+Evaluation set size: 90
+Model: cs224n.wordaligner.IBM2
+IBM1: EM Iteration: 0
+IBM1: EM Iteration: 1
+IBM1: EM Iteration: 2
+IBM1: EM Iteration: 3
+IBM1: EM Iteration: 4
+IBM1: EM Iteration: 5
+IBM1: EM Iteration: 6
+IBM1: EM Iteration: 7
+IBM1: EM Iteration: 8
+IBM1: EM Iteration: 9
+IBM1: EM Iteration: 10
+IBM1: EM Iteration: 11
+IBM1: EM Iteration: 12
+IBM1: EM Iteration: 13
+IBM1: EM Iteration: 14
+IBM1: EM Iteration: 15
+IBM1: EM Iteration: 16
+IBM1: EM Iteration: 17
+IBM1: EM Iteration: 18
+IBM1: EM Iteration: 19
+IBM2: EM Iteration: 0
+IBM2: EM Iteration: 1
+IBM2: EM Iteration: 2
+IBM2: EM Iteration: 3
+IBM2: EM Iteration: 4
+IBM2: EM Iteration: 5
+IBM2: EM Iteration: 6
+IBM2: EM Iteration: 7
+IBM2: EM Iteration: 8
+IBM2: EM Iteration: 9
+IBM2: EM Iteration: 10
+IBM2: EM Iteration: 11
+IBM2: EM Iteration: 12
+IBM2: EM Iteration: 13
+IBM2: EM Iteration: 14
+IBM2: EM Iteration: 15
+IBM2: EM Iteration: 16
+IBM2: EM Iteration: 17
+IBM2: EM Iteration: 18
+IBM2: EM Iteration: 19
+Alignment:
+ # [#]                                          | ?????
+                                        #       | ??
+      [ ]                                       | ????????
+      [ ]                                       | ??
+                                                | ??
+                                          [#]   | ??????
+                                       [ ]      | ??
+                         #          [ ]         | ???
+             #              #       [ ]         | ????
+          #           #             [ ]         | ????
+                                    [ ]         | ?????
+                                 [#]            | ??
+                           [ ]                  | ????
+                              [#]               | ????????
+                     [ ][ ]                     | ????
+                #    [ ][ ]                     | ??
+                     [ ][ ]                     | ???
+                                                | ??
+                  [#]                           | ?????
+                                                | ??
+       # [ ][ ]                      #          | ????
+                                             [#]| ?
+------------------------------------------------'
+ T  G  p  t  c  t  l  t  i  t  c  o  m  o  s  . 
+ h  o  r  o  h  h  a  o  n  o  o  n  i  f  e    
+ e  v  o     a  e  w     t  u  n     s     r    
+    e  p     n           r  g  t     d     v    
+    r  o     g           o  h  r     e     i    
+    n  s     e           d  e  o     s     c    
+    m  e                 u  r  l     c     e    
+    e  s                 c     s     r     s    
+    n                    e           i          
+    t                                p          
+                                     t          
+                                     i          
+                                     o          
+                                     n          
+                                     s          
+
+Alignment:
+   [ ]   | ???
+   [ ]   | ??
+      [#]| ???????
+[#] #    | ????
+         | ?
+---------'
+ p  t  i 
+ r  i  n 
+ o  m  f 
+ v  e  o 
+ i  l  r 
+ d  y  m 
+ i     a 
+ n     t 
+ g     i 
+       o 
+       n 
+
+Alignment:
+   [ ]      | ???????
+      [#]   | ??
+ #  #    [#]| ?????
+[ ]         | ??????
+[ ]         | ????
+            | ?
+------------'
+ b  k  a  s 
+ u  n  n  k 
+ i  o  d  i 
+ l  w     l 
+ d  l     l 
+ i  e     s 
+ n  d       
+ g  g       
+    e       
+
+Alignment:
+[ ]                  | ????????
+   [#]               | ??????
+ #          [#]      | ????????
+          #    [#]   | ??????????
+      [#]            | ??
+                  [#]| ?
+---------------------'
+ C  e  i  a  t  p  . 
+ o  d  s     o  r    
+ n  u        p  i    
+ s  c           o    
+ u  a           r    
+ m  t           i    
+ e  i           t    
+ r  o           y    
+    n                
+
+Alignment:
+ # [#]                                                   | ?????
+                  [ ][#]                                 | ???????
+                           [#]                           | ??????
+            [ ]                                          | ??
+            [#]                                          | ???
+            [ ]                                          | ?????
+                                             [#]         | ???????
+                                                [#]      | ???
+                                                   [ ]   | ?????
+                                                   [ ]   | ???
+                                  #                [ ]   | ????
+                         #                         [ ]   | ????
+                                                   [ ]   | ??????
+                                          [ ]            | ??
+                                          [#]            | ???
+                                    [#]                  | ?????????
+                                                         | ??
+                                       [#]          #    | ??????
+                              [#][ ]                     | ?????
+                #             [ ][ ]                     | ??
+       # [ ]                                             | ???
+      [ ] #        #                                     | ???
+                                                      [#]| ?
+---------------------------------------------------------'
+ T  G  i  w  w  a  w  r  o  g  t  d  t  p  f  a  a  s  . 
+ h  o  s  o  i     i  a  f  r  o  e  r  a  o  d  n  c    
+ e  v     r  t     d  n     o     v  a  c  r  u  d  h    
+    e     k  h     e  g     u     e  i  k     l     o    
+    r     i           e     p     l  n  a     t     o    
+    n     n                 s     o  i  g     s     l    
+    m     g                       p  n  e           c    
+    e                                g  s           h    
+    n                                               i    
+    t                                               l    
+                                                    d    
+                                                    r    
+                                                    e    
+                                                    n    
+
+Alignment:
+   [ ]   | ????????
+      [#]| ????
+[#] #    | ??????
+[ ]      | ????
+---------'
+ P  c  s 
+ r  u  e 
+ o  s  r 
+ m  t  v 
+ o  o  i 
+ t  m  c 
+ i  e  e 
+ n  r    
+ g       
+
+Alignment:
+[ ]                                    | ?????
+   [ ]                                 | ????????
+      [#]                              | ????
+                        [#]            | ????
+                        [ ]            | ??
+    #                      [#]         | ???
+                              [ ]      | ???????
+                     [#]               | ??
+            [ ]                        | ??
+ #             [#]                #    | ??????
+             #    [#]          #       | ???
+         [#]                           | ??
+                                    [#]| ?
+---------------------------------------'
+ G  c  s  i  a  i  p  o  a  s  b  s  . 
+ o  u  e  s  n  n  a  f  n  u  u  t    
+ o  s  r        t  r     y  c  s  r    
+ d  t  v        e  t        c  i  a    
+    o  i        g           e  n  t    
+    m  c        r           s  e  e    
+    e  e        a           s  s  g    
+    r           l           f  s  y    
+                            u          
+                            l          
+
+Alignment:
+ # [#]                                    | ?????
+                         # [ ][ ][#]      | ???
+                           [ ][ ][ ]      | -
+                           [ ][ ][ ]      | ???
+                   #           #    [#]   | ??????
+                        [ ]               | ??
+               [#]                        | ?????
+                  [ ]                     | ????????
+                     [#]    #             | ??????
+         [ ][#]                           | ???????????
+         [#][ ]                           | ????
+      [#]                                 | ?????
+      [ ]                                 | ???
+                                       [#]| ?
+------------------------------------------'
+ T  G  w  t  e  g  c  s  i  a  n  o  w  . 
+ h  o  a  o  n  o  u  e  n     u  f  a    
+ e  v  n     c  o  s  r        m     y    
+    e  t     o  d  t  v        b     s    
+    r  s     u     o  i        e          
+    n        r     m  c        r          
+    m        a     e  e                   
+    e        g     r                      
+    n        e                            
+    t                                     
+
+Alignment:
+   [#]         | ???????
+      [ ][ ][#]| ?????
+ #    [#][#][ ]| ????????
+[ ]            | ??????
+[ ]            | ????
+               | ?
+---------------'
+ d  e  c  o  p 
+ e  f  o  f  r 
+ v  f  d     a 
+ e  e  e     c 
+ l  c  s     t 
+ o  t        i 
+ p  i        c 
+ i  v        e 
+ n  e          
+ g             
+
+Alignment:
+ #    [#]                                                            | ?????????
+         [#]                #                                        | ,
+            [#]                                                      | ????????
+               [#]                                                   | ??????
+                  [#]                                                | ???
+                     [#]                                             | ???????
+                        [#]                   #                      | ??????????
+   [ ]                         #                             #       | ??
+   [#]                                                               | ???
+   [ ]                                                               | ?????
+[ ]                                                                  | ???
+[ ]                                                                  | ????
+                           [ ]                                       | ,
+                                 [#]                                 | ?????
+                                     #                               | ??
+                                                      [#]            | ???????
+                                                         [ ][ ][#]   | ?????
+                                                         [#][ ][ ]   | ????????
+                                                   [ ]               | ??
+                                        #    [ ]                     | ???
+                                           #    [#]                  | ????????
+                                       [ ][ ]                        | ??
+                                       [ ][ ]                        | ??
+                                    [ ]             #                | ???
+                                    [ ]                              | ???
+                                                                  [#]| ?
+---------------------------------------------------------------------'
+ W  w  b  ,  c  g  a  l  a  ,  t  G  h  d  u  c  p  f  e  c  o  p  . 
+ o  i  u     o  r  n  o  u     h  o  a  r  p  o  r  o  f  o  f  r    
+ r  t  s     n  o  d  c  t     e  v  s  a     r  i  r  f  d     a    
+ k  h  i     s  u     a  h        e     w     e  n     e  e     c    
+ i     n     u  p     l  o        r     n        c     c  s     t    
+ n     e     m  s        r        n              i     t        i    
+ g     s     e           i        m              p     i        c    
+       s     r           t        e              l     v        e    
+                         i        n              e     e             
+                         e        t              s                   
+                         s                                           
+
+Alignment:
+   [#]   | ?????
+      [#]| ?????
+ #    [ ]| ?????
+         | ??
+[ ]      | ?????
+         | ?
+---------'
+ p  g  p 
+ r  o  r 
+ o  o  a 
+ m  d  c 
+ o     t 
+ t     i 
+ i     c 
+ n     e 
+ g       
+
+Alignment:
+ # [#]                                                      | ?????
+                                                            | ??????
+                         #                                  | ??
+               [ ][ ]                                       | ??????????
+               [ ][ ]                                       | ??
+               [ ][ ]                      #                | ????????
+                   # [ ]       #                            | ??????
+                     [ ]                                    | ??
+             #  #    [ ]                                    | ??????
+            [ ]                   #                         | ??????
+            [ ]                                             | ????
+                           [#]                #             | ??
+                      #          [ ]                        | ????
+                                          [ ]               | ???????
+                                             [ ]            | ???
+                                                [#]         | ??????
+                                                            | ??
+                                                   [#]      | ????????????
+                                     #                [#]   | ???????
+                                       [#]                  | ???
+                                    [ ]                     | ?????
+                                    [ ]                     | ????
+                                                            | ??
+                                                            | ???
+      [ ][#]                                                | ???
+      [#][ ]                                                | ????
+                                                         [#]| ?
+------------------------------------------------------------'
+ T  G  w  h  d  c  s  i  ,  a  e  t  i  i  e  a  f  b  s  . 
+ h  o  i  e  e  u  a  n     n  n  h  n  n  x  n  u  e  c    
+ e  v  l  l  v  s  t  d     d  c  e  c     i  d  t  n  h    
+    e  l  p  e  t  i  i        o  i  l     s     u  c  e    
+    r        l  o  s  c        u  r  u     t     r  h  m    
+    n        o  m  f  e        r     s     i     e  m  e    
+    m        p  e  a  s        a     i     n        a  s    
+    e           r  c           g     o     g        r       
+    n              t           e     n              k       
+    t              i                                i       
+                   o                                n       
+                   n                                g       
+
+Alignment:
+       # [#]| ?????????
+      [ ]   | ??
+[#]         | ????
+   [#]      | ??????
+            | ?
+------------'
+ m  h  f  b 
+ o  e  o  u 
+ r  l  r  s 
+ e  p     i 
+          n 
+          e 
+          s 
+          s 
+
+Alignment:
+ # [#]                                          | ?????
+                                                | ??
+         [ ][ ] #                               | ???
+         [#][ ]                                 | ????
+      [#]                                       | ?????
+      [ ]                                       | ??
+               [ ]                              | ??
+                                                | ????
+                  [#]                           | ????
+                     [#]                        | ???????
+                                    [#]         | ???????
+                                       [#]      | ????????
+                                          [#]   | ?????
+                                 [#]            | ??????
+                              [ ]               | ????????
+                        [ ][#]                  | ????
+             #          [#][ ] #                | ???????
+                                             [#]| ?
+------------------------------------------------'
+ T  G  w  t  k  w  s  b  s  b  p  b  c  c  l  . 
+ h  o  a  o  n  h  m  u  h  e  r  y  u  o  a    
+ e  v  n     o  e  a  s  o     o     r  n  w    
+    e  t     w  t  l  i  u     t     r  s       
+    r  s        h  l  n  l     e     e  u       
+    n           e     e  d     c     n  m       
+    m           r     s        t     t  e       
+    e                 s        e        r       
+    n                 e        d                
+    t                 s                         
+
+Alignment:
+[ ]      | ?
+   [#]   | -
+ #    [#]| ???????
+         | ?
+---------'
+ e  -  c 
+       o 
+       m 
+       m 
+       e 
+       r 
+       c 
+       e 
+
+Alignment:
+   [#]                                                                                                                     | ?????
+                  [ ]                                              #                                                       | ??????
+                     [ ]                                                                   #                               | ??
+                        [ ]          #                                                                                     | ?????????????
+                   #     # [#]                                  #                                                          | ??????
+                              [#]                                                       #                                  | ,
+                                    [ ]                #                                                                   | ??????????
+                                       [ ]                                                                                 | ????????
+                                          [ ]                                                                              | ???
+                                                [#]                                                                        | ?????
+            [ ] #                 #           #                                                                            | ??
+            [#]                                                                                                            | ???
+            [ ]                                                                                                            | ?????
+          #                                                                [ ]                                             | ?
+                                                                           [ ] #                                           | -
+                                                                           [#]    #                                        | ???????
+                                                                              [ ]                               #     #    | ????
+                                                    #                 #                                                    | ??
+                                                          #          [ ][ ]                                                | ???????
+ #                                                                   [ ][ ]                                                | ??????
+                                                                                                                           | ??
+      [ ][ ]                                                                                                               | ???
+      [ ][ ]                                                                                                               | ??
+      [#][ ]                                                                                                               | ???
+      [ ][ ]                                                                                                               | ??
+                                           #                                                                               | ??
+                                                                                    [ ]                                    | ??
+                                                                                                                           | ?
+                                                                                                                           | -
+                                                                                                                           | ???????
+                                                                                       [ ][ ][ ]                           | ????
+                      #                                                                            [ ]                     | ??
+                                                                                                    # [ ]                  | ?????
+                                                             #                                            # [ ]            | ??
+                                                                                                [ ]          #     #       | ??????
+                                        #                                #           # [ ][ ][ ]                           | ?????????
+                                                                                                       #          [ ]      | ??????
+                                                                                              #  #                         | ????
+                                                                                                                         # | ?
+---------------------------------------------------------------------------------------------------------------------------'
+ T  G  i  w  w  t  A  o  E  B  ,  t  C  A  a  t  O  t  s  u  a  n  b  t  a  e  -  c  c  ,  w  w  b  i  b  a  d  "  h  "  . 
+ h  o  s  o  i  h  l  f  l  u     h  o  s  n  h  F  o  e  p     e  o  o  c        o  o     h  i  e  d  y     i     a       
+ e  v     r  t  e  l     e  s     e  n  s  d  e  T     t        w  d     c        m  d     i  l     e        g     l       
+    e     k  h     i     c  i        s  o                          y     r        m  e     c  l     n        i     l       
+    r     i        a     t  n        u  c                                e        e  s     h        t        t     m       
+    n     n        n     r  e        m  i                                d        r                 i        a     a       
+    m     g        c     o  s        e  a                                i        c                 f        l     r       
+    e              e     n  s        r  t                                t        e                 i              k       
+    n                    i           s  i                                                           e                      
+    t                    c           '  o                                                           d                      
+                                        n                                                                                  
+
+Alignment:
+   [#]         | ??????????
+       #       | ??
+ #          [#]| ???
+          # [ ]| ?????
+      [ ][ ]   | ??????
+      [ ][ ]   | ?????
+               | ?
+---------------'
+ H  c  t  g  r 
+ e  o  o  e  e 
+ l  n     t  d 
+ p  s        r 
+ i  u        e 
+ n  m        s 
+ g  e        s 
+    r          
+    s          
+
+Alignment:
+[#]                                          | ??
+    #                                        | ????
+      [#]                                    | ??????
+                                             | ???
+            [#]                         #    | ????
+                                             | ??
+         [ ]          #                      | ????
+         [ ]                                 | ??
+               [#]                           | ,
+                                             | ??
+                  [#]                        | ????????
+                                             | ??
+                     [ ][ ]                  | ??????
+                     [ ][ ]                  | ??
+                            #                | ??
+                                             | ??
+                                             | ??
+                         #    [#]            | ?????
+                                 [#]         | ???
+                                    [#]      | ???????
+          #                            [ ]   | ?????
+                                             | ??
+                                          [#]| ?
+---------------------------------------------'
+ W  a  p  g  w  ,  c  a  e  t  q  a  e  r  . 
+ h     u  o  r     o  r  n  o  u  n  f  e    
+ e     r  e  o     n  e  t     i  d  f  d    
+ n     c  s  n     s     i     c     e  r    
+       h     g     u     t     k     c  e    
+       a           m     l           t  s    
+       s           e     e           i  s    
+       e           r     d           v       
+                   s                 e       
+
+Alignment:
+         [#]| ????
+      [ ]   | ??
+   [#]      | ???????
+[ ]    #    | ??
+[ ]         | ??
+[#]         | ?????
+            | ?
+------------'
+ s  s  o  a 
+ i  o  f  d 
+ g  u     v 
+ n  r     i 
+ p  c     c 
+ o  e     e 
+ s  s       
+ t          
+ i          
+ n          
+ g          
+
+Alignment:
+ #           #                                              [ ]                           | ??????????
+                                                                                          | ??
+                                                                #                         | ????
+                               #                                                          | ????
+                                                    #                                     | ??
+                                                      [#]                   #             | ??
+                                        #                [#]                              | ??
+                                                               [ ]                        | ????
+                            #                                     [#]                     | ???????
+                                                   [ ]                                    | ??
+                         #                      [#]                                       | ???????
+                                                                                          | ??
+                                       [ ][ ]                                             | ??????
+                                       [ ][ ]                                             | ??
+                                       [ ][ ] #                                           | ??
+                                                                     [#]                  | ??
+                                                                           [ ]            | ??
+                                                             #           #    [ ]         | ?????
+                                                                                 [#]      | ???????
+                                     #                                              [#]   | ?????????
+                                                                        [ ]               | ????
+                                                                        [ ]               | ??
+                                                                        [ ]               | ??
+                      #                                                                   | ,
+            [ ]                                                                           | ??????????
+                                                                                          | ??
+                                 [ ]                                                      | ????
+                                    [ ]                                        #          | ????????
+                              [ ]                                                         | ??
+                #       [ ]                                                               | ???
+                                                                                          | ??
+    #             [#]                                                                     | ?????
+                           [ ]    #        #                                              | ????
+               [ ]                                                                        | ????
+               [ ]                                                                        | ???
+      [ ][#]                                                                              | ??????
+      [#][ ]                                                                              | ????
+                                                                                       [#]| ?
+------------------------------------------------------------------------------------------'
+ T  G  w  h  c  g  q  ,  a  a  t  t  q  b  p  t  d  o  a  n  c  a  n  a  l  a  p  t  h  . 
+ h  o  i  e  o  e  u     c  n  o  h  u  y  r  h  e  f     e  o  d  e  n  a     i  e  e    
+ e  v  l  l  n  t  i     c  s     e  e     o  e  v        w  n  v  t  d  u     l  l  l    
+    e  l  p  s     c     u  w     i  s     m     e           s  i  w     n     o  e  p    
+    r        u     k     r  e     r  t     o     l           u  c  o     c     t  p  l    
+    n        m           a  r        i     t     o           m  e  r     h        h  i    
+    m        e           t  s        o     i     p           e     k     i        o  n    
+    e        r           e           n     n     m           r           n        n  e    
+    n        s                       s     g     e                       g        e       
+    t                                            n                                        
+                                                 t                                        
+
+Alignment:
+   [ ]| ??????
+[#] # | ??????
+      | ?
+------'
+ e  r 
+ n  i 
+ f  g 
+ o  h 
+ r  t 
+ c  s 
+ i    
+ n    
+ g    
+
+Alignment:
+   [ ]    #        #              #                 #  #                      | ????
+                                                                              | ???
+                        [#]                                                   | ????????
+                           [ ]                                                | ???
+                              [ ]                                             | ???????
+                      #                                                       | ??
+                                                                              | ????
+                                                                              | ????????
+                                                                              | ??
+                               #                                              | ????????
+                                        #                                     | ??
+                                                                              | ???
+                                          [#]                                 | ???????
+                                 [ ][ ]                                       | ??
+                                 [ ][ ]                                       | ??????
+                                 [ ][ ]                      #                | ??
+                                 [ ][ ]                                       | ???
+                #                [ ][ ]                                       | ???
+                                             [#]                              | ??
+                                                   [ ][ ] #                   | ?????
+                                                   [ ][ ]                     | ??
+                                                [#]                           | ????
+                                     #             [ ][ ]                     | ???????????
+                                                                              | ??
+                                                                              | ????
+                                                                              | ???
+                                                                              | ??
+                                                                   #          | ,
+                                                                              | ??????
+                                                               [#]            | ???
+                            #                                                 | ??
+    #                                                                [#]      | ?????
+                                                                        [#]   | ??????
+ #                                                       [ ]                  | ??????
+               [ ]                                                            | ??
+               [ ]                                                            | ???
+            [#]                                                               | ???
+      [ ][ ]                                                                  | ???
+      [#][ ]                                                                  | ???
+      [ ][ ]                                                                  | ??
+                                                                           [#]| ?
+------------------------------------------------------------------------------'
+ T  G  i  t  s  t  e  t  c  a  b  g  t  t  c  o  o  r  m  g  a  s  ,  q  d  . 
+ h  o  s  a  t  o  n  h  o  n  u  o  h  h  o  r  t  e  e  e     i     u  e    
+ e  v     k  e     s  a  n  d  s  i  r  e  u     h  d  c  t     m     i  c    
+    e     i  p     u  t  s     i  n  o     r     e  r  h        p     c  i    
+    r     n  s     r     u     n  g  u     t     r  e  a        l     k  s    
+    n     g        e     m     e     g     s        s  n        e        i    
+    m                    e     s     h              s  i                 o    
+    e                    r     s                       s                 n    
+    n                    s     e                       m                      
+    t                          s                       s                      
+
+Alignment:
+[ ]                  | ????
+[ ]                  | ??
+   [ ]               | ????
+                     | ??
+            [#]      | ????
+               [#]   | ????
+         [#]         | ?????
+         [ ]         | ??
+         [ ]         | ?????
+                     | ????
+ #  # [ ]            | ????
+      [#]            | ?????
+                  [#]| ?
+---------------------'
+ N  p  s  i  h  c  . 
+ e  a  h  n  e  o    
+ i  r  o  c  a  s    
+ t  t  u  u  v  t    
+ h  y  l  r  y  s    
+ e     d             
+ r                   
+
+Alignment:
+   [ ]| ?????
+      | ??
+[#] # | ??????????
+      | ?
+------'
+ M  r 
+ o  e 
+ d  g 
+ e  u 
+ r  l 
+ n  a 
+ i  t 
+ s  i 
+ i  o 
+ n  n 
+ g    
+
+Alignment:
+[ ]                              | ????????
+   [ ]                           | ?????
+         [ ]                     | ????
+         [ ]                     | ??
+         [ ]                     | ??
+ #  #       [ ][ ]       #  #    | ????????
+      [#]                        | ??
+                  [#]            | ??
+                                 | ???
+          #  #  #     #    [ ]   | ?????
+                           [ ]   | ????
+                                 | ??
+                        [ ]      | ????
+                        [ ]      | ??
+                     [ ]         | ?????
+                     [ ]         | ??
+                              [#]| ?
+---------------------------------'
+ C  l  i  a  w  d  a  n  l  e  . 
+ o  e  s  l  e  e  n  e  i  x    
+ n  g     r  l  v  d  e  t  t    
+ s  i     e  l  e     d  t  e    
+ u  s     a     l     s  l  n    
+ m  l     d     o        e  s    
+ e  a     y     p           i    
+ r  t           e           o    
+    i           d           n    
+    o                            
+    n                            
+
+Alignment:
+                               #                [ ]   | ????????
+                         #                      [ ]   | ??
+                                                [ ]   | ???
+                                                      | ????
+                                                      | ??
+                                                      | ????
+                                                      | ???
+                                                      | ?????
+                                                      | ????
+                                             [ ]      | ??
+                                             [#]      | ?????
+[ ]             #           #                         | ????
+   [#]                                                | ,
+      [#]                                             | ????
+         [#]                                          | ??
+                                                      | ????
+                           [ ]                        | ?????
+                           [ ]                        | ??
+             #             [ ]                        | ??????
+ #                            [ ]                #    | ????????
+                   #                                  | ??
+                     [ ]                              | ????????
+                  [ ]                                 | ??
+            [ ]                                       | ?????
+               [ ]    #                    #          | ???????
+                                                      | ??
+                                    [#]               | ?????
+                                    [ ]               | ??
+                                 [ ]   [ ][ ]         | ???
+                                 [ ]   [ ][ ]         | ????
+                                 [#]   [#][ ]         | ?????
+                                                   [#]| ?
+------------------------------------------------------'
+ R  ,  c  a  a  w  o  a  t  d  r  w  a  b  c  b  r  . 
+ i     o  n  l  a  f  c  h  e  e  i  l  e  o  e  e    
+ s     s  d  t  y     h  e  s  s  l  w     n  f  g    
+ k     t     e  s     i     i  u  l  a     s  o  u    
+             r        e     r  l     y     i  r  l    
+             n        v     e  t     s     d  e  a    
+             a        i     d              e     t    
+             t        n                    r     i    
+             i        g                    e     o    
+             v                             d     n    
+             e                                        
+
+Alignment:
+[ ]                                                 #          | ???
+[ ]                                                            | ??
+                  [#]                                          | ??
+                                                               | ???
+                        [#]                                    | ?????????
+                           [ ]                                 | ????
+                           [ ]             #                   | ????
+                                                               | ??
+                               # [#]                           | ??????????
+       #                                        [ ]            | ??
+                                                [#]            | ???
+                                                               | ????
+                                                      [#]      | ????
+                                                   [ ]   [#]   | ???
+                                                   [ ]   [ ]   | ??
+ #                          #           #    [ ]               | ??????
+                                             [ ]               | ????
+                                       [ ][ ]                  | ????
+                                       [ ][ ]                  | ????
+             #                         [ ][ ]                  | ????
+    #                                                          | ,
+                                                               | ??
+         [#]                                                   | ?????
+                      #                                        | ??
+            [ ][ ]                                             | ?????
+            [ ][#]                   #        #                | ??????
+                                                            [#]| ?
+---------------------------------------------------------------'
+ H  ,  t  G  w  l  w  n  c  e  f  c  t  c  b  d  w  i  o  w  . 
+ o     h  o  i  e  h  e  i  m  o  o  h  a  e  e  i  n  t  a    
+ w     e  v  l  g  e  w  r  e  r  n  a  n     a  t     h  y    
+ e        e  l  i  n     c  r     s  t  n     l  h     e  s    
+ v        r     s        u  g     u     o     t        r       
+ e        n     l        m  e     m     t                      
+ r        m     a        s        e                            
+          e     t        t        r                            
+          n     e        a        s                            
+          t              n                                     
+                         c                                     
+                         e                                     
+                         s                                     
+
+Alignment:
+   [ ]                         #                          #                         | ???????
+      [#]                                                                           | ??????
+         [#]                                                       #                | ??
+            [#]                                                                     | ?????
+               [#]                                                                  | ???????
+                                              #     #  #              #             | ??
+ #                                                                                  | ?????????
+[ ]                                        #                                        | ???
+    #                                                    [ ]                        | ??????????
+                                     #                      [ ]                     | ????????
+                                                               [#]                  | ????????
+                                                                  [ ]               | ??
+                                                                        [#] #       | ???
+                         #              #                                  [ ] #    | ????????????
+                                                                              [ ]   | ?????
+                                                                                    | ??
+                                                [ ]                                 | ???
+                            #                                                       | ????
+                   #                                                                | ,
+                              [ ]                                                   | ????????
+                           [ ]                                                      | ??
+                     [#]                                                            | ??
+                        [ ]                      #           #                      | ?????
+                                 [ ][ ][ ]                                          | ?????
+                                 [ ][ ][ ]                                          | ???
+                                 [ ][ ][ ]                                          | ??
+                                 [#][ ][ ]                                          | ???
+                                 [ ][ ][ ]                                          | ???
+                                                                                 [#]| ?
+------------------------------------------------------------------------------------'
+ I  f  s  a  f  s  ,  n  f  f  r  a  b  b  i  t  f  o  t  F  S  A  a  t  F  S  A  . 
+ n  i  e  n  o  a     e  r  o  e  r  e  u  n  h  o  f  h  i  e  u  n  h  o  t  g    
+    n  r  d  o  f     w  a  r  g  e  i  i     e  r     e  n  r  t  d  e  o  a  e    
+    a  v     d  e        m     u     n  l        m        a  v  h        d  n  n    
+    n  i        t        e     l     g  t                 n  i  o           d  c    
+    c  c        y        w     a                          c  c  r           a  y    
+    i  e                 o     t                          i  e  i           r       
+    a  s                 r     i                          a  s  t           d       
+    l                    k     o                          l     y           s       
+                         s     n                                                    
+
+Alignment:
+   [#]| ???
+[#]   | ?????
+[ ]   | ????
+      | ?
+------'
+ r  b 
+ e  u 
+ d  r 
+ u  d 
+ c  e 
+ i  n 
+ n  s 
+ g    
+
+Alignment:
+ # [#]                                                | ?????
+                               #                      | ??
+      [#] #                                           | ???????
+      [ ]    #           #                            | ??
+                                                      | ??
+                   #                         [ ][ ]   | ??????????
+                                             [ ][ ]   | ??
+                                             [ ][#]   | ?????
+                                                      | ??
+                                       [ ][ ]         | ????????
+                                     # [ ][ ]         | ????
+                                       [ ][ ]         | ???
+                           [ ][ ]                     | ??
+                #     #          [ ][ ]               | ????????
+                            #    [ ][ ]               | ???????
+                                 [ ][ ]               | ??
+                                 [#][ ] #             | ???
+                  [ ]                                 | ??
+                     [ ]                   #  #       | ?????
+         [ ][ ][ ]                                    | ????
+         [ ][ ][ ]                                    | ??
+         [ ][ ][ ]                                    | ????
+         [ ][ ][ ]                                    | ??
+                                                   [#]| ?
+------------------------------------------------------'
+ T  G  b  t  i  s  f  r  a  n  o  b  r  w  j  c  i  . 
+ h  o  e  h  s  c  o  e     u  f  u  e  i  e  o  n    
+ e  v  l  e     o  r  m     m     r  g  t  o  n  t    
+    e  i  r     p     o     b     d  u  h  p  s  e    
+    r  e  e     e     v     e     e  l  o  a  u  r    
+    n  v              i     r     n  a  u  r  m  e    
+    m  e              n           s  t  t  d  e  s    
+    e  s              g           o  i     i  r  t    
+    n                             m  o     s     s    
+    t                             e  n     i          
+                                     s     n          
+                                           g          
+
+Alignment:
+   [#]                        | ????
+ #    [#]             #  #    | ???????
+[ ]          #                | ??
+[ ]                           | ????????
+               [#]            | ?????
+                              | ??
+          #             [ ]   | ??
+                  [ ][ ]      | ?????
+                  [ ][ ]      | ??
+                  [#][ ]      | ???
+                  [ ][ ]      | ??
+                           [#]| :
+                              | ?
+------------------------------'
+ A  o  t  ,  t  G  i  l  a  : 
+ m  t  h     h  o  s  o  t    
+ o  h  i     e  v     o       
+ n  e  n        e     k       
+ g  r  g        r     i       
+       s        n     n       
+                m     g       
+                e             
+                n             
+                t             
+
+Alignment:
+                  [#]      | ???
+    #                [#]   | ???
+       #                [#]| ????
+          #    [ ]         | ??
+               [ ]         | ???????
+            [#]            | ?????
+                           | ??
+[ ]                        | ??????
+   [ ]                     | ???
+ #    [ ]                  | ???
+      [ ]       #          | ?????
+                           | ?
+---------------------------'
+ u  a  s  t  l  o  w  a  m 
+ p  n  i  h  a  n  e  n  e 
+ d  d  m  e  w     i  d  a 
+ a     p           g     s 
+ t     l           h     u 
+ i     i           t     r 
+ n     f           s     e 
+ g     y                 s 
+       i                   
+       n                   
+       g                   
+
+Alignment:
+            [ ]         | ??????????
+         [#]            | ??
+   [#]                  | ???????
+               [#]      | ???????
+ #           #    [ ]   | ??????????
+      [#]          #    | ????????
+                     [#]| ?
+------------------------'
+ t  c  s  o  c  c  l  . 
+ h  u  y  f  o  r  i    
+ e  r  s     n  e  c    
+    r  t     s  d  e    
+    e  e     u  i  n    
+    n  m     m  t  s    
+    t        e     i    
+             r     n    
+                   g    
+
+Alignment:
+   [ ]| ?????
+[#] # | ????
+[ ]   | ????
+      | ?
+------'
+ S  c 
+ e  o 
+ c  m 
+ u  p 
+ r  l 
+ i  i 
+ n  a 
+ g  n 
+    c 
+    e 
+
+Alignment:
+ # [#]                                                               | ?????
+                                                                     | ??
+                                                                     | ??
+                                                                     | ???
+                #                    #           #                   | ??
+      [ ][ ]                #                                   #    | ???
+      [ ][#]                   #                             #       | ??????
+      [ ][ ]                                                         | ????
+      [#][ ]                                                         | ??
+            [#]                               #                      | ??
+                  [#]                                                | ????
+                                                                     | ??
+                        [ ]   [ ]                                    | ???????
+                        [#]   [ ] #                       #          | ?????
+                     [#]                               #             | ?????
+                                          [#]                        | ??
+                                        #          [#]               | ?????
+                                                                     | ??
+                                                            [ ]      | ???????
+                                                            [ ]      | ???
+                                                            [ ]      | ??
+                                                         [ ]   [ ]   | ????
+                                                         [ ]   [ ]   | ????
+                                                      [ ]            | ????
+                                                                  [#]| ?
+---------------------------------------------------------------------'
+ T  G  i  d  t  t  p  s  b  p  p  b  t  l  a  t  t  l  s  b  e  e  . 
+ h  o  s  e  h  h  u  h  e  r  r  y  h  a  n  h  h  a  h  e  f  n    
+ e  v     t  a  e  b  o     o  o     e  w  d  a  e  w  o     f  f    
+    e     e  t     l  u     p  t              t        u     e  o    
+    r     r        i  l     e  e                       l     c  r    
+    n     m        c  d     r  c                       d     t  c    
+    m     i                 l  t                             i  e    
+    e     n                 y  e                             v  d    
+    n     e                    d                             e       
+    t     d                                                  l       
+                                                             y       
+
+Alignment:
+         [ ]| ?????
+ #  #    [ ]| ?????
+         [ ]| ?????
+   [ ] #    | ??
+[ ]       # | ??????
+            | ?
+------------'
+ d  w  t  r 
+ e  i  h  o 
+ a  t  e  g 
+ l  h     u 
+ i        e 
+ n        s 
+ g          
+
+Alignment:
+[ ]                #           #                                  | ???????
+   [#]                                                            | ?????
+                     [ ][ ]                                       | ???
+             #                                                    | ?????
+                #                                                 | ??
+       # [ ][ ]             #     #                               | ???
+         [ ][ ]                                                   | ??
+         [ ][ ]                                                   | ???
+ #    [ ]                                  #              #       | ????
+      [ ]                                                         | ??
+                                       [#]                        | ??
+                                                            [#]   | ????????
+                                                         [ ]      | ???????
+          #                                              [ ]      | ????
+                         #                               [ ]      | ????
+                      #                         [#]               | ???????
+                                                      [ ]         | ??
+                                             [#]    #             | ?????
+                                             [ ]                  | ????
+                                     #       [ ]       #          | ?????
+                                             [ ]                  | ???
+                                                               [#]| ?
+------------------------------------------------------------------'
+ E  l  f  t  d  t  s  n  o  "  r  "  t  w  c  d  l  a  a  p  c  . 
+ x  a  a  o  e  h  m  u  f     o     r  h  o  i  e  i  t  r  o    
+ i  w  i     t  e  a  m        g     a  o  n  s  g  m     o  n    
+ s     l     e     l  b        u     d     t  r  i  e     t  s    
+ t     s     r     l  e        e     e     i  e  s  d     e  u    
+ i                    r              r     n  g  l        c  m    
+ n                                   s     u  a  a        t  e    
+ g                                         a  r  t        i  r    
+                                           l  d  i        n  s    
+                                           l     o        g       
+                                           y     n                
+
+Alignment:
+ # [#]                           | ?????
+      [#]                        | ?????
+      [ ]                        | ??
+                                 | ??
+             #             [#]   | ??????
+                                 | ?????
+                     [ ]         | ??
+                #  #             | ???????
+                      #  #       | ??
+                  [ ]            | ????
+                                 | ??
+            [ ]                  | ????
+                                 | ?????
+                                 | ????
+          #                      | ???
+                              [#]| ?
+---------------------------------'
+ T  G  w  a  m  c  t  o  t  d  . 
+ h  o  a     u  l  a  f  h  i    
+ e  v  n     c  e  r     e  s    
+    e  t     h  a  g        h    
+    r  s        r  e        o    
+    n           e  t        n    
+    m           r  i        e    
+    e              n        s    
+    n              g        t    
+    t                            
+
+Alignment:
+[ ]      | ??
+[ ]      | ??
+ # [#]   | ?????
+   [ ]   | ??
+         | ??
+      [#]| :
+---------'
+ I  p  : 
+ t  l    
+    a    
+    n    
+    s    
+
+Alignment:
+            [#]                                                         | ???????
+      [ ]       #                                                       | ??
+   [ ]                                                                  | ??????
+   [ ] #                    #                                           | ????
+                                                                        | ??
+                                                                        | ??
+                                     #    [ ]             #             | ???
+                                             [#]                        | ???????????
+          #                                                             | ??
+                      # [ ]                      #                      | ???????
+                     [ ]                                                | ???
+                           [ ][ ][ ][ ][ ]                              | ???
+                           [ ][ ][ ][ ][#]                              | ???
+                           [ ][ ][ ][ ][ ]                              | ??
+    #          [ ][ ]                                                   | ??????
+               [ ][ ]                                                   | ???
+                                                                #       | ????
+                                          [ ]                           | ??
+                                                               [ ]      | ????
+                                                                  [#]   | ??????
+                                           #                         [#]| ??????????????
+                                                                        | ??
+                   #     #        #                         [#]         | ???????
+                                                            [ ]         | ????
+ #                             #                    #  #                | ??
+                                                                        | ???
+                                                                        | ?
+------------------------------------------------------------------------'
+ a  p  f  t  c  t  b  f  t  f  a  p  o  t  t  t  w  a  h  o  d  t  l  o 
+    o  o  h  o  o  a  r  r  o     e  f  i  h  r  i     i  f  i  h  e  b 
+    w  r  e  u     n  o  a  r     r     m  o  a  t     s     s  e  g  l 
+    e        r        m  d        i     e  s  d  h     t     r  i  a  i 
+    r        t           i        o        e  e        o     e  r  l  g 
+             s           n        d           r        r     g        a 
+                         g                    s        y     a        t 
+                                                             r        i 
+                                                             d        o 
+                                                             i        n 
+                                                             n        s 
+                                                             g          
+
+Alignment:
+    #        #     #     #     #     #  #     #     #        #        #  #        #  #             | ?????????
+            [ ]                                                 #                                  | ??
+               [ ]                                                                                 | ?????
+                  [ ]                                                                              | ????
+                     [ ]                                                                           | ?????
+                        [ ] #                                                              #       | ????
+                           [ ]                                                                     | ?????????
+                              [ ]                                                                  | ??
+                                                                                                   | ??
+                                                                   #                               | ??????
+   [ ]                                                                                             | ??????
+   [ ]                            #                                         #                      | ????
+   [ ]                                                 #                                           | ??
+                                                                                                   | ??
+                                                                                                   | ???????
+                                             [ ] #                                                 | ???????
+          #                                     [ ]                                                | ??
+                                          [ ]                                                      | ????
+                #                         [ ]                                                      | ???
+                                                         [ ]                                       | ???????
+                                                            [ ]                                    | ??
+                                                                                              #    | ?????????
+                                                                                             [ ]   | ?????
+                                                          #                         [ ][ ][ ]      | ???
+                                                                                    [ ][ ][ ]      | ??
+                                                               [ ]                                 | ??????????
+                                                                                                   | ??
+       #              #                                                                            | ???
+                                                                               #        #          | ????????
+ #                                                                               [ ]               | ?????
+                                           #                      [ ][ ][ ][ ][ ]                  | ???
+                                                                  [ ][ ][ ][ ][ ]                  | ???
+                                                                  [ ][ ][ ][ ][ ]                # | ?
+---------------------------------------------------------------------------------------------------'
+ a  p  f  t  S  o  S  f  T  a  I  t  m  o  b  s  l  s  t  c  p  w  h  b  s  t  b  h  s  b  m  i  . 
+    o  o  h  e  f  t  o  r  n  n  o  a  r  y  e  e  p  h  e  r  h  a  e  h  o  e  a  h  e  a  l    
+    w  r  e  c     a  r  a  d  d     k  d     c  g  e  a  r  a  i  v  e  o        r  o     d  l    
+    e        r     t     d     u     e  e     o  i  c  t  t  c  c  e  n  w        m  u     e  e    
+    r        e     e     e     s        r     n  s  i     a  t  h        n        f  l        g    
+             t                 t        s     d  l  f     i  i                    u  d        a    
+             a                 r              a  a  y     n  c                    l           l    
+             r                 y              r  t  i        e                                     
+             y                                y  i  n        s                                     
+                                                 o  g                                              
+                                                 n                                                 
+
+Alignment:
+          # [#]      [ ]                                       | ??????
+                                                               | ??
+ #    [ ][ ]                                                   | ????
+      [#][ ]                         #                         | ????
+               [#]                                             | ??
+    #             [ ]                         #     #          | ??????
+                  [ ]                                          | ????
+                  [ ]                                          | ????
+                                                       #       | ??
+   [ ]                                                         | ??????
+                                       [#] #                   | ????
+                   #  #        #  #       [ ]    #             | ?????????
+                                             [ ][ ][ ]         | ???
+                                                         [#]   | ?????
+                                    [ ]                        | ??
+                                                               | ??
+                        [ ][ ][ ][ ]                           | ??????
+                        [ ][ ][ ][ ]                           | ???
+                        [#][#][ ][ ]                           | ??????
+                                                            [#]| ?
+---------------------------------------------------------------'
+ T  p  t  s  i  a  b  o  w  b  m  a  t  l  a  a  w  a  t  O  . 
+ h  o  o  e  n  n  a  r  i  e  a  v  o  o  u  s  e  s  h  F    
+ e  w     e  j  d  n  d  l     d  a     c  t     l     e  T    
+    e     k  u     n  e  l     e  i     a  h     l             
+    r        n     i  r           l     l  o                   
+             c     n  s           a        r                   
+             t     g              b        i                   
+             i                    l        t                   
+             o                    e        i                   
+             n                             e                   
+             s                             s                   
+
+Alignment:
+ # [#]         | ??????
+      [ ]      | ???????
+       # [#]   | ????
+            [#]| ????
+               | ?
+---------------'
+ a  m  t  s  s 
+    o  r  t  e 
+    d  a  a  r 
+    e  d  n  v 
+    r  i  d  i 
+    n  n  a  c 
+       g  r  e 
+          d    
+          s    
+
+Alignment:
+                                                      [#]         | ??????????
+                                                         [#]      | ??
+                                                            [ ]   | ???????????
+                                                   [#]            | ??
+                                                [#]          #    | ?????????
+                                       [ ][ ]                     | ??
+                                  #    [ ][ ]                     | ??????
+                #                      [ ][ ] #                   | ??
+                                       [ ][ ]                     | ???
+   [#]                                                            | ?????
+      [#]                                                         | ?????
+      [ ]                                                         | ??
+                                                                  | ??
+                              [#]                                 | ???????
+                                 [ ]                              | ?????
+                           [#]                                    | ???
+                  [#] #                                           | ????????
+                     [ ]             #     #                      | ??????????
+                        [#]                                       | ??????
+          #                             #                         | ??
+ #                                  [ ]                           | ?????
+             #                      [ ]                           | ?????
+                                    [ ]                           | ???
+                                                               [#]| ?
+------------------------------------------------------------------'
+ T  G  w  t  s  t  t  s  s  i  l  g  s  t  m  t  e  o  c  a  b  . 
+ h  o  a  o  e  h  r  t  e  n  o  o  t  o  e  h  x  f  o  n  u    
+ e  v  n     e  e  a  a  r     c  v  r     e  e  p     n  d  s    
+    e  t           d  n  v     a  e  e     t     e     s     i    
+    r  s           i  d  i     l  r  n           c     u     n    
+    n              n  a  c        n  g           t     m     e    
+    m              g  r  e        m  t           a     e     s    
+    e                 d           e  h           t     r     s    
+    n                 s           n  e           i     s          
+    t                             t  n           o                
+                                     e           n                
+                                     d           s                
+
+Alignment:
+ # [#]      | ?????
+      [#] # | ?????
+------------'
+ T  G  w  : 
+ h  o  i    
+ e  v  l    
+    e  l    
+    r       
+    n       
+    m       
+    e       
+    n       
+    t       
+
+Alignment:
+                  [#][ ]| ???????
+                  [ ][ ]| ????
+                  [ ][ ]| ??
+    #  #     #    [ ][ ]| ????????
+               [#]      | ???????????
+               [ ]      | ????
+                        | ??
+                        | ???
+         [#]          # | ??????
+[#]                     | ??????
+[ ]                     | ?????
+                        | ?
+------------------------'
+ d  c  p  m  w  e  l  a 
+ e  l  e  e  h  n  o  c 
+ v  e  r  a  i  c  c  c 
+ e  a  f  s  c  o  a  o 
+ l  r  o  u  h  u  l  u 
+ o     r  r     r     n 
+ p     m  e     a     t 
+       a  s     g     a 
+       n        e     b 
+       c              i 
+       e              l 
+                      i 
+                      t 
+                      y 
+
+Alignment:
+                           [#]                                 | ????????
+                              [#]                              | ???????
+                                 [ ]                           | ???????
+                                                               | ??
+                     [ ][ ]                                    | ????
+          #          [#][ ]                                    | ????
+                                    [#]                        | ???
+                                                      [ ][ ][#]| ???
+                                                      [ ][ ][ ]| ??
+                                                      [ ][ ][ ]| ???
+                                          [#]                  | ??
+                   #     #                   [ ]       #       | ????
+                                                [#]            | ??????
+                                                   [#]         | ????
+ #           #                         [ ]    #                | ???????
+                                       [ ]                     | ????
+                                                          #    | ??
+                                                               | ???
+               [#]                                             | ????
+                  [ ]             #     #                      | ??????
+                                                               | ??
+   [#]                                                         | ?????
+      [#]                                                      | ?????????
+         [ ][ ]                                                | ????
+         [ ][ ]                                                | ??
+         [ ][ ]                                                | ???
+                                                               | ???
+                                                               | ?????
+                                                               | ?
+---------------------------------------------------------------'
+ f  b  t  t  p  m  o  t  e  c  p  l  a  e  a  h  q  s  a  t  c 
+ o  e  r  o  r  o  f  o  n  o  r  a  n  n     i  u  e  c  h  o 
+ s  t  a     o  r  f     f  n  o  w  d  s     g  a  r  r  e  u 
+ t  t  i     v  e  i     o  s  t        u     h  l  v  o     n 
+ e  e  n     i     c     r  u  e        r        i  i  s     t 
+ r  r  i     d     e     c  m  c        e        t  c  s     r 
+       n     e     r     e  e  t                 y  e        y 
+       g           s        r  i                               
+                               o                               
+                               n                               
+
+Alignment:
+                  [#] #    | ????
+    #  #        #    [ ]   | ????????
+                           | ??
+   [ ][ ][ ][ ]            | ???
+   [ ][ ][#][#]            | ?????
+   [ ][ ][ ][ ]            | ???
+   [ ][ ][ ][ ]            | ????
+                           | ??
+                           | ?????
+[#]                        | ???????????
+[ ]                        | ?????
+                        [#]| ?
+---------------------------'
+ e  c  c  -  o  b  l  a  . 
+ n  l  o     p  e  o  u    
+ c  o        e  t  c  t    
+ o  s        r  w  a  h    
+ u  e        a  e  l  o    
+ r  r        t  e     r    
+ a           i  n     i    
+ g           o        t    
+ e           n        i    
+                      e    
+                      s    
+
+Alignment:
+      [ ][ ]| ????
+      [ ][ ]| ????
+    # [ ][ ]| ??
+      [ ][ ]| ????
+            | ??
+[#]    #  # | ?????
+            | ?
+------------'
+ w  t  e  b 
+ i  h  n  a 
+ d  e  f  s 
+ e     o  e 
+ n     r    
+ i     c    
+ n     e    
+ g     m    
+       e    
+       n    
+       t    
+
+Alignment:
+[ ]               | ????????
+               [#]| ?????
+       #    [#]   | ??
+ #  #    [#]      | ????
+   [ ]            | ???
+                  | ?
+------------------'
+ C  a  t  h  o  G 
+ o  t  h  e  f  o 
+ n     e  a     v 
+ s        r     e 
+ u        t     r 
+ m              n 
+ e              m 
+ r              e 
+ s              n 
+                t 
+
+Alignment:
+   [#]                        | ?????
+      [#]                     | ?????
+      [ ]                     | ??
+                              | ??
+         [#]                  | ??????????
+                              | ??
+                #     # [#]   | ????
+             #                | ??
+ #                   [ ]      | ?????
+            [ ][ ][#]         | ?????
+            [ ][ ][ ]         | ???
+                           [#]| ?
+------------------------------'
+ T  G  w  c  t  h  a  p  v  . 
+ h  o  a  o  o  a     o  o    
+ e  v  n  n     v     w  i    
+    e  t  s     e     e  c    
+    r  s  u           r  e    
+    n     m           f       
+    m     e           u       
+    e     r           l       
+    n     s                   
+    t                         
+
+Alignment:
+[ ]                        | ??
+                  [#]      | ????????
+ #                   [ ]   | ????????????
+          #                | ??
+   [#]                     | ??
+               [#]    #    | ???????
+         [ ][#]            | ?????
+      [#]                  | ?????
+      [ ]                  | ??
+                        [#]| ?
+---------------------------'
+ I  a  w  t  s  e  c  r  . 
+ t  l  a  o  e  f  o  e    
+    s  n     e  f  n  p    
+    o  t        e  s  r    
+       s        c  u  e    
+                t  m  s    
+                i  e  e    
+                v  r  n    
+                e     t    
+                      a    
+                      t    
+                      i    
+                      o    
+                      n    
+
+Alignment:
+ # [#]            | ?????
+      [ ][#]      | ?????????
+      [#][ ]      | ?????
+            [#]   | ??
+               [#]| :
+                  | ?
+------------------'
+ T  G  w  e  t  : 
+ h  o  i  n  h    
+ e  v  l  s  a    
+    e  l  u  t    
+    r     r       
+    n     e       
+    m             
+    e             
+    n             
+    t             
+
+Alignment:
+   [#]                     | ????????
+      [ ]                  | ????
+         [#]               | ????
+ #           #        # [ ]| ?????????
+                     [ ]   | ??
+                  [#]      | ????
+            [ ][ ]         | ??????
+       #    [ ][#]       # | ?????
+                           | ?
+---------------------------'
+ A  c  a  g  w  r  d  t  M 
+    o  d  r  i  e  i  o  i 
+    n  v  o  l  p  r     n 
+    s  i  u  l  o  e     i 
+    u  s  p     r  c     s 
+    m  o        t  t     t 
+    e  r           l     e 
+    r  y           y     r 
+                         s 
+
+Alignment:
+                                           # [#]               | ???
+                                                [#]            | ??
+                         #        #  #             [#][ ]      | ????
+                #                                  [ ][#] #    | ??????
+                                                   [ ][ ]      | ????
+ #                                                             | ??
+                                                               | ???
+                                                               | ??
+                                          [ ]                  | ???
+                                    [ ]                        | ????
+                                       [ ]                     | ??
+                              [ ][ ]                           | ????
+                              [ ][ ]                           | ?????
+                                                               | ????
+         [#]                                                   | ????????
+            [#]                                                | ???????
+      [#]                                                      | ??
+   [#]                                                         | ?????
+                        [ ]             #                      | ???
+                           [#] #                               | ????
+                     [#]                                       | ??
+               [ ][#]                                          | ??????
+               [ ][ ]                                          | ???
+                                                            [#]| ?
+---------------------------------------------------------------'
+ t  d  o  c  p  i  b  o  s  e  b  p  a  r  i  r  a  p  c  d  . 
+ h  e  f  o  o  s  a  n  o  v  y  u  d  e  n  e  n  o  o  i    
+ e  v     n  l     s     u  i     t  d  s  t  s  d  l  n  r    
+    e     s  i     e     n  d     t  i  o  o  e     l  s  e    
+    l     u  c     d     d  e     i  t  u     a     i  u  c    
+    o     m  i              n     n  i  r     r     n  m  t    
+    p     e  e              c     g  o  c     c     g  e  l    
+    m     r  s              e        n  e     h        r  y    
+    e                                a  s              s       
+    n                                l                         
+    t                                                          
+
+Alignment:
+            [#]| ??????????
+ #       [ ]   | ??
+   [ ] #  #    | ?????
+    # [ ]      | ????
+               | ?
+---------------'
+ a  s  v  f  c 
+    t  o  o  o 
+    r  i  r  n 
+    o  c     s 
+    n  e     u 
+    g        m 
+    e        e 
+    r        r 
+             s 
+
+Alignment:
+ # [#]                                             | ?????
+               [#]                   #             | ?????
+                                                   | ??
+                                          [#]      | ????????
+          #           #     #  #             [#]   | ??????
+                                    [ ] #          | ??
+                              [ ]                  | ????
+                                 [#]               | ??????
+                        [#][ ]                     | ????
+             #                                     | ??
+                  [#]                              | ??
+                     [ ]                           | ????
+      [ ][ ]                                       | ??
+      [#][ ]                                       | ???
+      [ ][ ]                                       | ??
+                                                [#]| ?
+---------------------------------------------------'
+ T  G  i  g  t  O  n  o  t  d  i  r  a  a  c  w  . 
+ h  o  s  i  h  F  e  p  o  e  t  o  s     o  a    
+ e  v     v  e  T  w  p     v  s  l        n  t    
+    e     i           o     e     e        s  c    
+    r     n           r     l              u  h    
+    n     g           t     o              m  d    
+    m                 u     p              e  o    
+    e                 n                    r  g    
+    n                 i                            
+    t                 t                            
+                      i                            
+                      e                            
+                      s                            
+
+Alignment:
+                                                                  [#]   | ?????
+                                                       #                | ??
+                                                               [ ]      | ??????
+ #                                               #             [ ]      | ?????
+                                                         [ ]            | ?????
+                                                [ ][ ][ ]               | ??
+                                                [ ][ ][ ]               | ???
+   [ ]                               #        #     #     #     #       | ?????????
+    # [#]                                                               | ????
+         [ ]                                                            | ??
+            [#] #           #                                           | ????
+               [ ]                                                      | ????????
+                                       [#]                              | ????????
+                                          [ ]                           | ??????
+                                                                        | ??
+                                    [ ]                                 | ????
+                                             [ ]                        | ???????
+          #                      [#]                                    | ??
+                        [#]                                  #          | ??
+                           [ ] #           #                            | ??????
+                      #       [ ]                                       | ?????????
+                  [#][ ]                                                | ?????
+                                                                     [#]| ?
+------------------------------------------------------------------------'
+ T  D  G  o  F  T  w  u  a  f  r  o  h  c  a  f  i  o  t  b  a  s  O  . 
+ h  i  e  f  a  r  i  n     u  e  f  i  o  f  u  n  r  o  u     t  F    
+ e  r  n     i  a  l  d     n  v     s  n  f  n     d     i     r  T    
+    e  e     r  d  l  e     d  i        s  a  c     e     l     o       
+    c  r        i     r     a  e        u  i  t     r     d     n       
+    t  a        n     t     m  w        m  r  i                 g       
+    o  l        g     a     e           e  s  o                 e       
+    r                 k     n           r     n                 r       
+                      e     t                 s                         
+                            a                                           
+                            l                                           
+
+Alignment:
+   [#]                                                | ?????
+      [ ]                   #     #                   | ????????
+       # [#]                                          | ??????
+            [#]                                       | (
+               [#]                                    | ??????
+                  [#]                                 | )
+                                                      | ???
+                                       [#]            | ??????????
+                                    [ ]               | ??
+                                    [ ]               | ??
+                                    [ ]               | ??
+                                             [#]      | ??????
+                                                [#]   | ???????
+                                          [#]         | ??
+                                 [ ]                  | ???
+                               # [ ]                  | ????
+                              [ ]                     | ??
+                              [ ]    #                | ???
+ #                   [ ] # [ ]                        | ??????
+                     [#]   [ ]                        | ??
+                                                   [#]| ?
+------------------------------------------------------'
+ T  N  C  C  (  N  )  i  w  p  t  s  f  c  o  m  i  . 
+ h  a  o  o     C     s  e  l  o  p  o  o  n  a  s    
+ e  t  n  u     C        l  a     e  r  n     j  s    
+    i  s  n              l  c     a     s     o  u    
+    o  u  c                 e     k     u     r  e    
+    n  m  i                 d           m        s    
+    a  e  l                             e             
+    l  r                                r             
+                                        s             
+
+Alignment:
+                                                   [#]      | ????????
+                                                      [#]   | ??????
+                                             [#]            | ???
+                  [#]       #                               | ??????
+                                                            | ??
+                        [#]                                 | ??
+                               # [ ]                        | ??
+                                    [#]                     | ????
+                           [ ]    #                         | ??????
+                              [ ]                           | ??
+                                       [#]                  | ???????
+       #     #                            [ ]               | ??????
+            [ ]       #                                     | ?????
+            [ ] #                                           | ??
+            [ ]                                             | ???
+ # [#]                                                      | ?????
+      [ ][#]                                                | ???
+      [ ][ ]                               #     #          | ??????
+                                                         [#]| ?
+------------------------------------------------------------'
+ T  G  w  h  r  t  N  a  a  d  a  e  m  e  f  i  U  c  a  . 
+ h  o  i  e  e  h  C  s     y  n  v  o  f  o  n  K  o  f    
+ e  v  l  l  l  e  C        n  d  e  r  f  r        n  f    
+    e  l  p  a              a     n  e  e  c        s  a    
+    r        u              m           c  e        u  i    
+    n        n              i           t           m  r    
+    m        c              c           i           e  s    
+    e        h                          v           r       
+    n                                   e                   
+    t                                                       
+
+Alignment:
+    # [#]   | ??
+   [ ]      | ??
+[#]      [#]| ?????
+[ ]      [ ]| ????
+            | ?
+------------'
+ J  i  a  u 
+ o  t  l  p 
+ i     l    
+ n          
+ i          
+ n          
+ g          
+
+Alignment:
+[#]         | ??
+[ ]         | ??
+   [ ][#] # | ?????????
+   [#][ ]   | ????
+            | ??
+------------'
+ T  w  e  : 
+ h  i  n    
+ i  l  s    
+ s  l  u    
+       r    
+       e    
+
+Alignment:
+               [#]            | ???
+            [ ]               | ??????
+                         #    | ??
+                           [#]| ????????
+    #  #     #     # [#]      | ?????
+          #          [ ]      | ????
+                     [ ]      | ???
+                              | ,
+      [ ]                     | ??????
+   [ ]                        | ?????
+ # [ ]                        | ????
+------------------------------'
+ a  e  o  t  i  w  r  m  t  c 
+ n  m  n  h  s  h  e  a  o  o 
+    p     e  s  i  a  t     n 
+    h        u  c  l  t     s 
+    a        e  h  l  e     u 
+    s        s     y  r     m 
+    i                       e 
+    s                       r 
+                            s 
+
+Alignment:
+   [#][ ][ ]       #                | ??????????
+                                    | ??
+       #  # [#]                     | ???????
+               [#]                  | ,
+                     [#]            | ????????
+                                    | ??
+                         #    [#]   | ??????
+ #                          #    [ ]| ???
+                        [ ]         | ???
+                                    | ??
+                  [ ]               | ?????
+                  [ ]             # | ????
+------------------------------------'
+ a  f  -  l  a  ,  i  p  a  a  e  s 
+    o     o  p     d  r  t  n  a  t 
+    r     o  p     e  o        r  a 
+    w     k  r     n  b        l  g 
+    a     i  o     t  l        y  e 
+    r     n  a     i  e             
+    d     g  c     f  m             
+             h     y  s             
+                   i                
+                   n                
+                   g                
+
+Alignment:
+                  [ ][ ][ ]| ??????
+                  [ ][ ][ ]| ???????
+            [#]            | ??
+    #    [#]       #       | ????????
+         [ ]               | ????
+         [ ]          #    | ??
+         [ ]    #          | ?????????
+      [#]                  | ???
+[ ]                        | ????
+ # [ ]                   # | ????????
+---------------------------'
+ g  c  i  a  a  t  d  o  s 
+ r  o  n  n  n  h  e  f  o 
+ e  n     a  d  e  v     l 
+ a  s     l        e     u 
+ t  i     y        l     t 
+ e  s     s        o     i 
+ r  t     i        p     o 
+    e     s        m     n 
+    n              e     s 
+    c              n       
+    y              t       
+
+Alignment:
+         [#]                  | ????
+            [#]               | -
+       #       [ ]    #       | ???????
+                  [#]         | ???
+                              | ??????
+                     [ ]      | ????
+                     [ ]      | ????
+                              | ??
+                        [#]   | ????????
+      [ ]                     | ???
+[#]                           | ????
+   [#]          #             | ?????????
+------------------------------'
+ m  c  b  p  -  m  a  e  o  . 
+ o  o  e  o     a  n  n  r    
+ r  h  t  l     k  d  f  g    
+ e  e  w  i     i     o  a    
+    s  e  c     n     r  n    
+    i  e  y     g     c  i    
+    o  n              e  s    
+    n                 m  a    
+                      e  t    
+                      n  i    
+                      t  o    
+                         n    
+                         s    
+
+Alignment:
+[#]   | ????
+   [#]| ???
+------'
+ N  s 
+ e  t 
+ x  e 
+ t  p 
+    s 
+
+Alignment:
+   [#] #                                  | ?????
+      [ ]                                 | ????
+                                          | ??
+             #        # [ ]       #       | ?????????
+                  [#]                     | ??
+               [#]       #                | ???????
+         [#]                              | ??
+                           [#]            | ,
+ #                                  [#]   | ???
+                              [#]         | ???
+                                       [#]| ?
+------------------------------------------'
+ T  W  P  i  t  s  o  t  p  ,  n  t  e  . 
+ h  h  a  s  h  t  f  h  r     o  h  n    
+ e  i  p     e  a     e  o     t  e  d    
+    t  e        r        c                
+    e  r        t        e                
+                         s                
+                         s                
+
+Alignment:
+ #                                        [#]   | ??????
+                                    [#]         | ???
+                              [#]               | ????????
+                                 [#]            | ????
+                      #    [#]          #       | ??
+                        [#]                     | ?????
+                  [ ]                           | ??
+                  [#]                           | ???
+[ ]                                             | ??
+         [#]                                    | ??
+            [#]                                 | ???
+               [#]                              | ????
+   [ ][#]                                       | ??????
+   [#][ ]                                       | ?????
+                                             [#]| ?
+------------------------------------------------'
+ I  w  p  a  s  b  f  t  d  o  c  p  i  t  f  . 
+ t  i  r     o  a  o  h  e  f  o  o  n  h  u    
+    l  o     l  s  r  e  v     n  l     e  t    
+    l  v     i  i        e     s  i        u    
+       i     d  s        l     u  c        r    
+       d                 o     m  y        e    
+       e                 p     e                
+                         m     r                
+                         e                      
+                         n                      
+                         t                      
+
+Alignment:
+[ ]                                                                                       | ??
+                                    [ ]                                                   | ??????????
+                                    [ ]                                                   | ??
+    #                       #          [ ]                                           #    | ???????
+                                 [ ]                                                      | ??
+                                 [ ]                                                      | ????
+                      #          [ ]                                                      | ???
+                     [ ][ ][ ]                                                            | ??????
+                              [#] #                                                       | ???
+                   #                                                                      | ??
+               [#][ ]                                                                     | ??????
+      [#]                                                                                 | ??
+                                                                                          | ???
+         [#]                                                                #             | ?????
+   [ ]                                                                                    | ???????
+   [ ]                                                                                    | ????
+   [ ]                                                                                    | ??
+                                             [#]                                          | ??
+                                                                                          | ??
+                                                [ ][#]                                    | ?????????
+                                                [#][ ]                                    | ?????
+                                                      [#]                                 | ??
+                                                         [#]                              | ??
+                                     #                      [#]                           | ???????
+                                                                                          | ??
+                                                                  [ ]                     | ????
+                                                                  [ ]                     | ?????
+                                                                  [ ]                     | ??
+                                                               [ ]   [#]                  | ??????
+                                                               [ ]   [ ]                  | ????
+                                                               [ ]   [ ]                  | ??
+             #                             #                            [#]               | ,
+                                                                                          | ????
+                                        #                          #       [ ]    #       | ????????
+ #                                                                         [ ]            | ????
+                                                                           [ ]            | ??
+                                                                              [#]         | ??
+                                                                                    [ ]   | ??
+                                                                                    [ ]   | ??
+                         #                                                          [ ]   | ?????
+                                                                                    [ ]   | ???
+                                                                                 [ ]      | ???
+                                                                                 [ ]      | ???
+                                                                                 [ ]      | ????
+                                                                #                [ ]      | ???
+                                                                                       [#]| ?
+------------------------------------------------------------------------------------------'
+ I  e  a  f  ,  b  o  i  -  d  r  i  c  n  ,  w  w  e  t  n  i  a  p  i  ,  r  a  a  u  . 
+ t  s     r     a  n  n     e  e  n  o  e     h  i  n  h  e  s  r  r  d     e  n  c  p    
+    t     a     s           p  s  t  n  e     i  l  s  a  w  s  e  o  e     s  d  t  o    
+    a     m     e           t  e  o  s  d     c  l  u  t     u     p  n     e     e  n    
+    b     e     d           h  a     u  s     h     r        e     e  t     a     d       
+    l     w                    r     m              e        s     r  i     r             
+    i     o                    c     e                             l  f     c             
+    s     r                    h     r                             y  i     h             
+    h     k                          s                                e     e             
+    e                                '                                d     d             
+    s                                                                                     
+
+Alignment:
+ #  #                                  [ ]   | ?????
+                                             | ??
+             #                [#]            | ????
+                                 [#]         | ???
+                                    [ ]      | ????
+                                             | ,
+                           [#]               | ?????
+                                             | ??
+                      #                      | ?????????
+                                             | ???
+   [ ]                                       | ?????
+               [ ][ ][ ]                     | ???
+               [#][#][ ]                     | ?????
+               [ ][ ][ ]                     | ???
+               [ ][ ][ ]                     | ????
+               [ ][ ][ ]                     | ??
+                        [#]                  | ???????
+                                     #  #    | ??????
+                                             | ??
+      [ ][#]                                 | ?????
+      [#][ ]                                 | ????
+                                          [#]| ?
+---------------------------------------------'
+ T  G  w  p  a  j  -  u  a  b  w  a  o  g  . 
+ h  o  i  r     o     p  p  o  i  n  u  o    
+ e  v  l  o     i        p  t  t  d  t  v    
+    e  l  m     n        r  h  h     s  e    
+    r     o     e        o     i     i  r    
+    n     t     d        a     n     d  n    
+    m     e              c           e  m    
+    e                    h              e    
+    n                                   n    
+    t                                   t    
+
+Alignment:
+[#]                                          | ???
+   [#]                                       | ??
+                        [#] #                | ?????
+                           [ ]               | ????
+                  [#]                        | ??
+       #    [ ][#]                #          | ???????
+            [#][ ]                      #    | ????
+      [ ][ ]                                 | ?????
+      [ ][ ]                                 | ??
+                              [#]            | ,
+                                             | ??
+                      #                [ ]   | ????
+          #                         [#]      | ?????
+                                          [#]| :
+                                             | ?
+---------------------------------------------'
+ I  y  w  l  t  c  o  t  W  P  ,  p  w  t  : 
+ f  o  o  i  o  o  n  h  h  a     l  r  o    
+    u  u  k     m     i  i  p     e  i       
+       l  e     m     s  t  e     a  t       
+       d        e        e  r     s  e       
+                n                 e          
+                t                            
+
+Alignment:
+[#]   | Stephen
+   [#]| Haddrill
+------'
+ S  H 
+ t  a 
+ e  d 
+ p  d 
+ h  r 
+ e  i 
+ n  l 
+    l 
+
+Alignment:
+[#]         | Director
+   [#]      | of
+      [#]   | Consumer
+         [#]| Affairs
+------------'
+ D  o  C  A 
+ i  f  o  f 
+ r     n  f 
+ e     s  a 
+ c     u  i 
+ t     m  r 
+ o     e  s 
+ r     r    
+
+Alignment:
+[#]            | Department
+   [#]         | of
+      [#]      | Trade
+         [#]   | and
+            [#]| Industry
+---------------'
+ D  o  T  a  I 
+ e  f  r  n  n 
+ p     a  d  d 
+ a     d     u 
+ r     e     s 
+ t           t 
+ m           r 
+ e           y 
+ n             
+ t             
+
+Alignment:
+[#]      | 1
+   [#]   | Victoria
+      [#]| Street
+---------'
+ 1  V  S 
+    i  t 
+    c  r 
+    t  e 
+    o  e 
+    r  t 
+    i    
+    a    
+
+Alignment:
+[#]| London
+---'
+ L 
+ o 
+ n 
+ d 
+ o 
+ n 
+
+Alignment:
+[#]   | SW1H
+   [#]| OET
+------'
+ S  0 
+ W  E 
+ 1  T 
+ H    
+
+Alignment:
+[#]                                             | ??
+   [ ]                                          | ?
+      [#]                                       | -
+         [#]                                    | ???
+            [#]                                 | :
+    #          [ ][ ][ ]          #             | whitepaper
+                        [#]                     | @
+                           [#]                  | cacp
+                              [ ]               | .
+                #     #          [ ]            | dti
+                                    [ ]         | .
+                                       [#]      | gov
+                                          [ ]   | .
+                                             [#]| uk
+                   #           #     #     #    | ?
+------------------------------------------------'
+ o  e  -  m  :  w  .  p  @  c  .  d  .  g  .  u 
+ r        a     h     a     a     t     o     k 
+          i     i     p     c     i     v       
+          l     t     e     p                   
+                e     r                         
+
+Alignment:
+[ ]                     | ??
+[ ]                     | ??
+   [ ]                  | ?????
+    #          [#]      | 29
+             #    [#]   | ???????
+ #        #          [#]| 1999
+            [ ]         | ??
+                        | ????
+         [ ]            | ???????
+         [ ]            | ??
+         [ ]            | ????
+      [#]               | ??????
+                        | ?
+------------------------'
+ Y  c  s  a  b  2  O  1 
+ o  o  h  r  y  9  c  9 
+ u  m  o  r        t  9 
+ r  m  u  i        o  9 
+    e  l  v        b    
+    n  d  e        e    
+    t              r    
+    s                   
+
+Alignment:
+[#]               | School
+   [#]    #       | Attendance
+      [#]         | :
+         [ ]      | Information
+            [#]   | for
+               [#]| parents
+------------------'
+ S  A  :  I  f  P 
+ c  t     n  o  a 
+ h  t     f  r  r 
+ o  e     o     e 
+ o  n     r     n 
+ l  d     m     t 
+    a     a     s 
+    n     t       
+    c     i       
+    e     o       
+          n       
+
+Alignment:
+[#]| ?????
+   | |
+---'
+ I 
+ n 
+ t 
+ r 
+ o 
+ d 
+ u 
+ c 
+ t 
+ i 
+ o 
+ n 
+
+Alignment:
+[#]                                                                                                                     | ???
+   [ ]                                                                               #                                  | ??
+          #                          #                                                                                  | ????
+                                                                     [#]                                        #       | ?????
+                                                                  [ ]                                                   | ???
+                                                            [ ][#] #                                                    | ???????
+                                                            [ ][ ]                                                      | ???
+                                                [#]                                                                     | 5
+                                           #                                                                            | ????
+                                                   [ ]                                                                  | ??
+                                                      [#]                                                               | 16
+                                          [ ]                                                                           | ????
+                                          [ ]                                                                           | ??
+                #                         [ ]                                                                           | ??
+                                          [ ]                                                                           | ????
+                                             [ ]                                                                        | ??
+                                       [#]                                                                              | ?????
+               [ ]                                                                                                      | ??
+            [ ]                                                                                                         | ????
+            [#]                                                                                                         | ????
+      [ ]                                                                                                               | ???
+                  [#]                                                                                                   | (
+                     [#]                                                                               #                | ??
+                              [ ]                                                                                       | ????
+                        [ ][ ] #                                                           #  #                         | ??????????
+                        [ ][ ]                                                                                          | ?????
+       #                [#][ ]                                                                   #                      | ????
+                        [ ][ ]                                                                                          | ???
+                                 [#]                                                                                    | )
+                                                                                                                        | ??
+                                                                           [ ]                                          | ??
+                                                                            # [ ]                                       | ?????
+                                              #                                   # [ ] #           #     #  #          | ????
+                                                                                       [ ]                              | ?????????????
+                                                                                                                        | ??
+                                                                                                                        | ????
+                                                                                                                        | ???
+    #                                                                                                                   | ????
+                                                                               # [ ]                                    | ???????
+                                                          #                      [ ]                                    | ????
+                                                                                                                        | -
+                                                                                                                        | ??
+                                                                                                                        | ??
+                                                                                                                        | ????
+                                                                                                                  [#]   | ??????
+                                                                         #                                        [ ]   | ???
+                                                                                                                  [ ]   | ??
+                                                                                                            [ ][ ]      | ????
+                                                             #                                              [ ][ ]      | ????
+                                                                                                                        | ??
+                                                                                                                        | ???
+                                                                                                                        | ??
+                                                                                                                        | ????
+                            #                                                             [ ][ ][ ]                     | ?????
+                                                    #                                     [ ][ ][ ]                     | ???
+                                                                                                                        | ????
+                                                                                                                        | ???
+                                                                                                                     [ ]| |
+------------------------------------------------------------------------------------------------------------------------'
+ I  y  a  a  p  o  (  o  a  r  f  )  a  c  a  b  5  a  1  w  i  r  a  s  ,  t  i  e  y  r  f  m  s  h  o  s  a  s  r  . 
+ f  o  r     a  f     r  r  e  o        h  g  e     n  6  h  s  e  t  c     h  n  x  o  e  o  a  u  e  r  h  t  c  e    
+    u  e     r           e  s  r        i  e  t     d     o     g     h     i  f  p  u  s  r  k  r        e  t  h  g    
+             e              p           l  d  w                 i     o     s  o  l  r  p     i  e           e  o  u    
+             n              o           d     e                 s     o        r  a     o     n              n  o  l    
+             t              n                 e                 t     l        m  i     n     g              d  l  a    
+                            s                 n                 e              a  n     s                    s     r    
+                            i                                   r              t  s     i                          l    
+                            b                                   e              i        b                          y    
+                            l                                   d              o        i                               
+                            e                                                  n        l                               
+                                                                                        i                               
+                                                                                        t                               
+                                                                                        i                               
+                                                                                        e                               
+                                                                                        s                               
+
+Alignment:
+ # [#]| ?????
+      | |
+------'
+ T  L 
+ h  a 
+ e  w 
+
+Alignment:
+   [#]                                                                  | ?????
+[ ]                                                                     | ??
+[ ]                            #     #                                  | ??????
+ #                [#]                                                   | ????????
+                     [#][ ]                                             | ?????
+                     [ ][ ]                                             | ????
+                #    [ ][ ]                         #                   | ??
+                     [ ][#]                                  #          | ????
+                           [#]                                          | (
+                                 [#]                                    | 5
+       #                      [ ]                                       | ??
+                                       [#]                              | 16
+                                          [#]                           | )
+               [ ]                                                      | ??
+               [ ]                                                      | ??
+         [#]                                                            | ???
+            [#]                                                         | ??????
+                                                                        | ??
+                                                       # [#][ ][ ]      | ????
+                                                         [ ][ ][#]      | ???
+                                                                        | ??
+                                                                  [#]   | ??????
+                                                [#]                     | ???????
+                                                [ ]                     | ????
+                                             [#]                        | ?????
+                                                                     [ ]| |
+------------------------------------------------------------------------'
+ B  l  ,  a  c  o  c  s  a  (  b  5  a  1  )  m  g  a  p  f  -  t  e  . 
+ y  a     l  h  f  o  c  g     e     n  6     u  e     r  u     i  d    
+    w     l  i     m  h  e     t     d        s  t     o  l     m  u    
+             l     p  o        w              t        p  l     e  c    
+             d     u  o        e                       e           a    
+             r     l  l        e                       r           t    
+             e     s           n                                   i    
+             n     o                                               o    
+                   r                                               n    
+                   y                                                    
+
+Alignment:
+                  [#]                                                               | ??
+                                                                                    | ???
+         [ ]                         #                                              | ??
+       #    [ ][#]                                                                  | ?????
+            [#][ ]                                        #                         | ?????
+[#]                                                                                 | ????
+   [ ][ ]                   #     #                                         #       | ???????
+   [ ][ ]                                                                           | ??
+                                                                                    | ??
+                                                                                    | ??
+                           [ ]                      #                               | ??
+                                       [#]                                          | ?????
+                                                                                    | ??
+                                              #                                     | ????
+                                                [#]                                 | ?????
+                                          [ ]                                       | ???
+                              [ ][ ]       #                                        | ???????
+                      #       [ ][ ]                         #                      | ??????
+                                                   [ ]                              | ??
+                                                            [ ]                     | ???
+                               #                       # [ ]   [#]    #             | ??????
+                                                         [ ]   [ ]                  | ????
+                                                                  [#]    #          | ?????
+                                                                                    | ?????
+                                                                                    | ??
+                                                                           [ ]      | ???
+                                                                              [#]   | ??????
+                         #                                           [ ]            | ?????
+    #     #                                                          [ ]            | ???
+                                                                                 [ ]| |
+------------------------------------------------------------------------------------'
+ Y  a  r  f  m  s  t  h  ,  e  b  r  t  c  a  a  s  o  b  m  o  a  w  p  a  e  e  . 
+ o  r  e  o  a  u  h  a     i  y  e  h  h  t     c  r  y  a  t  r  h  r  n  f  d    
+ u  e  s  r  k  r  i  p     t     g  e  i        h        k  h  r  i  o     f  u    
+       p     i  e  s  p     h     i     l        o        i  e  a  c  v     e  c    
+       o     n        e     e     s     d        o        n  r  n  h  i     c  a    
+       n     g        n     r     t              l        g     g     d     t  t    
+       s              s           e                             e     e     i  i    
+       i                          r                             m           v  o    
+       b                          i                             e           e  n    
+       l                          n                             n                   
+       e                          g                             t                   
+                                                                s                   
+
+Alignment:
+      [#]                  | ????
+         [#]               | ?????
+                #          | ??
+                     [#]   | ??????
+                     [ ]   | ???
+                     [ ]   | ??
+                  [#]      | ?????
+[#]                        | ?????
+            [#]            | ????
+   [#]                     | ?????
+                        [#]| ?
+                           | |
+---------------------------'
+ W  m  m  c  g  t  s  r  ? 
+ h  u  y  h  o  o  c  e    
+ y  s     i        h  g    
+    t     l        o  u    
+          d        o  l    
+                   l  a    
+                      r    
+                      l    
+                      y    
+
+Alignment:
+      [#]                                          | ?????
+         [#]                                       | ??????
+                         # [#]                     | ?????
+                               #                   | ??
+    #                            [#]               | ?????
+                                             [#]   | ????
+ #                    #              # [#]         | ????
+                   #                   [ ]         | ????
+                                          [#]      | ???
+            [ ][#]                                 | ???
+            [#][ ]                                 | ????
+                                                [ ]| |
+---------------------------------------------------'
+ H  a  g  e  w  h  t  g  y  c  t  b  p  s  i  l  . 
+ a     o  d  i  e  o  i  o  h  h  e  o  t  n  i    
+ v     o  u  l  l     v  u  i  e  s  s  a     f    
+ i     d  c  l  p     e  r  l     t  s  r     e    
+ n        a                 d        i  t          
+ g        t                          b             
+          i                          l             
+          o                          e             
+          n                                        
+
+Alignment:
+[#]                                                                  | ???
+   [#]                                                               | ????
+      [#]                                                            | ?????
+                     [#]                                             | ??????
+                     [ ] #                                           | ???
+                     [ ]                                     #       | ??
+                  [#]                                                | ?????
+            [#]                         #                            | ?
+         [ ]   [ ]             #                 #              #    | ???
+                                                                     | ??
+                           [ ][ ][ ]                                 | ??
+                                                          #    [ ]   | ????
+                                                         [ ]         | ???
+                            #       [ ][ ][ ][#][ ][#][ ]            | ????
+          #     #                 # [ ][ ][ ][ ][ ][ ][#]            | ??
+                                    [#][ ][#][ ][ ][ ][ ]            | ?????
+                                                                  [#]| ?
+---------------------------------------------------------------------'
+ I  y  c  d  n  a  s  r  ,  h  o  s  w  n  b  a  t  k  u  w  t  w  . 
+ f  o  h  o  o  t  c  e     e  r  h  i  o  e  b  o  e  p  i  h  o    
+    u  i  e  t  t  h  g           e  l  t     l     e     t  e  r    
+    r  l  s     e  o  u              l        e     p     h     k    
+       d        n  o  l                                              
+                d  l  a                                              
+                      r                                              
+                      l                                              
+                      y                                              
+
+Alignment:
+[ ]                                                   | ??
+[ ]                                                   | ???
+                                                      | ???
+   [#]                                                | ?????
+                        [#]                           | ??????
+                        [ ]                           | ???
+                        [ ]                           | ??
+                     [#]                              | ?????
+            [#]                                       | ????
+         [#]   [ ]          #           #             | ????
+                                                      | ??
+                                                      | ??????
+                                           # [#]      | ?????
+                                                [#]   | ???
+       #                               [ ]            | ?????
+                                    [#]               | ??
+ #              #                [#]                  | ????
+                              [#]                     | ??
+                                                      | ??
+                   #       [ ]                        | ?????
+                                                   [ ]| |
+------------------------------------------------------'
+ S  c  w  h  n  a  t  s  r  h  l  c  o  g  a  g  j  . 
+ o  h  h  a  o  t  h  c  e  a  e  h  f  e     o  o    
+    i  o  v  t  t  e  h  g  v  s  a     t     o  b    
+    l     e     e  i  o  u  e  s  n     t     d       
+    d           n  r  o  l        c     i             
+    r           d     l  a        e     n             
+    e           e        r              g             
+    n           d        l                            
+                         y                            
+
+
+### Evaluation Results ###
+Precision:	0.4735
+Recall:	0.3750
+AER:	0.5815

@@ -6,3 +6,11 @@
 *.ear
 *.idea
 *.DS_Store
+
+pa1/submission
+pa3/java/pa3.imlexit
+pa1/pa1-mt.tgz
+pa1/pa1-mt/code/.BLEU
+pa1/pa1-mt/code/classes
+pa1/pa1-mt/system
+pa1/pa1-mt/code/logs/.myfeature.online.stdout
